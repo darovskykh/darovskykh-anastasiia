@@ -83,6 +83,7 @@
       "home": "الرئيسية",
       "users": "المستخدمون",
       "caseManagement": "إدارة الحالات",
+      "basePrompt": "Base prompt",
       "feedback": "الملاحظات"
     },
     "dashboard": {

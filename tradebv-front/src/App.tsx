@@ -21,6 +21,7 @@ import SimulationResults from "./pages/SimulationResults";
 import CaseDetails from "./pages/CaseDetails";
 import CaseManagement from "./pages/CaseManagement";
 import CaseEditor from "./pages/CaseEditor";
+import BasePrompt from "./pages/BasePrompt";
 import Cases from "./pages/Cases";
 import PromotionDashboard from "./pages/PromotionDashboard";
 import HelloPage from "./pages/HelloPage";
@@ -95,6 +96,14 @@ const AppRoutes = () => {
           element={
             <ProtectedRoute requiredRole="admin">
               <CaseEditor />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin-dashboard/base-prompt"
+          element={
+            <ProtectedRoute requiredRole="admin">
+              <BasePrompt />
             </ProtectedRoute>
           }
         />

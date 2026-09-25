@@ -83,6 +83,7 @@
       "home": "Home",
       "users": "Users",
       "caseManagement": "Case Management",
+      "basePrompt": "Base prompt",
       "feedback": "Feedback"
     },
     "dashboard": {

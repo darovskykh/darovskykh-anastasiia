@@ -83,6 +83,7 @@
       "home": "Inicio",
       "users": "Usuarios",
       "caseManagement": "Gestión de casos",
+      "basePrompt": "Prompt base",
       "feedback": "Comentarios"
     },
     "dashboard": {

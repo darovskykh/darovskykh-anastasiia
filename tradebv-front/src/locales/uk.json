@@ -83,6 +83,7 @@
       "home": "Головна",
       "users": "Користувачі",
       "caseManagement": "Управління кейсами",
+      "basePrompt": "Базовий промпт",
       "feedback": "Зворотний зв'язок"
     },
     "dashboard": {

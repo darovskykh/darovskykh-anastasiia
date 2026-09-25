@@ -49,6 +49,11 @@ export function AdminSidebar() {
       icon: BookOpen
     },
     {
+      title: t('admin.sidebar.basePrompt'),
+      url: "/admin-dashboard/base-prompt",
+      icon: Shield
+    },
+    {
       title: t('admin.sidebar.feedback'),
       url: "/admin-dashboard/feedback",
       icon: FileText
