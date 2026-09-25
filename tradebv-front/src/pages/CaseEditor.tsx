@@ -38,6 +38,11 @@ import { MultiLocaleField } from "@/components/MultiLocaleField";
 import PersonaBehaviorConfigEditor from "@/components/PersonaBehaviorConfigEditor";
 import { createDefaultPersonaBehaviorConfig, type PersonaBehaviorMode } from "@/types/personaBehavior";
 import { savePersonaOnly as savePersonaRecordOnly } from "@/utils/personaSave";
+import { FieldLabel } from "@/components/AudienceBadge";
+import { PersonaStatesEditor } from "@/components/persona/PersonaStatesEditor";
+import { ConditionalFactsEditor } from "@/components/persona/ConditionalFactsEditor";
+import { personaStructureService } from "@/services/personaStructureService";
+import type { PersonaStructure } from "@/types/personaStructure";
 
 interface Message {
   id: string;
@@ -120,6 +125,7 @@ const CaseEditor = () => {
   const [isDraftCase, setIsDraftCase] = useState(false);
   const [originalCaseId, setOriginalCaseId] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState('basic');
+  const [personaStructure, setPersonaStructure] = useState<PersonaStructure>({ states: [], facts: [] });
   const [showApplyDraftDialog, setShowApplyDraftDialog] = useState(false);
   const [aiTestModal, setAITestModal] = useState<{ isOpen: boolean; caseId: string; caseTitle: string }>({ isOpen: false, caseId: '', caseTitle: '' });
   const [isValidating, setIsValidating] = useState(false);
@@ -482,6 +488,15 @@ const CaseEditor = () => {
     // when language changes; toast/navigate are stable from hooks.
   }, [caseId, isEditing, navigate, toast]);
 
+  useEffect(() => {
+    const personaId = caseData.persona?.id;
+    if (!personaId) return;
+    personaStructureService
+      .getPersonaStructure(personaId)
+      .then(setPersonaStructure)
+      .catch(error => console.error('Failed to load persona structure:', error));
+  }, [caseData.persona?.id]);
+
   // Load draft chat history when component mounts
   useEffect(() => {
     const loadChatHistory = async () => {
@@ -820,6 +835,7 @@ const CaseEditor = () => {
         caseId,
         caseData.persona,
       );
+      await personaStructureService.savePersonaStructure(caseData.persona.id, personaStructure);
       setCaseData(prev => ({ ...prev, persona: savedPersona }));
       setPersonaV2JsonValidity({});
       toast({
@@ -884,6 +900,7 @@ const CaseEditor = () => {
           console.log('Updating case with data:', caseUpdate);
           console.log('Updating persona with data:', personaUpdate);
           await personaService.updatePersona(caseData.persona.id, personaUpdate);
+          await personaStructureService.savePersonaStructure(caseData.persona.id, personaStructure);
         } else if (caseData.persona) {
           // Create new persona if it doesn't exist
           const personaCreate = mockPersonaToPersonaCreate(caseData.persona, caseId);
@@ -1697,10 +1714,9 @@ const CaseEditor = () => {
         {/* Main content - Case editing */}
         <div className={isDraftCase ? 'lg:col-span-2' : ''}>
           <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-4 sm:space-y-6">
-            <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 h-auto">
+            <TabsList className="grid w-full grid-cols-2 h-auto">
               <TabsTrigger value="basic" className="text-xs sm:text-sm py-2">{t('caseEditor.tabs.basic')}</TabsTrigger>
               <TabsTrigger value="persona" className="text-xs sm:text-sm py-2">{t('caseEditor.tabs.persona')}</TabsTrigger>
-              <TabsTrigger value="evaluation" className="text-xs sm:text-sm py-2">{t('caseEditor.tabs.evaluation')}</TabsTrigger>
             </TabsList>
 
             <TabsContent value="basic">
@@ -1713,7 +1729,7 @@ const CaseEditor = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-2">
-                    <Label htmlFor="title">{t('caseEditor.basic.caseTitle')}</Label>
+                    <FieldLabel audience="user" htmlFor="title">{t('caseEditor.basic.caseTitle')}</FieldLabel>
                     <MultiLocaleField
                       kind="input"
                       id="title"
@@ -1724,7 +1740,7 @@ const CaseEditor = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="userDescription">{t('caseEditor.basic.userDescription')}</Label>
+                    <FieldLabel audience="user" htmlFor="userDescription">{t('caseEditor.basic.userDescription')}</FieldLabel>
                     <Textarea
                       id="userDescription"
                       value={caseData.userDescription || ''}
@@ -1738,7 +1754,7 @@ const CaseEditor = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <Label>{t('caseEditor.basic.roleInSimulation')}</Label>
+                    <FieldLabel audience="user">{t('caseEditor.basic.roleInSimulation')}</FieldLabel>
                     <MultiLocaleField
                       kind="rich"
                       combined={caseData.roleInSimulation || ''}
@@ -1751,7 +1767,7 @@ const CaseEditor = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <Label>{t('caseEditor.basic.personaDescription')}</Label>
+                    <FieldLabel audience="user">{t('caseEditor.basic.personaDescription')}</FieldLabel>
                     <MultiLocaleField
                       kind="rich"
                       combined={caseData.personaDescription || ''}
@@ -1764,7 +1780,7 @@ const CaseEditor = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <Label>{t('caseEditor.basic.caseOverview')}</Label>
+                    <FieldLabel audience="user">{t('caseEditor.basic.caseOverview')}</FieldLabel>
                     <MultiLocaleField
                       kind="rich"
                       combined={caseData.caseOverview || ''}
@@ -1777,7 +1793,7 @@ const CaseEditor = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="aiDescription">{t('caseEditor.basic.aiDescription')}</Label>
+                    <FieldLabel audience="ai" htmlFor="aiDescription">{t('caseEditor.basic.aiDescription')}</FieldLabel>
                     <Textarea
                       id="aiDescription"
                       value={caseData.aiDescription || ''}
@@ -1791,9 +1807,9 @@ const CaseEditor = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="scenarioBehaviorRulesCoarse">
+                    <FieldLabel audience="ai" htmlFor="scenarioBehaviorRulesCoarse">
                       {t('caseEditor.basic.scenarioBehaviorRulesCoarse')}
-                    </Label>
+                    </FieldLabel>
                     <Textarea
                       id="scenarioBehaviorRulesCoarse"
                       value={caseData.scenario_behavior_rules_coarse || ''}
@@ -1810,9 +1826,9 @@ const CaseEditor = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="scenarioBehaviorRulesFull">
+                    <FieldLabel audience="ai" htmlFor="scenarioBehaviorRulesFull">
                       {t('caseEditor.basic.scenarioBehaviorRulesFull')}
-                    </Label>
+                    </FieldLabel>
                     <Textarea
                       id="scenarioBehaviorRulesFull"
                       value={caseData.scenario_behavior_rules_full || ''}
@@ -1829,9 +1845,9 @@ const CaseEditor = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="simulationNavigation">
+                    <FieldLabel audience="user" htmlFor="simulationNavigation">
                       {t('caseEditor.basic.simulationNavigation')}
-                    </Label>
+                    </FieldLabel>
                     <MultiLocaleField
                       kind="textarea"
                       id="simulationNavigation"
@@ -1846,168 +1862,6 @@ const CaseEditor = () => {
                     <p className="text-xs text-muted-foreground">
                       {t('caseEditor.basic.simulationNavigationHint')}
                     </p>
-                  </div>
-
-                  {/* Brief items — populates the right-panel "Your brief" box during simulation. */}
-                  <div className="space-y-3">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <Label>{t('caseEditor.basic.briefItems.title')}</Label>
-                        <p className="text-xs text-muted-foreground mt-0.5">
-                          {t('caseEditor.basic.briefItems.hint')}
-                        </p>
-                      </div>
-                      <Button
-                        type="button"
-                        variant="outline"
-                        size="sm"
-                        onClick={() => setCaseData(prev => ({
-                          ...prev,
-                          briefItems: [...(prev.briefItems || []), { label: '', value: '' }]
-                        }))}
-                      >
-                        + {t('caseEditor.basic.briefItems.add')}
-                      </Button>
-                    </div>
-                    {(caseData.briefItems || []).map((item, i) => (
-                      <div key={i} className="flex gap-2 items-start">
-                        <Input
-                          placeholder={t('caseEditor.basic.briefItems.labelPlaceholder')}
-                          value={item.label}
-                          onChange={(e) => setCaseData(prev => {
-                            const next = [...(prev.briefItems || [])];
-                            next[i] = { ...next[i], label: e.target.value };
-                            return { ...prev, briefItems: next };
-                          })}
-                          className="flex-1"
-                        />
-                        <Input
-                          placeholder={t('caseEditor.basic.briefItems.valuePlaceholder')}
-                          value={item.value}
-                          onChange={(e) => setCaseData(prev => {
-                            const next = [...(prev.briefItems || [])];
-                            next[i] = { ...next[i], value: e.target.value };
-                            return { ...prev, briefItems: next };
-                          })}
-                          className="w-40"
-                        />
-                        <Button
-                          type="button"
-                          variant="ghost"
-                          size="sm"
-                          onClick={() => setCaseData(prev => ({
-                            ...prev,
-                            briefItems: (prev.briefItems || []).filter((_, idx) => idx !== i)
-                          }))}
-                        >
-                          ×
-                        </Button>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Phases — populates the right-panel Progress widget. reactionIds
-                      lists the persona.reactions[*].name values that belong to each phase. */}
-                  <div className="space-y-3">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <Label>{t('caseEditor.basic.phases.title')}</Label>
-                        <p className="text-xs text-muted-foreground mt-0.5">
-                          {t('caseEditor.basic.phases.hint')}
-                        </p>
-                      </div>
-                      <Button
-                        type="button"
-                        variant="outline"
-                        size="sm"
-                        onClick={() => setCaseData(prev => ({
-                          ...prev,
-                          phases: [...(prev.phases || []), { id: '', name: '', reactionIds: [] }]
-                        }))}
-                      >
-                        + {t('caseEditor.basic.phases.add')}
-                      </Button>
-                    </div>
-                    {(caseData.phases || []).map((phase, i) => {
-                      const reactionsList = caseData.persona?.reactions || [];
-                      return (
-                        <div key={i} className="rounded-md border p-3 space-y-2">
-                          <div className="flex gap-2 items-start">
-                            <Input
-                              placeholder={t('caseEditor.basic.phases.idPlaceholder')}
-                              value={phase.id}
-                              onChange={(e) => setCaseData(prev => {
-                                const next = [...(prev.phases || [])];
-                                next[i] = { ...next[i], id: e.target.value };
-                                return { ...prev, phases: next };
-                              })}
-                              className="w-32"
-                            />
-                            <Input
-                              placeholder={t('caseEditor.basic.phases.namePlaceholder')}
-                              value={phase.name}
-                              onChange={(e) => setCaseData(prev => {
-                                const next = [...(prev.phases || [])];
-                                next[i] = { ...next[i], name: e.target.value };
-                                return { ...prev, phases: next };
-                              })}
-                              className="flex-1"
-                            />
-                            <Button
-                              type="button"
-                              variant="ghost"
-                              size="sm"
-                              onClick={() => setCaseData(prev => ({
-                                ...prev,
-                                phases: (prev.phases || []).filter((_, idx) => idx !== i)
-                              }))}
-                            >
-                              ×
-                            </Button>
-                          </div>
-                          <div>
-                            <p className="text-xs text-muted-foreground mb-1.5">
-                              {t('caseEditor.basic.phases.reactionsLabel')}
-                            </p>
-                            {reactionsList.length === 0 ? (
-                              <p className="text-xs italic text-muted-foreground">
-                                {t('caseEditor.basic.phases.noReactions')}
-                              </p>
-                            ) : (
-                              <div className="flex flex-wrap gap-1.5">
-                                {reactionsList.map(r => {
-                                  const isSelected = (phase.reactionIds || []).includes(r.name);
-                                  return (
-                                    <button
-                                      key={r.id}
-                                      type="button"
-                                      onClick={() => setCaseData(prev => {
-                                        const next = [...(prev.phases || [])];
-                                        const current = next[i].reactionIds || [];
-                                        next[i] = {
-                                          ...next[i],
-                                          reactionIds: isSelected
-                                            ? current.filter(n => n !== r.name)
-                                            : [...current, r.name]
-                                        };
-                                        return { ...prev, phases: next };
-                                      })}
-                                      className={`text-xs px-2.5 py-1 rounded-full border transition-colors ${
-                                        isSelected
-                                          ? 'bg-primary text-primary-foreground border-primary'
-                                          : 'bg-background border-border text-muted-foreground hover:border-primary/50'
-                                      }`}
-                                    >
-                                      {r.name}
-                                    </button>
-                                  );
-                                })}
-                              </div>
-                            )}
-                          </div>
-                        </div>
-                      );
-                    })}
                   </div>
 
                   {/* LLM Models Section */}
@@ -2137,7 +1991,7 @@ const CaseEditor = () => {
                           </DialogHeader>
                           <div className="space-y-4">
                             <div className="space-y-2">
-                              <Label>{t('caseEditor.basic.userActions.name')}</Label>
+                              <FieldLabel audience="user">{t('caseEditor.basic.userActions.name')}</FieldLabel>
                               <Input
                                 value={newAction.name}
                                 onChange={(e) => setNewAction(prev => ({ ...prev, name: e.target.value }))}
@@ -2145,7 +1999,7 @@ const CaseEditor = () => {
                               />
                             </div>
                             <div className="space-y-2">
-                              <Label>{t('caseEditor.basic.userActions.descriptionLabel')}</Label>
+                              <FieldLabel audience="ai">{t('caseEditor.basic.userActions.descriptionLabel')}</FieldLabel>
                               <Textarea
                                 value={newAction.description}
                                 onChange={(e) => setNewAction(prev => ({ ...prev, description: e.target.value }))}
@@ -2153,7 +2007,7 @@ const CaseEditor = () => {
                               />
                             </div>
                             <div className="space-y-2">
-                              <Label>{t('caseEditor.basic.userActions.shortDescriptionLabel')}</Label>
+                              <FieldLabel audience="user">{t('caseEditor.basic.userActions.shortDescriptionLabel')}</FieldLabel>
                               <Input
                                 value={newAction.shortDescription || ''}
                                 onChange={(e) => setNewAction(prev => ({ ...prev, shortDescription: e.target.value }))}
@@ -2164,7 +2018,7 @@ const CaseEditor = () => {
                               </p>
                             </div>
                             <div className="space-y-2">
-                              <Label>{t('caseEditor.basic.userActions.chatMessageLabel')}</Label>
+                              <FieldLabel audience="both">{t('caseEditor.basic.userActions.chatMessageLabel')}</FieldLabel>
                               <Textarea
                                 value={newAction.chatMessage || ''}
                                 onChange={(e) => setNewAction(prev => ({ ...prev, chatMessage: e.target.value }))}
@@ -2175,7 +2029,7 @@ const CaseEditor = () => {
                               </p>
                             </div>
                             <div className="space-y-2">
-                              <Label>{t('caseEditor.basic.userActions.popupTextLabel')}</Label>
+                              <FieldLabel audience="user">{t('caseEditor.basic.userActions.popupTextLabel')}</FieldLabel>
                               <Textarea
                                 value={newAction.popupText || ''}
                                 onChange={(e) => setNewAction(prev => ({ ...prev, popupText: e.target.value }))}
@@ -2201,7 +2055,7 @@ const CaseEditor = () => {
                         </DialogHeader>
                         <div className="space-y-4">
                           <div className="space-y-2">
-                            <Label>{t('caseEditor.basic.userActions.name')}</Label>
+                            <FieldLabel audience="user">{t('caseEditor.basic.userActions.name')}</FieldLabel>
                             <Input
                               value={editingAction?.name || ''}
                               onChange={(e) => setEditingAction(prev => prev ? { ...prev, name: e.target.value } : null)}
@@ -2209,7 +2063,7 @@ const CaseEditor = () => {
                             />
                           </div>
                           <div className="space-y-2">
-                            <Label>{t('caseEditor.basic.userActions.descriptionLabel')}</Label>
+                            <FieldLabel audience="ai">{t('caseEditor.basic.userActions.descriptionLabel')}</FieldLabel>
                             <Textarea
                               value={editingAction?.description || ''}
                               onChange={(e) => setEditingAction(prev => prev ? { ...prev, description: e.target.value } : null)}
@@ -2217,7 +2071,7 @@ const CaseEditor = () => {
                             />
                           </div>
                           <div className="space-y-2">
-                            <Label>{t('caseEditor.basic.userActions.shortDescriptionLabel')}</Label>
+                            <FieldLabel audience="user">{t('caseEditor.basic.userActions.shortDescriptionLabel')}</FieldLabel>
                             <Input
                               value={editingAction?.shortDescription || ''}
                               onChange={(e) => setEditingAction(prev => prev ? { ...prev, shortDescription: e.target.value } : null)}
@@ -2228,7 +2082,7 @@ const CaseEditor = () => {
                             </p>
                           </div>
                           <div className="space-y-2">
-                            <Label>{t('caseEditor.basic.userActions.chatMessageLabel')}</Label>
+                            <FieldLabel audience="both">{t('caseEditor.basic.userActions.chatMessageLabel')}</FieldLabel>
                             <Textarea
                               value={editingAction?.chatMessage || ''}
                               onChange={(e) => setEditingAction(prev => prev ? { ...prev, chatMessage: e.target.value } : null)}
@@ -2239,7 +2093,7 @@ const CaseEditor = () => {
                             </p>
                           </div>
                           <div className="space-y-2">
-                            <Label>{t('caseEditor.basic.userActions.popupTextLabel')}</Label>
+                            <FieldLabel audience="user">{t('caseEditor.basic.userActions.popupTextLabel')}</FieldLabel>
                             <Textarea
                               value={editingAction?.popupText || ''}
                               onChange={(e) => setEditingAction(prev => prev ? { ...prev, popupText: e.target.value } : null)}
@@ -2325,7 +2179,7 @@ const CaseEditor = () => {
                 <CardContent className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="personaName">{t('caseEditor.persona.name')}</Label>
+                      <FieldLabel audience="both" htmlFor="personaName">{t('caseEditor.persona.name')}</FieldLabel>
                       <Input
                         id="personaName"
                         value={caseData.persona?.name || ''}
@@ -2338,7 +2192,7 @@ const CaseEditor = () => {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="personaRole">{t('caseEditor.persona.role')}</Label>
+                      <FieldLabel audience="both" htmlFor="personaRole">{t('caseEditor.persona.role')}</FieldLabel>
                       <MultiLocaleField
                         kind="input"
                         id="personaRole"
@@ -2434,1002 +2288,19 @@ const CaseEditor = () => {
                     </div>
                   </div>
 
-                  <div className="space-y-3 rounded-lg border bg-muted/10 p-4">
-                    <div className="space-y-1">
-                      <Label htmlFor="personaBehaviorMode">Behavior engine</Label>
-                      <p className="text-xs text-muted-foreground">
-                        Legacy personas keep the existing router and talker flow. Stateful controller enables the structured V2 profile below.
-                      </p>
-                    </div>
-                    <Select
-                      value={caseData.persona?.behavior_mode || 'legacy_router_talker'}
-                      onValueChange={(value) => handlePersonaBehaviorModeChange(value as PersonaBehaviorMode)}
-                    >
-                      <SelectTrigger id="personaBehaviorMode">
-                        <SelectValue />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="legacy_router_talker">Legacy router + talker</SelectItem>
-                        <SelectItem value="stateful_controller">Stateful controller (V2)</SelectItem>
-                      </SelectContent>
-                    </Select>
-                    <Badge variant="outline" className="w-fit">
-                      {caseData.persona?.behavior_mode === 'stateful_controller' ? 'V2 structured profile' : 'Legacy compatible'}
-                    </Badge>
-                  </div>
+                  <PersonaStatesEditor
+                    states={personaStructure.states}
+                    onChange={states => setPersonaStructure(prev => ({ ...prev, states }))}
+                  />
 
-                  <div className="space-y-2">
-                    <Label htmlFor="personaDescription">{t('caseEditor.persona.personaDescription')}</Label>
-                    <Textarea
-                      id="personaDescription"
-                      value={caseData.persona?.description || ''}
-                      onChange={(e) => setCaseData(prev => ({
-                        ...prev,
-                        persona: { ...prev.persona!, description: e.target.value }
-                      }))}
-                      placeholder={t('caseEditor.persona.personaDescriptionPlaceholder')}
-                      rows={4}
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="styleAndLanguage">{t('caseEditor.persona.styleAndLanguage')}</Label>
-                    <Textarea
-                      id="styleAndLanguage"
-                      value={caseData.persona?.style_and_language || ''}
-                      onChange={(e) => setCaseData(prev => ({
-                        ...prev,
-                        persona: { ...prev.persona!, style_and_language: e.target.value }
-                      }))}
-                      placeholder={t('caseEditor.persona.styleAndLanguagePlaceholder')}
-                      rows={3}
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="behaviorConstraints">{t('caseEditor.persona.behaviorConstraints')}</Label>
-                    <Textarea
-                      id="behaviorConstraints"
-                      value={caseData.persona?.behavior_constraints || ''}
-                      onChange={(e) => setCaseData(prev => ({
-                        ...prev,
-                        persona: { ...prev.persona!, behavior_constraints: e.target.value }
-                      }))}
-                      placeholder={t('caseEditor.persona.behaviorConstraintsPlaceholder')}
-                      rows={3}
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="internalReasoning">{t('caseEditor.persona.internalReasoning')}</Label>
-                    <Textarea
-                      id="internalReasoning"
-                      value={caseData.persona?.internal_reasoning || ''}
-                      onChange={(e) => setCaseData(prev => ({
-                        ...prev,
-                        persona: { ...prev.persona!, internal_reasoning: e.target.value }
-                      }))}
-                      placeholder={t('caseEditor.persona.internalReasoningPlaceholder')}
-                      rows={3}
-                    />
-                  </div>
-
-                  {caseData.persona?.behavior_mode === 'stateful_controller' && caseData.persona.behavior_config && (
-                    <PersonaBehaviorConfigEditor
-                      value={caseData.persona.behavior_config}
-                      emotionNames={(caseData.persona.emotions || []).map(emotion => emotion.name).filter(Boolean)}
-                      phaseNames={(caseData.persona.reactions || []).map(reaction => reaction.name).filter(Boolean)}
-                      onChange={(behavior_config) => setCaseData(prev => ({
-                        ...prev,
-                        persona: { ...prev.persona!, behavior_config },
-                      }))}
-                      onJsonValidityChange={handlePersonaV2JsonValidity}
-                    />
-                  )}
-
-                  {/* Emotions Section */}
-                  <div className="space-y-4">
-                    <div className="flex items-center justify-between">
-                      <Label>{t('caseEditor.persona.emotions.title')}</Label>
-                      <Dialog open={showAddEmotion} onOpenChange={(open) => {
-                        setShowAddEmotion(open);
-                        if (!open) {
-                          setSelectedFileName('');
-                          if (fileInputRef.current) {
-                            fileInputRef.current.value = '';
-                          }
-                        }
-                      }}>
-                        <DialogTrigger asChild>
-                          <Button size="sm" variant="outline">
-                            <Plus className="w-4 h-4 mr-2" />
-                            {t('caseEditor.persona.emotions.add')}
-                          </Button>
-                        </DialogTrigger>
-                        <DialogContent>
-                          <DialogHeader>
-                            <DialogTitle>{t('caseEditor.persona.emotions.addTitle')}</DialogTitle>
-                          </DialogHeader>
-                          <div className="space-y-4">
-                            <div className="space-y-2">
-                              <Label>{t('caseEditor.persona.emotions.name')}</Label>
-                              <Input
-                                value={newEmotion.name || ''}
-                                onChange={(e) => setNewEmotion(prev => ({ ...prev, name: e.target.value }))}
-                                placeholder={t('caseEditor.persona.emotions.namePlaceholder')}
-                              />
-                            </div>
-                            <div className="space-y-2">
-                              <Label>{t('caseEditor.persona.emotions.description')}</Label>
-                              <Textarea
-                                value={newEmotion.description || ''}
-                                onChange={(e) => setNewEmotion(prev => ({ ...prev, description: e.target.value }))}
-                                placeholder={t('caseEditor.persona.emotions.descriptionPlaceholder')}
-                              />
-                            </div>
-                            <div className="space-y-2">
-                              <Label>{t('caseEditor.persona.emotions.image')}</Label>
-                              <div className="flex items-center gap-2">
-                                <Input
-                                  ref={fileInputRef}
-                                  type="file"
-                                  accept="image/*"
-                                  disabled={isUploadingImage}
-                                  className="hidden"
-                                  onChange={(e) => {
-                                    const file = e.target.files?.[0];
-                                    if (file) {
-                                      setSelectedFileName(file.name);
-                                      openCropperForFile(file, { type: 'newEmotion' });
-                                    }
-                                  }}
-                                />
-                                <Button
-                                  type="button"
-                                  variant="outline"
-                                  onClick={() => fileInputRef.current?.click()}
-                                  disabled={isUploadingImage}
-                                  className="flex-shrink-0"
-                                >
-                                  {t('caseEditor.persona.emotions.chooseFile')}
-                                </Button>
-                                <span className="text-sm text-muted-foreground">
-                                  {selectedFileName || t('caseEditor.persona.emotions.noFileChosen')}
-                                </span>
-                              </div>
-                              {isUploadingImage && (
-                                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                                  <Loader2 className="w-4 h-4 animate-spin" />
-                                  {t('caseEditor.persona.uploading')}
-                                </div>
-                              )}
-                              {newEmotion.imageUrl && !isUploadingImage && (
-                                <div className="relative w-24 h-24 border rounded overflow-hidden">
-                                  <img
-                                    src={newEmotion.imageUrl}
-                                    alt="Preview"
-                                    className="w-full h-full object-cover"
-                                  />
-                                  <div className="absolute top-1 right-1">
-                                    <Check className="w-4 h-4 text-green-500 bg-white rounded-full" />
-                                  </div>
-                                </div>
-                              )}
-                            </div>
-                            <Button onClick={addEmotion} className="w-full">
-                              {t('caseEditor.persona.emotions.submit')}
-                            </Button>
-                          </div>
-                        </DialogContent>
-                      </Dialog>
-                    </div>
-                    
-                    <div className="grid gap-3">
-                      {caseData.persona?.emotions?.map((emotion, index) => {
-                        // Handle both old format (string) and new format (object)
-                        const emotionData = typeof emotion === 'string'
-                          ? { id: index.toString(), name: emotion, description: '', imageUrl: undefined }
-                          : emotion;
-
-                        return (
-                          <div key={emotionData.id || index} className="flex items-center gap-3 p-3 border rounded-lg">
-                            <div className="relative w-16 h-16 border rounded overflow-hidden flex-shrink-0 group">
-                              {emotionData.imageUrl ? (
-                                <img
-                                  src={emotionData.imageUrl}
-                                  alt={emotionData.name}
-                                  className="w-full h-full object-cover"
-                                />
-                              ) : (
-                                <div className="w-full h-full bg-muted flex items-center justify-center text-xs text-muted-foreground">
-                                  {t('caseEditor.persona.noImage')}
-                                </div>
-                              )}
-                              <label className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer flex items-center justify-center">
-                                <Upload className="w-6 h-6 text-white" />
-                                <input
-                                  type="file"
-                                  accept="image/*"
-                                  className="hidden"
-                                  onChange={(e) => {
-                                    const file = e.target.files?.[0];
-                                    if (file) {
-                                      openCropperForFile(file, { type: 'existingEmotion', index });
-                                    }
-                                  }}
-                                />
-                              </label>
-                            </div>
-                            <div className="flex-1">
-                              <h4 className="font-medium">{emotionData.name}</h4>
-                              <p className="text-sm text-muted-foreground">{emotionData.description}</p>
-                            </div>
-                            <Button
-                              size="sm"
-                              variant="ghost"
-                              onClick={() => removeEmotion(emotionData.id || index.toString())}
-                            >
-                              <Trash2 className="w-4 h-4" />
-                            </Button>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
-
-                  {/* Reactions Section */}
-                  <div className="space-y-4">
-                    <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
-                      <div>
-                        <Label>{t('caseEditor.persona.reactions.title')}</Label>
-                        <p className="text-xs text-muted-foreground mt-1">
-                          {t('caseEditor.persona.reactions.helper')}
-                        </p>
-                      </div>
-                      <Dialog open={showAddReaction} onOpenChange={setShowAddReaction}>
-                        <DialogTrigger asChild>
-                          <Button size="sm" variant="outline">
-                            <Plus className="w-4 h-4 mr-2" />
-                            {t('caseEditor.persona.reactions.add')}
-                          </Button>
-                        </DialogTrigger>
-                        <DialogContent>
-                          <DialogHeader>
-                            <DialogTitle>{t('caseEditor.persona.reactions.addTitle')}</DialogTitle>
-                          </DialogHeader>
-                          <div className="space-y-4">
-                            <div className="space-y-2">
-                              <Label>{t('caseEditor.persona.reactionName')}</Label>
-                              <Input
-                                value={newReaction.name}
-                                onChange={(e) => setNewReaction(prev => ({ ...prev, name: e.target.value }))}
-                                placeholder={t('caseEditor.persona.reactionNamePlaceholder')}
-                              />
-                            </div>
-                            <div className="space-y-2">
-                              <Label>{t('caseEditor.persona.reactionDescription')}</Label>
-                              <Textarea
-                                value={newReaction.description}
-                                onChange={(e) => setNewReaction(prev => ({ ...prev, description: e.target.value }))}
-                                placeholder={t('caseEditor.persona.reactionDescriptionPlaceholder')}
-                                rows={2}
-                              />
-                            </div>
-                            <div className="space-y-2">
-                              <Label>{t('caseEditor.persona.reactions.selectionLogic')}</Label>
-                              <Textarea
-                                value={newReaction.selectionLogic}
-                                onChange={(e) => setNewReaction(prev => ({ ...prev, selectionLogic: e.target.value }))}
-                                placeholder={t('caseEditor.persona.reactions.selectionLogicPlaceholder')}
-                                rows={2}
-                              />
-                            </div>
-                            <div className="space-y-2">
-                              <Label>{t('caseEditor.persona.reactionPrompt')}</Label>
-                              <Textarea
-                                value={newReaction.prompt}
-                                onChange={(e) => setNewReaction(prev => ({ ...prev, prompt: e.target.value }))}
-                                placeholder={t('caseEditor.persona.reactionPromptPlaceholder')}
-                                rows={4}
-                              />
-                            </div>
-                            <div className="space-y-2">
-                              <Label>{t('caseEditor.persona.reactions.goals')}</Label>
-                              <Textarea
-                                value={newReaction.goals}
-                                onChange={(e) => setNewReaction(prev => ({ ...prev, goals: e.target.value }))}
-                                placeholder={t('caseEditor.persona.reactions.goalsPlaceholder')}
-                                rows={3}
-                              />
-                              <p className="text-xs text-muted-foreground">
-                                {t('caseEditor.persona.reactions.goalsHint')}
-                              </p>
-                            </div>
-                            <Button onClick={addReaction} className="w-full">
-                              {t('caseEditor.persona.addReaction')}
-                            </Button>
-                          </div>
-                        </DialogContent>
-                      </Dialog>
-                    </div>
-
-                    <div className="grid gap-3">
-                      {caseData.persona?.reactions?.map((reaction) => (
-                        <div key={reaction.id} className="flex items-start justify-between p-3 border rounded-lg">
-                          <div className="flex-1 space-y-1">
-                            <h4 className="font-medium">{reaction.name}</h4>
-                            <p className="text-sm text-muted-foreground">{reaction.description}</p>
-                            {reaction.goals && (
-                              <p className="text-xs text-muted-foreground">
-                                <span className="font-semibold">{t('caseEditor.persona.reactions.goalsLabel')}</span> {reaction.goals}
-                              </p>
-                            )}
-                            {reaction.selectionLogic && (
-                              <p className="text-xs text-muted-foreground">
-                                <span className="font-semibold">{t('caseEditor.persona.reactions.selectionLogicLabel')}</span> {reaction.selectionLogic}
-                              </p>
-                            )}
-                            <p className="text-xs text-muted-foreground mt-2 p-2 bg-muted/50 rounded">
-                              <span className="font-semibold">{t('caseEditor.persona.promptLabel')}</span> {reaction.prompt}
-                            </p>
-                          </div>
-                          <div className="flex gap-1">
-                            {/* Кнопка редактирования */}
-                            <Button
-                              size="sm"
-                              variant="ghost"
-                              onClick={() => setEditingReaction({
-                                id: reaction.id,
-                                name: reaction.name,
-                                description: reaction.description,
-                                prompt: reaction.prompt,
-                                selectionLogic: reaction.selectionLogic || '',
-                                goals: reaction.goals || ''
-                              })}
-                            >
-                              <Settings className="w-4 h-4" />
-                            </Button>
-                            {/* Кнопка удаления */}
-                            <Button
-                              size="sm"
-                              variant="ghost"
-                              onClick={() => removeReaction(reaction.id)}
-                            >
-                              <Trash2 className="w-4 h-4" />
-                            </Button>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
+                  <ConditionalFactsEditor
+                    title="Факти (conditional facts)"
+                    description="Факти, які персона згадує не завжди, а лише коли спрацьовує умова. Тому вони не входять в опис кейсу: AI отримує тільки ті, що релевантні зараз."
+                    facts={personaStructure.facts}
+                    onChange={facts => setPersonaStructure(prev => ({ ...prev, facts }))}
+                  />
                 </CardContent>
               </Card>
-            </TabsContent>
-
-            <TabsContent value="evaluation">
-              <div className="space-y-6">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>{t('caseEditor.evaluation.promptSettingsTitle')}</CardTitle>
-                    <CardDescription>
-                      {t('caseEditor.evaluation.promptSettingsDescription')}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="evaluationPrompt">
-                          {t('caseEditor.basic.evaluationPrompt')} <span className="text-red-500">*</span>
-                        </Label>
-                        <div className="flex items-center gap-2">
-                          <Select
-                            value={caseData.evaluationPromptId || 'none'}
-                            onValueChange={(value) => setCaseData(prev => ({
-                              ...prev,
-                              evaluationPromptId: value === 'none' ? null : value
-                            }))}
-                          >
-                            <SelectTrigger id="evaluationPrompt" className={`flex-1 ${!caseData.evaluationPromptId ? 'border-red-300' : ''}`}>
-                              <SelectValue placeholder={t('caseEditor.basic.evaluationPromptPlaceholder')} />
-                            </SelectTrigger>
-                            <SelectContent>
-                              <SelectItem value="none">{t('caseEditor.basic.noEvaluationPrompt')}</SelectItem>
-                              {evaluationPrompts.map((prompt) => (
-                                <SelectItem key={prompt.id} value={prompt.id}>
-                                  {prompt.name}
-                                </SelectItem>
-                              ))}
-                            </SelectContent>
-                          </Select>
-                          {caseData.evaluationPromptId && (
-                            <Button
-                              type="button"
-                              variant="outline"
-                              size="sm"
-                              onClick={() => setShowEvaluationPromptDialog(true)}
-                              className="flex-shrink-0"
-                            >
-                              {t('caseEditor.evaluation.viewPrompt')}
-                            </Button>
-                          )}
-                        </div>
-                        <p className="text-xs text-muted-foreground">
-                          {t('caseEditor.basic.evaluationPromptPlaceholder')}
-                        </p>
-                      </div>
-
-                      <div className="space-y-2">
-                        <Label htmlFor="evaluationPromptModel">{t('caseEditor.basic.evaluationModel')}</Label>
-                        <Select
-                          value={caseData.evaluationPromptModelName || AI_MODELS.DEFAULT}
-                          onValueChange={(value) => setCaseData(prev => ({
-                            ...prev,
-                            evaluationPromptModelName: value
-                          }))}
-                        >
-                          <SelectTrigger id="evaluationPromptModel">
-                            <SelectValue placeholder={t('caseEditor.basic.selectAIModel')} />
-                          </SelectTrigger>
-                          <SelectContent className="max-h-[300px]">
-                            <TooltipProvider>
-                              {MODEL_GROUPS.map((group) => (
-                                <React.Fragment key={group.label}>
-                                  <div className="px-2 py-1.5 text-sm font-semibold text-muted-foreground">
-                                    {getModelCategoryLabel(group.label)}
-                                  </div>
-                                  {group.models.map((model) => (
-                                    <SelectItem key={model.value} value={model.value}>
-                                      <div className="flex items-center justify-between w-full">
-                                        <span>{model.label}</span>
-                                        <Tooltip>
-                                          <TooltipTrigger asChild>
-                                            <button
-                                              type="button"
-                                              onClick={(e) => e.stopPropagation()}
-                                              className="ml-2 p-0.5 hover:bg-muted rounded"
-                                              onMouseDown={(e) => e.preventDefault()}
-                                            >
-                                              <Info className="w-3.5 h-3.5 text-muted-foreground" />
-                                            </button>
-                                          </TooltipTrigger>
-                                          <TooltipContent side="right" className="max-w-xs">
-                                            <p>{getModelDescription(model.value, model.description)}</p>
-                                          </TooltipContent>
-                                        </Tooltip>
-                                      </div>
-                                    </SelectItem>
-                                  ))}
-                                </React.Fragment>
-                              ))}
-                            </TooltipProvider>
-                          </SelectContent>
-                        </Select>
-                        <p className="text-xs text-muted-foreground">
-                          {t('caseEditor.basic.aiModelForCategories')}
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="finalEvaluationPrompt">
-                          {t('caseEditor.basic.finalEvaluationPrompt')} <span className="text-red-500">*</span>
-                        </Label>
-                        <div className="flex items-center gap-2">
-                          <Select
-                            value={caseData.finalEvaluationPromptId || 'none'}
-                            onValueChange={(value) => setCaseData(prev => ({
-                              ...prev,
-                              finalEvaluationPromptId: value === 'none' ? null : value
-                            }))}
-                          >
-                            <SelectTrigger id="finalEvaluationPrompt" className={`flex-1 ${!caseData.finalEvaluationPromptId ? 'border-red-300' : ''}`}>
-                              <SelectValue placeholder={t('caseEditor.basic.finalEvaluationPromptPlaceholder')} />
-                            </SelectTrigger>
-                            <SelectContent>
-                              <SelectItem value="none">{t('caseEditor.basic.noFinalEvaluationPrompt')}</SelectItem>
-                              {finalEvaluationPrompts.map((prompt) => (
-                                <SelectItem key={prompt.id} value={prompt.id}>
-                                  {prompt.name}
-                                </SelectItem>
-                              ))}
-                            </SelectContent>
-                          </Select>
-                          {caseData.finalEvaluationPromptId && (
-                            <Button
-                              type="button"
-                              variant="outline"
-                              size="sm"
-                              onClick={() => setShowFinalEvaluationPromptDialog(true)}
-                              className="flex-shrink-0"
-                            >
-                              {t('caseEditor.evaluation.viewPrompt')}
-                            </Button>
-                          )}
-                        </div>
-                        <p className="text-xs text-muted-foreground">
-                          {t('caseEditor.basic.finalEvaluationPromptPlaceholder')}
-                        </p>
-                      </div>
-
-                      <div className="space-y-2">
-                        <Label htmlFor="finalEvaluationPromptModel">{t('caseEditor.basic.finalEvaluationModel')}</Label>
-                        <Select
-                          value={caseData.finalEvaluationPromptModelName || AI_MODELS.DEFAULT}
-                          onValueChange={(value) => setCaseData(prev => ({
-                            ...prev,
-                            finalEvaluationPromptModelName: value
-                          }))}
-                        >
-                          <SelectTrigger id="finalEvaluationPromptModel">
-                            <SelectValue placeholder={t('caseEditor.basic.selectAIModel')} />
-                          </SelectTrigger>
-                          <SelectContent className="max-h-[300px]">
-                            <TooltipProvider>
-                              {MODEL_GROUPS.map((group) => (
-                                <React.Fragment key={group.label}>
-                                  <div className="px-2 py-1.5 text-sm font-semibold text-muted-foreground">
-                                    {group.label}
-                                  </div>
-                                  {group.models.map((model) => (
-                                    <SelectItem key={model.value} value={model.value}>
-                                      <div className="flex items-center justify-between w-full">
-                                        <span>{model.label}</span>
-                                        <Tooltip>
-                                          <TooltipTrigger asChild>
-                                            <button
-                                              type="button"
-                                              onClick={(e) => e.stopPropagation()}
-                                              className="ml-2 p-0.5 hover:bg-muted rounded"
-                                              onMouseDown={(e) => e.preventDefault()}
-                                            >
-                                              <Info className="w-3.5 h-3.5 text-muted-foreground" />
-                                            </button>
-                                          </TooltipTrigger>
-                                          <TooltipContent side="right" className="max-w-xs">
-                                            <p>{model.description}</p>
-                                          </TooltipContent>
-                                        </Tooltip>
-                                      </div>
-                                    </SelectItem>
-                                  ))}
-                                </React.Fragment>
-                              ))}
-                            </TooltipProvider>
-                          </SelectContent>
-                        </Select>
-                        <p className="text-xs text-muted-foreground">
-                          {t('caseEditor.basic.aiModelForFinalSummary')}
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                <CardHeader>
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <CardTitle>{t('caseEditor.evaluation.title')}</CardTitle>
-                      <CardDescription>
-                        {t('caseEditor.evaluation.description')}
-                      </CardDescription>
-                    </div>
-                    <Dialog open={showAddEvaluation} onOpenChange={setShowAddEvaluation}>
-                      <DialogTrigger asChild>
-                        <Button>
-                          <Plus className="w-4 h-4 mr-2" />
-                          {t('caseEditor.evaluation.add')}
-                        </Button>
-                      </DialogTrigger>
-                      <DialogContent>
-                        <DialogHeader>
-                          <DialogTitle>{t('caseEditor.evaluation.addTitle')}</DialogTitle>
-                        </DialogHeader>
-                        <div className="space-y-4">
-                          <div className="space-y-2">
-                            <Label>{t('caseEditor.evaluation.categoryName')}</Label>
-                            <Input
-                              value={newEvaluation.name}
-                              onChange={(e) => setNewEvaluation(prev => ({ ...prev, name: e.target.value }))}
-                              placeholder={t('caseEditor.evaluation.categoryNamePlaceholder')}
-                            />
-                          </div>
-                          <div className="space-y-2">
-                            <Label>{t('caseEditor.evaluation.adminDescriptionLabel')}</Label>
-                            <Textarea
-                              value={newEvaluation.description}
-                              onChange={(e) => setNewEvaluation(prev => ({ ...prev, description: e.target.value }))}
-                              placeholder={t('caseEditor.evaluation.adminDescriptionPlaceholder')}
-                              className="min-h-[80px]"
-                            />
-                          </div>
-                          <div className="space-y-2">
-                            <Label>{t('caseEditor.evaluation.instructionLabel')}</Label>
-                            <Textarea
-                              value={newEvaluation.instruction}
-                              onChange={(e) => setNewEvaluation(prev => ({ ...prev, instruction: e.target.value }))}
-                              placeholder={t('caseEditor.evaluation.categoryInstructionPlaceholder')}
-                              className="min-h-[80px]"
-                            />
-                          </div>
-                          <Button onClick={addEvaluation} className="w-full">
-                            {t('caseEditor.evaluation.submit')}
-                          </Button>
-                        </div>
-                      </DialogContent>
-                    </Dialog>
-
-                    {/* Edit Evaluation Category Dialog */}
-                    <Dialog open={!!editingEvaluation} onOpenChange={() => setEditingEvaluation(null)}>
-                      <DialogContent>
-                        <DialogHeader>
-                          <DialogTitle>Edit Evaluation Category</DialogTitle>
-                        </DialogHeader>
-                        <div className="space-y-4">
-                          <div className="space-y-2">
-                            <Label>{t('caseEditor.evaluation.nameLabel')}</Label>
-                            <Input
-                              value={editingEvaluation?.name || ''}
-                              onChange={(e) => setEditingEvaluation(prev => prev ? ({ ...prev, name: e.target.value }) : null)}
-                              placeholder={t('caseEditor.evaluation.categoryNamePlaceholder')}
-                            />
-                          </div>
-                          <div className="space-y-2">
-                            <Label>{t('caseEditor.evaluation.adminDescriptionLabel')}</Label>
-                            <Textarea
-                              value={editingEvaluation?.description || ''}
-                              onChange={(e) => setEditingEvaluation(prev => prev ? ({ ...prev, description: e.target.value }) : null)}
-                              placeholder={t('caseEditor.evaluation.adminDescriptionPlaceholder')}
-                              className="min-h-[80px]"
-                            />
-                          </div>
-                          <div className="space-y-2">
-                            <Label>{t('caseEditor.evaluation.instructionLabel')}</Label>
-                            <Textarea
-                              value={editingEvaluation?.instruction || ''}
-                              onChange={(e) => setEditingEvaluation(prev => prev ? ({ ...prev, instruction: e.target.value }) : null)}
-                              placeholder={t('caseEditor.evaluation.categoryInstructionPlaceholder')}
-                              className="min-h-[80px]"
-                            />
-                          </div>
-                          <div className="flex gap-2">
-                            <Button onClick={updateEvaluation} className="flex-1">
-                              Save Changes
-                            </Button>
-                            <Button variant="outline" onClick={() => setEditingEvaluation(null)} className="flex-1">
-                              Cancel
-                            </Button>
-                          </div>
-                        </div>
-                      </DialogContent>
-                    </Dialog>
-                  </div>
-                </CardHeader>
-                 <CardContent className="space-y-6">
-                   {/* Evaluation Logic Container */}
-                    <div>
-                      <h3 className="font-semibold text-lg mb-4">{t('caseEditor.evaluation.title')}</h3>
-
-                      {/* Evaluation Prompt Editor */}
-                      {currentEvaluationPrompt || isCreatingEvaluationPrompt ? (
-                        <div
-                          ref={promptEditorRef}
-                          className={`space-y-4 ${showEditorHighlight ? 'rounded-lg ring-2 ring-primary/60 bg-primary/5 transition-shadow duration-300' : ''}`}
-                        >
-                          <div className="flex items-start justify-between mb-4">
-                            <h4 className="font-medium text-base">
-                              {isCreatingEvaluationPrompt ? t('caseEditor.evaluation.instructionCreateTitle') : t('caseEditor.evaluation.instructionEditTitle')}
-                            </h4>
-                            <Badge variant={editedIsDraft ? "outline" : "default"}>
-                              {editedIsDraft ? 'Draft' : 'Active'}
-                            </Badge>
-                          </div>
-                          
-                          <div className="space-y-4">
-                            {/* Prompt Name */}
-                            <div className="space-y-2">
-                              <Label htmlFor="promptName">{t('caseEditor.evaluation.nameLabel')}</Label>
-                              <Input
-                                id="promptName"
-                                value={editedEvaluationPromptName}
-                                onChange={(e) => setEditedEvaluationPromptName(e.target.value)}
-                                placeholder={t('caseEditor.evaluation.namePlaceholder')}
-                              />
-                            </div>
-
-                            {/* Main Prompt */}
-                            <div className="space-y-2">
-                              <Label htmlFor="mainPrompt">{t('caseEditor.evaluation.instructionLabel')}</Label>
-                              <Textarea
-                                id="mainPrompt"
-                                value={editedEvaluationPrompt}
-                                onChange={(e) => setEditedEvaluationPrompt(e.target.value)}
-                                rows={8}
-                                className="font-mono text-sm"
-                                placeholder={t('caseEditor.evaluation.instructionPlaceholder')}
-                              />
-                              <p className="text-sm text-muted-foreground">
-                                {t('caseEditor.evaluation.instructionHint')}
-                              </p>
-                            </div>
-
-
-                            {/* Draft Status */}
-                            <div className="flex items-center space-x-2">
-                              <Switch
-                                id="isDraft"
-                                checked={editedIsDraft}
-                                onCheckedChange={setEditedIsDraft}
-                              />
-                              <Label htmlFor="isDraft">{t('caseEditor.evaluation.saveAsDraftLabel')}</Label>
-                              <p className="text-sm text-muted-foreground">
-                                {t('caseEditor.evaluation.saveAsDraftNote')}
-                              </p>
-                            </div>
-
-                            {/* Save Button for Creating New Prompt */}
-                            {isCreatingEvaluationPrompt && (
-                              <div className="flex gap-2">
-                                <Button
-                                  onClick={async () => {
-                                    setIsSavingPrompt(true);
-                                    try {
-                                      const newPrompt = await evaluationPromptService.createEvaluationPrompt({
-                                        name: editedEvaluationPromptName,
-                                        main_prompt: editedEvaluationPrompt,
-                                        categories_prompts: editedCategoriesPrompts,
-                                        is_draft: editedIsDraft
-                                      });
-                                      setCurrentEvaluationPrompt(newPrompt);
-                                      setEvaluationPrompts([...evaluationPrompts, { id: newPrompt.id, name: newPrompt.name }]);
-                                      setCaseData(prev => ({ ...prev, evaluationPromptId: newPrompt.id }));
-                                      setIsCreatingEvaluationPrompt(false);
-                                      toast({
-                                        title: t('userProfile.toasts.success'),
-                                        description: t('caseEditor.evaluation.createSuccess')
-                                      });
-                                    } catch (error: any) {
-                                      console.error('Failed to create instruction for AI:', error);
-                                      toast({
-                                        title: t('userProfile.toasts.error'),
-                                        description: error.message || t('caseEditor.evaluation.createError'),
-                                        variant: 'destructive'
-                                      });
-                                    } finally {
-                                      setIsSavingPrompt(false);
-                                    }
-                                  }}
-                                  disabled={!editedEvaluationPromptName || !editedEvaluationPrompt || isSavingPrompt}
-                                >
-                                  {isSavingPrompt ? 'Creating...' : t('caseEditor.evaluation.createInstructionButton')}
-                                </Button>
-                                <Button
-                                  variant="outline"
-                                  onClick={() => {
-                                    setIsCreatingEvaluationPrompt(false);
-                                    setEditedEvaluationPromptName('');
-                                    setEditedEvaluationPrompt('');
-                                    setEditedCategoriesPrompts({});
-                                    setEditedIsDraft(false);
-                                  }}
-                                >
-                                  Cancel
-                                </Button>
-                              </div>
-                            )}
-                          </div>
-                        </div>
-                      ) : (
-                        <div className="p-6 border-2 border-dashed border-muted-foreground/25 rounded-lg text-center space-y-4">
-                          <div>
-                            <h4 className="font-medium text-lg mb-2">{t('caseEditor.evaluation.noInstructionTitle')}</h4>
-                            <p className="text-muted-foreground text-sm mb-4">{t('caseEditor.evaluation.noInstructionDescription')}</p>
-                          </div>
-                          <Button
-                            onClick={() => {
-                              setIsCreatingEvaluationPrompt(true);
-                              setEditedEvaluationPromptName('');
-                              setEditedEvaluationPrompt('');
-                              // Initialize with empty prompts for existing categories
-                              const initialCategories: Record<string, string> = {};
-                              caseData.evaluationCategories?.forEach(category => {
-                                initialCategories[category.name] = '';
-                              });
-                              setEditedCategoriesPrompts(initialCategories);
-                              setEditedIsDraft(false);
-                              scrollPromptEditorIntoView();
-                            }}
-                          >
-                            {t('caseEditor.evaluation.createInstructionCta')}
-                          </Button>
-                        </div>
-                      )}
-                    </div>
-
-                   {/* Evaluation Categories */}
-                   <div className="space-y-4">
-                     <h3 className="font-medium">{t('caseEditor.evaluation.categories')}</h3>
-                     <div className="grid gap-4">
-                       {caseData.evaluationCategories?.map((category) => (
-                         <div key={category.id} className="p-4 border rounded-lg">
-                           <div className="flex items-start justify-between">
-                             <div className="flex-1">
-                               <h4 className="font-medium">{category.name}</h4>
-                                <p className="text-sm text-muted-foreground mt-2">{category.description}</p>
-                               
-                               {/* Show current prompt */}
-                               {editedCategoriesPrompts[category.name] && (
-                                 <div className="mt-2 p-2 bg-muted rounded text-sm">
-                                   <div className="text-xs text-muted-foreground mb-1">{t('caseEditor.evaluation.instructionLabel')}:</div>
-                                   <div className="text-sm">{editedCategoriesPrompts[category.name]}</div>
-                                 </div>
-                               )}
-                             </div>
-                             <div className="flex gap-1">
-                                 <Button
-                                   size="sm"
-                                   variant="ghost"
-                                   onClick={() => {
-                                     setEditingEvaluation({
-                                       ...category,
-                                       instruction: editedCategoriesPrompts[category.name] || ''
-                                     });
-                                   }}
-                                 >
-                                 <Settings className="w-4 h-4" />
-                               </Button>
-                               <Button
-                                 size="sm"
-                                 variant="ghost"
-                                 onClick={() => removeEvaluation(category.id)}
-                               >
-                                 <Trash2 className="w-4 h-4" />
-                               </Button>
-                             </div>
-                           </div>
-                         </div>
-                       ))}
-                     </div>
-                   </div>
-
-                 </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader>
-                    <CardTitle>{t('caseEditor.finalEvaluation.title')}</CardTitle>
-                    <CardDescription>
-                      {t('caseEditor.finalEvaluation.description')}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-6">
-                    {finalEvaluationPrompt || isCreatingFinalPrompt ? (
-                      <div className="space-y-4">
-                        <div className="flex items-start justify-between mb-4">
-                          <h4 className="font-medium text-base">
-                            {isCreatingFinalPrompt ? t('caseEditor.finalEvaluation.createTitle') : t('caseEditor.finalEvaluation.editTitle')}
-                          </h4>
-                          <Badge variant={editedFinalIsDraft ? "outline" : "default"}>
-                            {editedFinalIsDraft ? 'Draft' : 'Active'}
-                          </Badge>
-                        </div>
-                        
-                        <div className="space-y-4">
-                          {/* Prompt Name */}
-                          <div className="space-y-2">
-                            <Label htmlFor="finalPromptName">{t('caseEditor.evaluation.nameLabel')}</Label>
-                            <Input
-                              id="finalPromptName"
-                              value={editedFinalPromptName}
-                              onChange={(e) => setEditedFinalPromptName(e.target.value)}
-                              placeholder={t('caseEditor.finalEvaluation.namePlaceholder')}
-                            />
-                          </div>
-
-                          {/* Final Prompt Content */}
-                          <div className="space-y-2">
-                            <Label htmlFor="finalPromptContent">{t('caseEditor.finalEvaluation.promptContent')}</Label>
-                            <Textarea
-                              id="finalPromptContent"
-                              value={editedFinalPrompt}
-                              onChange={(e) => setEditedFinalPrompt(e.target.value)}
-                              rows={10}
-                              className="font-mono text-sm"
-                              placeholder={t('caseEditor.finalEvaluation.promptPlaceholder')}
-                            />
-                          </div>
-
-                          {/* Draft Status */}
-                          <div className="flex items-center space-x-2">
-                          <Switch
-                            id="finalIsDraft"
-                            checked={editedFinalIsDraft}
-                            onCheckedChange={setEditedFinalIsDraft}
-                          />
-                          <Label htmlFor="finalIsDraft">{t('caseEditor.finalEvaluation.saveAsDraftLabel')}</Label>
-                          <p className="text-sm text-muted-foreground">
-                            {t('caseEditor.finalEvaluation.saveAsDraftNote')}
-                          </p>
-                          </div>
-
-                          {/* Save Button for Creating New Prompt */}
-                          {isCreatingFinalPrompt && (
-                            <div className="flex gap-2">
-                              <Button
-                                onClick={async () => {
-                                  setIsSavingPrompt(true);
-                                  try {
-                                    const newPrompt = await evaluationPromptService.createFinalEvaluationPrompt({
-                                      name: editedFinalPromptName,
-                                      prompt: editedFinalPrompt,
-                                      is_draft: editedFinalIsDraft
-                                    });
-                                    setFinalEvaluationPrompt(newPrompt);
-                                    setFinalEvaluationPrompts([...finalEvaluationPrompts, { id: newPrompt.id, name: newPrompt.name }]);
-                                    setCaseData(prev => ({ ...prev, finalEvaluationPromptId: newPrompt.id }));
-                                    setIsCreatingFinalPrompt(false);
-                                    toast({
-                                      title: t('userProfile.toasts.success'),
-                                      description: t('caseEditor.finalEvaluation.createSuccess')
-                                    });
-                                  } catch (error: any) {
-                                    console.error('Failed to create final evaluation instruction:', error);
-                                    toast({
-                                      title: t('userProfile.toasts.error'),
-                                      description: error.message || t('caseEditor.finalEvaluation.createError'),
-                                      variant: 'destructive'
-                                    });
-                                  } finally {
-                                    setIsSavingPrompt(false);
-                                  }
-                                }}
-                                disabled={!editedFinalPromptName || !editedFinalPrompt || isSavingPrompt}
-                              >
-                                {t('caseEditor.finalEvaluation.saveInstructionButton')}
-                              </Button>
-                              <Button
-                                variant="outline"
-                                onClick={() => {
-                                  setIsCreatingFinalPrompt(false);
-                                  setEditedFinalPromptName('');
-                                  setEditedFinalPrompt('');
-                                  setEditedFinalIsDraft(false);
-                                }}
-                              >
-                                Cancel
-                              </Button>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-                    ) : (
-                      <div className="space-y-4">
-                        <div className="p-6 border-2 border-dashed border-muted-foreground/25 rounded-lg text-center space-y-4">
-                          <div>
-                            <h3 className="font-medium text-lg mb-2">{t('caseEditor.finalEvaluation.noPromptFound')}</h3>
-                            <p className="text-muted-foreground text-sm mb-4">{t('caseEditor.finalEvaluation.noPromptDescription')}</p>
-                          </div>
-                          <Button
-                            onClick={() => {
-                              setIsCreatingFinalPrompt(true);
-                              setEditedFinalPromptName('');
-                              setEditedFinalPrompt('');
-                              setEditedFinalIsDraft(false);
-                            }}
-                          >
-                            {t('caseEditor.finalEvaluation.createPrompt')}
-                          </Button>
-                        </div>
-                      </div>
-                    )}
-
-                    <div className="space-y-1 text-sm text-muted-foreground">
-                      <p>{t('caseEditor.finalEvaluation.pdfNote')}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
             </TabsContent>
           </Tabs>
         </div>
