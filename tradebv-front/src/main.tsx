@@ -18,4 +18,13 @@ if (import.meta.env.DEV) {
   import('./utils/devHelpers');
 }
 
-createRoot(document.getElementById("root")!).render(<App />);
+const render = () => createRoot(document.getElementById("root")!).render(<App />);
+
+if (import.meta.env.VITE_MOCK_API === 'true') {
+  import('./mock/installMockApi').then(({ installMockApi }) => {
+    installMockApi();
+    render();
+  });
+} else {
+  render();
+}
