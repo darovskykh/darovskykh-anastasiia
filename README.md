@@ -6,6 +6,7 @@
 
 - `tradebv-front/` — копія фронта TradeBV (Vite + React + TypeScript).
 - `docs/tradebv-admin/vymohy.md` — вимоги до адмінки персони (дзвінок 25.09).
+- `docs/tradebv-admin/dlya-vani.md` — що змінено в макеті, як запустити на фейкових даних (`npm run dev:mock`) і що перенести в справжній фронт.
 
 ## Звідки копія
 
