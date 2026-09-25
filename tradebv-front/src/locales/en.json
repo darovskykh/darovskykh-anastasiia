@@ -1,0 +1,1606 @@
+{
+  "notifications": {
+    "title": "Notifications",
+    "markAllRead": "Mark all read",
+    "empty": "No notifications yet"
+  },
+  "nav": {
+    "home": "Go to website",
+    "mhr": "Trade BV",
+    "dashboard": "Dashboard",
+    "courses": "Courses",
+    "profile": "Profile",
+    "logout": "Logout",
+    "login": "Login",
+    "settings": "Settings",
+    "language": "Language",
+    "users": "Users",
+    "cases": "Cases",
+    "feedback": "Feedback",
+    "desktopSidebarHint": "💡 Desktop sidebar available for quick navigation"
+  },
+  "welcome": {
+    "title": "Welcome to AI Learning Platform",
+    "subtitle": "Develop skills through interactive AI simulations"
+  },
+  "home": {
+    "goToDashboard": "Go to Training",
+    "startLearning": "Start Learning",
+    "learnMore": "Learn More",
+    "features": {
+      "title": "Why Choose Our Platform?",
+      "subtitle": "Innovative AI technologies for maximum learning efficiency",
+      "aiPersonas": {
+        "title": "AI Personas",
+        "description": "Interactive simulations with intelligent AI conversation partners"
+      },
+      "targetedLearning": {
+        "title": "Targeted Learning",
+        "description": "Personalized scenarios for developing specific skills"
+      },
+      "teamwork": {
+        "title": "Teamwork",
+        "description": "Training for effective team collaboration"
+      }
+    },
+    "courses": {
+      "title": "Popular Courses",
+      "subtitle": "Most in-demand training programs",
+      "viewAll": "View All",
+      "students": "students",
+      "start": "Start",
+      "noCourses": "No courses available"
+    },
+    "cta": {
+      "title": "Ready to Start Learning?",
+      "subtitle": "Join thousands of professionals already improving their skills"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "back": "Back",
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "goToPreviousPage": "Go to previous page",
+      "goToNextPage": "Go to next page"
+    }
+  },
+  "login": {
+    "title": "System Login",
+    "description": "Sign in to the system",
+    "username": "Username",
+    "password": "Password",
+    "submit": "Login",
+    "admin": "Administrator",
+    "member": "Member"
+  },
+  "admin": {
+    "sidebar": {
+      "title": "Admin Panel",
+      "subtitle": "AI Training Platform",
+      "navigation": "Navigation",
+      "home": "Home",
+      "users": "Users",
+      "caseManagement": "Case Management",
+      "feedback": "Feedback"
+    },
+    "dashboard": {
+      "title": "Admin Dashboard",
+      "welcome": "Welcome",
+      "overview": "Activity Overview",
+      "filters": "Filters",
+      "search": "Search",
+      "casesLaunchedWeekly": "Cases launched this week",
+      "recentActivity": "Recent Activity",
+      "recentActivityDescription": "Recent user actions in the system",
+      "viewAll": "View All",
+      "viewLess": "Show Less",
+      "noRecentActivity": "No recent activity",
+      "pendingReports": "Reports awaiting confirmation",
+      "pendingReportsDescription": "Confirm evaluations to release scored reports to users",
+      "reviewReport": "Review",
+      "noPendingReports": "No reports awaiting confirmation",
+      "loadingActivity": "Loading activity...",
+      "quickActions": "Quick Actions",
+      "quickActionsDescription": "Main administrator operations",
+      "createUser": "Create User",
+      "createCase": "Create Case",
+      "viewFeedback": "View Feedback",
+      "systemAnalytics": "System Analytics",
+      "systemNotifications": "System Notifications"
+    },
+    "activityActions": {
+      "startedSimulation": "Started simulation",
+      "completedSimulation": "Completed simulation",
+      "uploadedRecording": "Uploaded recording"
+    },
+    "timeAgo": {
+      "justNow": "just now",
+      "minutesAgo": "{{count}} min ago",
+      "hoursAgo": "{{count}} hrs ago",
+      "daysAgo": "{{count}} days ago"
+    },
+    "stats": {
+      "totalUsers": "Total Users",
+      "activeSimulations": "Active Simulations",
+      "completedSimulations": "Completed Simulations",
+      "totalChats": "Total Chats",
+      "newUsersThisWeek": "new users this week",
+      "newSimulationsThisWeek": "started this week",
+      "completedThisWeek": "completed this week",
+      "newChatsThisWeek": "new chats this week"
+    },
+    "activities": {
+      "completedSimulation": "Completed simulation",
+      "startedSimulation": "Started simulation",
+      "leftFeedback": "Left feedback",
+      "registered": "Registered",
+      "timeAgo": {
+        "minutes": "{{count}} min ago",
+        "hours": "{{count}} hr ago"
+      }
+    }
+  },
+  "member": {
+    "dashboard": {
+      "welcome": "Welcome",
+      "selectCase": "Press \"Start Working\" to proceed",
+      "learningCases": "Learning Cases",
+      "searchCases": "Search cases...",
+      "startWorking": "Start Working",
+      "loading": "Loading...",
+      "noCases": "No available cases",
+      "bannerSubtitle": "Complete your assigned case before the deadline",
+      "deadlineLabel": "Deadline",
+      "deadlineRemaining": "{{count}} days left",
+      "deadlinePassed": "Deadline passed",
+      "deadlineNone": "No deadline",
+      "statsAssigned": "Cases assigned",
+      "statsCompleted": "Completed",
+      "statsDaysLeft": "Days until deadline",
+      "sectionLearningCase": "Learning case",
+      "cardDefaultKind": "Negotiation simulation",
+      "cardAccessUntil": "Access until {{date}}"
+    },
+    "caseIntro": {
+      "roleInSimulation": "Case Description",
+      "personaDescription": "Your Role",
+      "caseOverview": "Who You Are Talking To",
+      "roleSubtitle": "Your context and commercial brief for this negotiation",
+      "personaSubtitle": "Meet your counterpart in this negotiation",
+      "overviewSubtitle": "What to expect from this simulation",
+      "preparation": "Preparation",
+      "case": "Case",
+      "stepBadge": "Step {{current}} of {{total}}",
+      "starting": "Starting...",
+      "continue": "Continue",
+      "back": "Back",
+      "languageTitle": "Language",
+      "languageSubtitle": "Choose the language you'll run the simulation in",
+      "languageLabel": "Simulation language",
+      "languageHint": "This sets the interface, the conversation with the persona and the final report. You can change it any time in the header.",
+      "languageSaveError": "Couldn't save your language. Please pick it again."
+    },
+    "stats": {
+      "completedSimulations": "Completed Simulations",
+      "lastActivity": "Last Activity",
+      "overallProgress": "Overall Progress",
+      "daysAgo": "{{count}} days ago"
+    }
+  },
+  "cases": {
+    "conflictManagement": {
+      "title": "Conflict Management",
+      "description": "Learn to effectively resolve workplace conflicts"
+    },
+    "leadership": {
+      "title": "Leadership and Motivation",
+      "description": "Develop leadership skills and team motivation"
+    },
+    "communication": {
+      "title": "Effective Communication",
+      "description": "Fundamentals of professional business communication"
+    },
+    "duration": "{{count}} min",
+    "list": {
+      "title": "Cases",
+      "subtitle": "Choose a case to start simulation",
+      "searchPlaceholder": "Search cases...",
+      "refresh": "Refresh",
+      "errorLoading": "Error loading cases",
+      "failedToLoad": "Failed to load cases",
+      "loading": "Loading cases...",
+      "noMatchingSearch": "No cases found matching your search.",
+      "noCases": "No cases available.",
+      "badgeAvailable": "Available",
+      "createdLabel": "Created",
+      "startSimulation": "Start Simulation",
+      "accessDeniedTitle": "Access denied",
+      "accessDeniedBody": "You don't have access to this case. Contact your administrator.",
+      "runErrorTitle": "Error",
+      "runErrorBody": "Failed to start simulation. Please try again."
+    }
+  },
+  "status": {
+    "completed": "Completed",
+    "active": "Active",
+    "inProgress": "In Progress",
+    "available": "Available",
+    "unavailable": "Unavailable",
+    "feedback": "Feedback",
+    "new": "New",
+    "unknown": "Unknown",
+    "draft": "Draft"
+  },
+  "users": {
+    "title": "User Management",
+    "subtitle": "Manage user accounts and access permissions",
+    "addUser": "Add User",
+    "addUserShort": "Add",
+    "searchPlaceholder": "Search users...",
+    "filterByRole": "Filter by Role",
+    "filterByStatus": "Filter by Status",
+    "allRoles": "All Roles",
+    "allStatuses": "All Statuses",
+    "userList": "User List",
+    "refresh": "Refresh",
+    "table": {
+      "id": "ID",
+      "name": "Name",
+      "email": "Email",
+      "username": "Username",
+      "role": "Role",
+      "lastLogin": "Last Login",
+      "simulations": "Simulations",
+      "status": "Status",
+      "actions": "Actions",
+      "createdAt": "Created",
+      "noName": "No name"
+    },
+    "roles": {
+      "user": "Member",
+      "admin": "Administrator",
+      "superadmin": "Super Administrator"
+    },
+    "statuses": {
+      "active": "Active",
+      "blocked": "Blocked"
+    },
+    "lastLogin": {
+      "never": "Never",
+      "now": "Now",
+      "hoursAgo": "{{count}} hr ago",
+      "daysAgo": "{{count}} days ago"
+    },
+    "actions": {
+      "viewProfile": "View Profile",
+      "edit": "Edit",
+      "block": "Block",
+      "unblock": "Unblock",
+      "delete": "Delete"
+    },
+    "modal": {
+      "addTitle": "Add New User",
+      "addDescription": "Create a new user account in the system",
+      "firstName": "First Name",
+      "firstNamePlaceholder": "Enter first name",
+      "lastName": "Last Name",
+      "lastNamePlaceholder": "Enter last name",
+      "username": "Email",
+      "usernamePlaceholder": "user@example.com",
+      "role": "Role",
+      "password": "Password",
+      "passwordPlaceholder": "Leave empty to auto-generate",
+      "passwordCopied": "Password copied!",
+      "cancel": "Cancel",
+      "create": "Create User",
+      "creating": "Creating..."
+    },
+    "toasts": {
+      "userCreated": "User created",
+      "userCreatedDesc": "User {{username}} has been created successfully.",
+      "generatedPassword": "Generated Password",
+      "passwordDesc": "Password: {{password}}",
+      "statusUpdated": "Status updated",
+      "statusUpdatedDesc": "User status changed to {{status}}.",
+      "userDeleted": "User deleted",
+      "userDeletedDesc": "User has been removed from the system.",
+      "error": "Error",
+      "errorCreating": "Failed to create user",
+      "errorUpdating": "Failed to update user status",
+      "errorDeleting": "Failed to delete user",
+      "errorLoading": "Failed to load users",
+      "cannotBlockAdmin": "Cannot block admin or superadmin users",
+      "cannotDeleteAdmin": "Cannot delete admin or superadmin users"
+    },
+    "confirmDelete": "Are you sure you want to delete this user?",
+    "noUsersFound": "No users found",
+    "noUsersFoundDesc": "No users match your current search criteria. Try adjusting your filters or search terms.",
+    "noSearchResults": "No results found",
+    "noSearchResultsDesc": "Your search didn't return any results. Try using different keywords or check your spelling."
+  },
+  "caseManagement": {
+    "title": "Case Management",
+    "subtitle": "Manage training cases and personas",
+    "searchPlaceholder": "Search cases and personas...",
+    "refresh": "Refresh",
+    "tabs": {
+      "cases": "Cases",
+      "personas": "Personas"
+    },
+    "addCase": "Add Case",
+    "addPersona": "Add Persona",
+    "loading": "Loading...",
+    "noCases": "No cases",
+    "noPersonas": "No personas",
+    "casesNotFound": "Cases not found",
+    "personasNotFound": "Personas not found",
+    "case": {
+      "status": {
+        "draft": "Draft",
+        "active": "Active"
+      },
+      "prompt": "Prompt",
+      "draftCopy": "Draft Copy",
+      "actions": {
+        "run": "Run",
+        "edit": "Edit",
+        "delete": "Delete",
+        "testWithAI": "AI-test",
+        "createDraft": "Create Full Copy",
+        "applyChanges": "Apply Changes"
+      },
+      "createdAt": "Created",
+      "evaluationPrompt": "Evaluation Prompt",
+      "drafts": "Drafts"
+    },
+    "persona": {
+      "status": {
+        "draft": "Draft",
+        "active": "Active"
+      },
+      "goal": "Goal",
+      "actions": "Actions",
+      "actionsCount": "Actions ({{count}})",
+      "emotions": "Emotions",
+      "createdAt": "Created",
+      "edit": "Edit",
+      "delete": "Delete",
+      "more": "more"
+    },
+    "aiTestRunner": {
+      "title": "AI Case Testing",
+      "testPersonaLabel": "Test persona",
+      "selectPlaceholder": "Choose a test persona",
+      "actions": {
+        "edit": "Edit persona",
+        "hideEdit": "Hide editor",
+        "run": "Run test",
+        "running": "Testing...",
+        "showTestPersona": "Add test persona",
+        "hideTestPersona": "Hide test persona",
+        "delete": "Delete",
+        "cancel": "Cancel",
+        "save": "Save changes",
+        "saving": "Saving..."
+      },
+      "devStatus": {
+        "title": "Feature in development",
+        "description": "AI case testing is currently under development."
+      },
+      "collapsible": {
+        "log": "AI activity log",
+        "dialogue": "Final dialogue"
+      },
+      "editPersonaCard": {
+        "title": "Edit persona",
+        "description": "Update the selected test persona details."
+      },
+      "testPersonaCard": {
+        "title": "Test persona",
+        "description": "Provide characteristics for a persona to run this test."
+      },
+      "fields": {
+        "name": "Name",
+        "role": "Role",
+        "voice": "Voice",
+        "description": "Persona description",
+        "goals": "Persona goals",
+        "voiceSample": "Voice sample text"
+      },
+      "placeholders": {
+        "name": "Example: Irene",
+        "role": "Example: Head of department",
+        "description": "Describe character traits and context.",
+        "goals": "What the persona wants to achieve and expects.",
+        "voiceSample": "Text that reflects the persona's communication style.",
+        "voiceSelect": "Choose voice"
+      },
+      "voiceSampleHint": "Voice generation is not available yet, but you can prepare the text in advance.",
+      "confirmDelete": "Are you sure you want to delete this persona?",
+      "toasts": {
+        "update": {
+          "title": "Persona updated",
+          "description": "Test persona changes saved."
+        },
+        "delete": {
+          "title": "Persona deleted",
+          "description": "Test persona removed successfully."
+        },
+        "error": {
+          "title": "Error",
+          "run": "Failed to run test",
+          "update": "Failed to update persona",
+          "delete": "Failed to delete persona",
+          "load": "Failed to load personas"
+        }
+      }
+    },
+    "toasts": {
+      "caseDeleted": "Case deleted",
+      "caseDeletedDesc": "Case has been deleted successfully.",
+      "personaDeleted": "Persona deleted",
+      "personaDeletedDesc": "Persona has been deleted successfully.",
+      "error": "Error",
+      "errorDeleting": "Failed to delete",
+      "errorLoading": "Failed to load data",
+      "draftCopyCreated": "Draft Copy Created",
+      "draftCopyCreatedDesc": "Draft copy created successfully. Redirecting...",
+      "errorCreatingDraft": "Failed to create draft copy",
+      "changesApplied": "Changes Applied",
+      "errorApplyingChanges": "Failed to apply changes",
+      "errorStartingSimulation": "Failed to start simulation"
+    },
+    "applyDraft": {
+      "title": "Apply Draft Changes?",
+      "description": "This action will replace the original case with the changes from this draft. The draft will be deleted after applying the changes. This action cannot be undone.",
+      "cancel": "Cancel",
+      "apply": "Apply Changes"
+    }
+  },
+  "feedback": {
+    "title": "Feedback Management",
+    "subtitle": "Review and manage user feedback",
+    "refresh": "Refresh",
+    "searchPlaceholder": "Search feedback...",
+    "feedbackEntries": "Feedback Entries ({{count}})",
+    "table": {
+      "dateTime": "Date/Time",
+      "user": "User",
+      "page": "Page",
+      "case": "Case",
+      "feedbackText": "Feedback Text",
+      "screenshot": "Screenshot",
+      "status": "Status",
+      "gradeAccepted": "Grade Accepted",
+      "actions": "Actions"
+    },
+    "screenshot": {
+      "noImage": "No Image",
+      "error": "Error loading image",
+      "loadError": "Failed to load screenshot",
+      "clickToView": "Click to view full size",
+      "title": "Screenshot",
+      "zoomIn": "Zoom in",
+      "zoomOut": "Zoom out",
+      "reset": "Reset zoom",
+      "zoomLabel": "Screenshot zoom level",
+      "zoomHint": "Use slider or buttons to zoom; scroll to pan."
+    },
+    "caseContext": {
+      "title": "Case Context",
+      "caseName": "Case Name",
+      "description": "Description"
+    },
+    "gradeStatus": {
+      "yes": "Yes",
+      "no": "No",
+      "accepted": "Accepted",
+      "notAccepted": "Not Accepted",
+      "notApplicable": "Not applicable"
+    },
+    "detail": {
+      "title": "Feedback Details",
+      "feedbackInfo": "Feedback Information",
+      "userInformation": "User Information",
+      "name": "Name",
+      "email": "Email",
+      "source": "Source",
+      "role": "Role",
+      "user": "User",
+      "page": "Page",
+      "submitted": "Submitted",
+      "gradeAccepted": "Grade Accepted",
+      "caseId": "Case ID",
+      "personaId": "Persona ID",
+      "chatId": "Chat ID",
+      "feedbackText": "Full feedback",
+      "adminReview": "Admin Review",
+      "addReview": "Add Review",
+      "currentStatus": "Current Status",
+      "savedNotes": "Saved Notes",
+      "markAsReviewed": "Mark as Reviewed",
+      "markAs": "Mark as",
+      "reviewed": "Reviewed",
+      "pending": "Pending",
+      "adminNotes": "Admin Notes",
+      "addNotesPlaceholder": "Add your notes about this feedback...",
+      "saveNotes": "Save Notes",
+      "saving": "Saving...",
+      "characters": "characters"
+    },
+    "filters": {
+      "allStatus": "All Status",
+      "pending": "⏳ Pending",
+      "reviewed": "✓ Reviewed",
+      "filterByStatus": "Filter by status",
+      "filterBySource": "Filter by source",
+      "allSources": "All sources"
+    },
+    "sourceTags": {
+      "simulation": "Simulation session",
+      "simulationResults": "Simulation results",
+      "other": "Other source"
+    },
+    "anonymous": "Anonymous",
+    "noResults": "No feedback found",
+    "noFeedback": "No feedback",
+    "noFeedbackAvailable": "No feedback available\nNo feedback has been submitted yet. Users will see their feedback appear here after completing simulations.",
+    "loading": "Loading...",
+    "error": "Error",
+    "errorLoading": "Failed to load feedback",
+    "toasts": {
+      "success": "Success",
+      "error": "Error",
+      "feedbackUpdated": "Feedback updated successfully",
+      "updateError": "Failed to update feedback"
+    }
+  },
+  "equipmentTest": {
+    "title": "Equipment Test",
+    "description": "Let's check your equipment before starting the simulation",
+    "microphone": {
+      "title": "Microphone",
+      "description": "Audio recording test",
+      "recording": "Recording… speak into the mic",
+      "getReady": "Get ready to speak…",
+      "speakNow": "Speak now",
+      "success": "Microphone is working properly",
+      "noSpeechDetected": "No speech detected. Please speak clearly during the test.",
+      "noAudioDetected": "No audio detected. Please check your microphone and try again.",
+      "testFailed": "Microphone test failed. Please try again.",
+      "mp3NotSupported": "Your browser cannot generate MP3 audio. Please switch to a browser that supports MP3 recording.",
+      "selectDevice": "Select Microphone:",
+      "selectPlaceholder": "Select a microphone",
+      "audioLevel": "Audio level",
+      "unsupported": "Microphone access is not supported in this browser.",
+      "notFound": "No microphone found.",
+      "notReadable": "Microphone is in use or not accessible.",
+      "permissionDenied": "Microphone permission denied.",
+      "invalidState": "Microphone is in an invalid state."
+    },
+    "speakers": {
+      "title": "Speakers",
+      "description": "Audio playback test"
+    },
+    "camera": {
+      "title": "Camera",
+      "description": "Video recording test"
+    },
+    "screen": {
+      "title": "Screen capture",
+      "description": "Allow screen recording so the simulation view can be saved."
+    },
+    "status": {
+      "ready": "Ready",
+      "error": "Error",
+      "testing": "Testing..."
+    },
+    "buttons": {
+      "testMicrophone": "Test Microphone",
+      "retryMicrophone": "Retry",
+      "testAgain": "Test Again",
+      "testSpeakers": "Test Speakers",
+      "testCamera": "Test Camera",
+      "testScreen": "Test Screen",
+      "testing": "Testing..."
+    },
+    "footer": {
+      "allTestsRequired": "Complete all tests to continue",
+      "startSimulation": "Start Simulation",
+      "waitingForTests": "Waiting for tests..."
+    },
+    "transcription": {
+      "label": "Recognized text:"
+    }
+  },
+  "userProfile": {
+    "title": "User Profile",
+    "subtitle": "Manage account and settings",
+    "backToList": "Back to list",
+    "userNotFound": "User not found",
+    "loading": "Loading...",
+    "status": {
+      "active": "Active",
+      "blocked": "Blocked"
+    },
+    "role": {
+      "admin": "Administrator",
+      "user": "Member",
+      "superadmin": "Super Administrator"
+    },
+    "basicInfo": {
+      "title": "Basic Information",
+      "edit": "Edit",
+      "cancel": "Cancel",
+      "save": "Save",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "role": "Role",
+      "password": "Password",
+      "id": "ID",
+      "created": "Created",
+      "lastLogin": "Last Login",
+      "never": "Never",
+      "status": "Status"
+    },
+    "permissions": {
+      "title": "Permissions Management",
+      "subtitle": "Configure user access and restrictions",
+      "caseAccess": "Case Access",
+      "allCases": "All cases",
+      "limitedCases": "Assigned only ({{count}})",
+      "noCases": "No access",
+      "accountExpiry": "Account Expiration",
+      "launchLimit": "Run limit per day",
+      "simulationsCount": "Maximum session duration (min)",
+      "simulationsCountPlaceholder": "Feature under development",
+      "noLimit": "No limit",
+      "editNote": "Editing advanced settings will be available in future versions",
+      "savePermissions": "Save Permissions",
+      "resetToDefault": "Reset to Default"
+    },
+    "recordings": {
+      "title": "Session Recordings",
+      "subtitle": "Audio and video recordings of user simulations",
+      "mockBadge": "Mock data",
+      "view": "View",
+      "viewReport": "View Report",
+      "viewWebcam": "View webcam",
+      "viewScreen": "View simulation",
+      "copyLink": "Copy link",
+      "videoAudio": "Audio + Video",
+      "videoOnly": "Video only",
+      "audioOnly": "Audio only",
+      "webcamLabel": "Webcam recording",
+      "screenLabel": "Simulation recording",
+      "complete": "Completed",
+      "incomplete": "Incompleted",
+      "noRecordings": "No session recordings found",
+      "loading": "Loading recordings...",
+      "count": "{{count}} recording",
+      "count_plural": "{{count}} recordings"
+    },
+    "history": {
+      "title": "Simulation History",
+      "subtitle": "Results of completed training cases",
+      "mockBadge": "Mock data",
+      "date": "Date",
+      "caseName": "Case Name",
+      "status": "Status",
+      "duration": "Duration",
+      "score": "Score",
+      "actions": "Actions",
+      "viewLogs": "View logs",
+      "viewReport": "View Report",
+      "viewRecording": "View Recording",
+      "pendingReview": "Pending review",
+      "confirmed": "Confirmed",
+      "completed": "Completed",
+      "incomplete": "Incomplete",
+      "noHistory": "No simulation history found",
+      "loading": "Loading simulation history...",
+      "count": "{{count}} simulation",
+      "count_plural": "{{count}} simulations",
+      "minLabel": "min",
+      "secLabel": "sec"
+    },
+    "assignedCases": {
+      "title": "Assigned Cases",
+      "subtitle": "Cases available for user completion",
+      "loading": "Loading cases...",
+      "noCases": "No cases assigned",
+      "draft": "Draft",
+      "active": "Active",
+      "created": "Created",
+      "view": "View",
+      "assignCase": "Assign Case",
+      "allAccessNote": "User has access to all cases"
+    },
+    "assignCaseModal": {
+      "title": "Assign Case",
+      "subtitle": "Add a new case for user completion",
+      "selectCase": "Select Case",
+      "placeholder": "Choose a case to assign",
+      "timeLimit": "Time Limit (hours)",
+      "timeLimitNote": "Access to the case will be active for the specified time",
+      "cancel": "Cancel",
+      "assign": "Assign Case",
+      "invitationSent": "Invitation sent",
+      "sendInvitation": "Send invitation",
+      "copyAll": "Copy all",
+      "done": "Done",
+      "emailLanguage": "Email language",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "firstNamePlaceholder": "Enter first name",
+      "lastNamePlaceholder": "Enter last name",
+      "editBodyLabel": "Edit email body (HTML, available placeholders: ",
+      "editorPlaceholder": "Email body...",
+      "previewLabel": "Email preview",
+      "previewFrom": "From:",
+      "previewTo": "To:",
+      "previewSubject": "Subject:",
+      "resultMessage": "Email sent to {{email}}. Save or copy the login details below — we don't show the password again.",
+      "loginLabel": "Login",
+      "passwordLabel": "Password",
+      "linkLabel": "Link",
+      "passwordAlreadyGenerated": "(generated earlier)",
+      "passwordNotAvailable": "(already generated earlier)",
+      "toastCopied": "{{label}} copied",
+      "toastCopyFailed": "Could not copy",
+      "credentialsLabel": "Credentials",
+      "toastInvitationSent": "Invitation sent",
+      "toastInvitationDescription": "Email sent to {{email}}",
+      "toastInvitationFailed": "Could not send invitation",
+      "toastInvitationFailedDescription": "Please try again later",
+      "previewName": "Name Surname"
+    },
+    "passwordModal": {
+      "title": "Change Password",
+      "subtitle": "Generate new password for user",
+      "newPassword": "New Password",
+      "placeholder": "Click 'Generate' to create password",
+      "generate": "Generate",
+      "copy": "Copy",
+      "cancel": "Cancel",
+      "save": "Save Password",
+      "passwordChanged": "Password has been changed successfully",
+      "passwordChangeError": "Failed to change password"
+    },
+    "caseSelection": {
+      "title": "Select Cases",
+      "subtitle": "Choose which cases the user will have access to",
+      "selectAll": "Select All",
+      "deselectAll": "Deselect All",
+      "selected": "Selected",
+      "noCases": "No cases available",
+      "draft": "Draft",
+      "cancel": "Cancel",
+      "save": "Save"
+    },
+    "toasts": {
+      "success": "Success",
+      "error": "Error",
+      "profileUpdated": "User profile updated",
+      "profileUpdateError": "Failed to update profile",
+      "loadError": "Failed to load user data",
+      "permissionsUpdated": "User permissions updated",
+      "permissionsUpdateError": "Failed to update permissions",
+      "caseAssigned": "Case successfully assigned",
+      "caseAssignError": "Failed to assign case",
+      "caseUnassigned": "Case successfully removed",
+      "caseUnassignError": "Failed to remove case"
+    }
+  },
+  "simulation": {
+    "endSuggestion": {
+      "title": "You can wrap up this conversation",
+      "description": "It looks like the dialogue has reached a natural close. Click Finish to end the simulation, or keep going.",
+      "finish": "Finish"
+    },
+    "loadingCase": "Loading case...",
+    "errors": {
+      "forbiddenTitle": "Access denied",
+      "forbiddenMessage": "You do not have access to this case. Contact your administrator for access.",
+      "notFoundTitle": "Case not found",
+      "notFoundMessage": "This case is unavailable or does not exist. It may have been removed.",
+      "authTitle": "Authentication",
+      "authMessage": "Session has ended. Please sign in again.",
+      "loadErrorTitle": "Loading error",
+      "loadErrorMessage": "Failed to load the case. Please refresh the page."
+    },
+    "backToCases": "Back to cases",
+    "titleWithCase": "Simulation: {{title}}",
+    "sidebar": {
+      "userRole": "Your role",
+      "botMessage": "Bot message",
+      "introForUser": "Intro for user",
+      "personaDescription": "Persona Description"
+    },
+    "personaNameFallback": "AI Assistant",
+    "personaAltFallback": "AI",
+    "initialBotMessage": "Hi! Let's start the simulation.",
+    "endButton": "End",
+    "ending": "Ending...",
+    "inputPlaceholder": "Enter your response...",
+    "connectionError": "Connection error. Please reload the page.",
+    "connectionReconnecting": "Connection lost. Reconnecting — your message will be sent automatically.",
+    "replyTimeout": "The reply didn't arrive in time. Check your connection and send the message again.",
+    "errorGeneric": "Something went wrong. Please try sending the message again.",
+    "nonVerbalActionsButton": "Non-verbal Actions",
+    "nonVerbalActions": {
+      "lookAround": "Look around",
+      "nod": "Nod",
+      "shakeHead": "Shake head",
+      "pauseThink": "Pause to think",
+      "showConfusion": "Show confusion"
+    },
+    "endReminder": {
+      "message": "If you're ready to end the conversation, please click «End».",
+      "dismiss": "Dismiss"
+    },
+    "endDialog": {
+      "title": "End Simulation?",
+      "description": "Are you sure you want to end the current simulation? All progress will be saved.",
+      "recordingWarning": "⚠️ Video recording will be stopped and uploaded.",
+      "continue": "Continue",
+      "endSimulation": "End Simulation"
+    },
+    "beforeUnloadWarning": "Video recording is in progress. If you leave now, the recording will be stopped and uploaded.",
+    "feedbackDialog": {
+      "title": "Feedback",
+      "description": "Share your impressions and suggestions about the simulation",
+      "label": "Your Feedback",
+      "placeholder": "Describe your impressions, suggestions or issues...",
+      "cancel": "Cancel",
+      "submit": "Submit",
+      "addScreenshot": "Add screenshot",
+      "capturingScreenshot": "Capturing...",
+      "screenshotAdded": "✓ Screenshot added"
+    },
+    "personaInfo": {
+      "title": "Persona Information",
+      "description": "Detailed information about the AI persona in this simulation",
+      "aboutPersona": "About Persona",
+      "goals": "Goals",
+      "currentState": "Current State",
+      "online": "Online",
+      "feedback": "Feedback",
+      "availableEmotions": "Available Emotions",
+      "nonVerbalActions": "Non-verbal Actions",
+      "simulationContext": "Simulation Context",
+      "case": "Case",
+      "close": "Close",
+      "role": "Role",
+      "noDescription": "No description provided",
+      "noGoals": "No goals provided"
+    },
+    "inputMode": {
+      "text": "Text",
+      "audio": "Audio",
+      "audioRecording": "Audio Recording"
+    },
+    "stepButtons": {
+      "step1": "1. Case Description",
+      "step2": "2. Your Role",
+      "step3": "3. Who You Are Talking To"
+    },
+    "actionButtons": {
+      "Visit production site": "Visit production site",
+      "Show detailed price proposal": "Show detailed price proposal",
+      "Share internal volume commitment": "Share internal volume commitment",
+      "Summarise and move to closure": "Summarise and move to closure"
+    },
+    "rightPanel": {
+      "actions": "Actions",
+      "brief": "Your brief",
+      "progress": "Progress",
+      "currentPhase": "Current phase",
+      "phaseHint": "Phase {{current}} of {{total}} — {{name}}"
+    },
+    "confirmAction": {
+      "title": "Confirm action",
+      "description": "Are you sure you want to take this action? It will be sent to the chat.",
+      "cancel": "Cancel",
+      "confirm": "Yes, do it"
+    },
+    "navigation": {
+      "button": "Simulation navigation",
+      "title": "Simulation navigation",
+      "description": "Follow these steps during the simulation",
+      "empty": "Navigation is not provided for this simulation."
+    },
+    "nonVerbalActionsMobile": "Actions",
+    "voiceMessage": "Voice message",
+    "recordingActive": "Recording active...",
+    "userLabel": "You",
+    "micAccessError": "Could not access the microphone",
+    "timerWarning": {
+      "title": "Time Warning",
+      "message": "You have 10 minutes left to send a message",
+      "ok": "OK"
+    },
+    "divider": {
+      "postVisit": "The visit took place, the conversation continues after the visit"
+    },
+    "aiThinkingLong": "{{name}} is taking a bit longer than usual, give them a moment…",
+    "finishingResults": "Wrapping up the simulation and preparing your results. This can take up to a minute…"
+  },
+  "videoRecorder": {
+    "consentDialog": {
+      "title": "Recording Consent",
+      "description": "To record the simulation, access to your webcam and microphone is required. The recording will be saved along with the simulation results.",
+      "question": "Do you consent to video and audio recording?",
+      "decline": "Decline",
+      "accept": "I Agree"
+    },
+    "recording": {
+      "started": "Recording started",
+      "startedDesc": "Your webcam is recording the simulation",
+      "stopped": "Recording stopped",
+      "stoppedDesc": "Uploading video to server...",
+      "inProgress": "Recording simulation in progress"
+    },
+    "upload": {
+      "progress": "Uploading recording to server...",
+      "completed": "Upload completed",
+      "completedDesc": "Video successfully saved ({{size}} MB)"
+    },
+    "errors": {
+      "cameraAccess": "Error",
+      "cameraAccessDesc": "Failed to access camera. Check permissions.",
+      "stopRecording": "Error",
+      "stopRecordingDesc": "Failed to stop recording",
+      "uploadFailed": "Upload failed",
+      "uploadFailedDesc": "Failed to upload video to server"
+    },
+    "confirmCloseWhileRecording": "Recording will stop when you close the browser. Are you sure?"
+  },
+  "sessionRecorder": {
+    "title": "Simulation capture",
+    "description": "Record the simulation screen and chat to review later.",
+    "start": "Start screen recording",
+    "stop": "Stop screen recording",
+    "inProgress": "Screen recording in progress...",
+    "uploading": "Uploading simulation recording...",
+    "uploadCompleted": "Simulation recording saved",
+    "uploadCompletedDesc": "Screen recording uploaded ({{size}} MB)",
+    "uploadFailed": "Upload failed",
+    "uploadFailedDesc": "Could not upload the simulation recording",
+    "startFailed": "Cannot start screen recording",
+    "startFailedDesc": "Screen sharing was blocked. Please allow access and try again.",
+    "stopFailed": "Cannot stop screen recording",
+    "stopFailedDesc": "Screen recorder did not stop correctly"
+  },
+  "caseEditor": {
+    "title": {
+      "edit": "Edit Case",
+      "create": "Create New Case"
+    },
+    "back": "Back",
+    "testDraft": "Test draft",
+    "testCase": "Test case",
+    "saveDraft": "Save draft",
+    "saveCase": "Save case",
+    "saving": "Saving...",
+    "draftCopy": "Draft Copy",
+    "applying": "Applying...",
+    "applyDraft": "Apply draft",
+    "applyChanges": "Apply Changes",
+    "cancel": "Cancel",
+    "saveChanges": "Save Changes",
+    "applyDraftTitle": "Apply Draft Changes?",
+    "applyDraftDescription": "This action will replace the original case with the changes from this draft. The draft will be deleted after applying the changes. This action cannot be undone.",
+    "finalEvaluationSystem": "Final Evaluation (System)",
+    "toasts": {
+      "caseUpdated": "Case updated",
+      "caseCreated": "Case created",
+      "loadError": "Failed to load case",
+      "saveError": "Failed to save case"
+    },
+    "tabs": {
+      "basic": "Basic",
+      "persona": "Persona",
+      "scenarios": "Scenarios",
+      "evaluation": "Evaluation",
+      "finalEvaluation": "Final Evaluation"
+    },
+    "basic": {
+      "title": "Basic Information",
+      "description": "Core data about the training case",
+      "caseTitle": "Case Title",
+      "caseTitlePlaceholder": "Enter case title",
+      "userDescription": "Intro for user",
+      "userDescriptionPlaceholder": "Description visible to end user",
+      "userDescriptionHint": "Text displayed to the user in the description.",
+      "roleInSimulation": "Case Description",
+      "roleInSimulationPlaceholder": "Enter the case description",
+      "roleInSimulationHint": "General description of the case situation shown to the user.",
+      "personaDescription": "Your Role",
+      "personaDescriptionPlaceholder": "Enter the user's role description",
+      "personaDescriptionHint": "Describe the role that the user will play in the simulation.",
+      "caseOverview": "Who You Are Talking To",
+      "caseOverviewPlaceholder": "Enter description of the counterpart",
+      "caseOverviewHint": "Description of the persona the user will be talking to.",
+      "aiDescription": "Conversation flow",
+      "aiDescriptionPlaceholder": "Full context for AI work, including goals and dialogue behavior",
+      "aiDescriptionHint": "Description of the AI's working context, including its goals and dialogue logic.",
+      "evaluationPrompt": "Evaluation Prompt",
+      "evaluationPromptPlaceholder": "Select evaluation prompt",
+      "noEvaluationPrompt": "No evaluation prompt",
+      "evaluationModel": "AI Model for Evaluation",
+      "selectAIModel": "Select AI model",
+      "aiModelForCategories": "AI model for category evaluations",
+      "finalEvaluationPrompt": "Final Evaluation Instruction for AI",
+      "finalEvaluationPromptPlaceholder": "Select final evaluation instruction for AI",
+      "noFinalEvaluationPrompt": "No final evaluation instruction",
+      "finalEvaluationModel": "AI Model for Final Evaluation",
+      "aiModelForFinalSummary": "AI model for final summary evaluation",
+      "llm1Model": "LLM 1 Model",
+      "llm1ModelHint": "Primary AI model for case processing",
+      "llm2Model": "LLM 2 Model",
+      "llm2ModelHint": "Secondary AI model for case processing",
+      "userActions": {
+        "title": "User Actions",
+        "helper": "A list of actions available for the user to choose from.",
+        "add": "Add Action",
+        "addTitle": "Add User Action",
+        "name": "Action Name",
+        "namePlaceholder": "Action name",
+        "shortDescriptionLabel": "Short button subtitle",
+        "shortDescriptionPlaceholder": "e.g. Arrange a plant visit",
+        "shortDescriptionHint": "Shown under the action button name in the simulation right panel.",
+        "chatMessageLabel": "Chat action log",
+        "chatMessagePlaceholder": "e.g. I'd like to visit your production site",
+        "chatMessageHint": "Text posted to the chat as the user's message after they confirm the action. Use <!-- uk --> ... <!-- en --> ... markers for locale-specific text.",
+        "popupTextLabel": "Pop-up text",
+        "popupTextPlaceholder": "e.g. Visit the customer's processing operation to understand trimming...",
+        "popupTextHint": "Body of the confirmation popup shown when the user clicks this action. If empty — falls back to a generic 'Are you sure?' prompt. Use <!-- uk --> ... <!-- en --> ... markers for locale-specific text.",
+        "descriptionLabel": "Description",
+        "descriptionPlaceholder": "Describe what this action enables the user to do",
+        "submit": "Add Action",
+        "emptyState": "No actions configured yet.",
+        "validationError": "Please fill in both name and description for the action",
+        "editTitle": "Edit User Action",
+        "update": "Update Action",
+        "cancel": "Cancel",
+        "updateSuccess": "Action updated successfully"
+      },
+      "scenarioBehaviorRulesCoarse": "Scenario Behavior Rules (Coarse)",
+      "scenarioBehaviorRulesCoarsePlaceholder": "Enter high-level behavior rules for the scenario...",
+      "scenarioBehaviorRulesCoarseHint": "Define general behavioral guidelines that the AI should follow during the scenario",
+      "scenarioBehaviorRulesFull": "Scenario Behavior Rules (Full)",
+      "scenarioBehaviorRulesFullPlaceholder": "Enter detailed behavior rules for the scenario...",
+      "scenarioBehaviorRulesFullHint": "Provide comprehensive behavioral instructions including specific reactions, conditions, and edge cases",
+      "simulationNavigation": "Simulation navigation",
+      "simulationNavigationPlaceholder": "Add participant-facing navigation (steps, timing, what to watch)",
+      "simulationNavigationHint": "Example: 1) Start with a greeting and send your first message; 2) Watch the timer and finish within the allotted time.",
+      "briefItems": {
+        "title": "Brief (simulation right panel)",
+        "hint": "Label/value pairs shown in the right-panel \"Your brief\" box. E.g. Reference price → €4.50/kg.",
+        "add": "Add row",
+        "labelPlaceholder": "Reference price",
+        "valuePlaceholder": "€4.50/kg"
+      },
+      "phases": {
+        "title": "Phases (Progress widget)",
+        "hint": "Simulation phases shown in the progress widget. Pick persona reactions that map to each phase.",
+        "add": "Add phase",
+        "idPlaceholder": "opening",
+        "namePlaceholder": "Opening",
+        "reactionsLabel": "Reactions in this phase:",
+        "noReactions": "Add persona reactions in the Persona tab first."
+      }
+    },
+    "persona": {
+      "title": "Persona",
+      "description": "AI persona configuration for this case (1 persona = 1 case)",
+      "name": "Persona Name",
+      "namePlaceholder": "Persona name",
+      "role": "Role",
+      "rolePlaceholder": "e.g. Leadership, Manager, Employee",
+      "roleExample": "e.g. Leadership, Manager, Employee",
+      "voice": "Voice",
+      "voicePlaceholder": "Select voice",
+      "voiceSampleLabel": "Sample text for preview",
+      "voiceSamplePlaceholder": "Type text to generate the voice sample",
+      "voiceSampleHint": "Use the default sentence or enter your own phrase to hear the selected voice.",
+      "voiceSampleButton": "Play voice sample",
+      "voiceSampleGenerating": "Generating sample...",
+      "voiceSampleDefault": "This is a sample voice test",
+      "voiceSampleError": "Failed to generate voice sample. Please try again.",
+      "personaDescription": "Persona Description",
+      "personaDescriptionPlaceholder": "Who they are, their role and behavior",
+      "goalDescription": "Persona Goals",
+      "goalDescriptionPlaceholder": "Describe persona goals (each goal on a new line)",
+      "goalDescriptionHint": "Describe person's goals. Each goal should be presented in a new line",
+      "styleAndLanguage": "Style and Language",
+      "styleAndLanguagePlaceholder": "Describe the communication style and language preferences...",
+      "behaviorConstraints": "Behavior Constraints",
+      "behaviorConstraintsPlaceholder": "Define behavioral boundaries and constraints...",
+      "internalReasoning": "Internal Reasoning",
+      "internalReasoningPlaceholder": "Describe the internal reasoning process...",
+      "noImage": "No image",
+      "uploading": "Uploading...",
+      "cropper": {
+        "title": "Adjust image",
+        "subtitle": "Drag to center the face, use the slider to zoom",
+        "zoom": "Zoom",
+        "cancel": "Cancel",
+        "save": "Save crop"
+      },
+      "reactionName": "Reaction Name",
+      "reactionNamePlaceholder": "Enter reaction name",
+      "reactionDescription": "Description",
+      "reactionDescriptionPlaceholder": "Describe this reaction",
+      "reactionPrompt": "Describe the behavior",
+      "reactionPromptPlaceholder": "Describe how the persona should behave for this reaction",
+      "addReaction": "Add Reaction",
+      "promptLabel": "Behavior:",
+      "emotions": {
+        "title": "Persona Emotions",
+        "add": "Add Emotion",
+        "addTitle": "Add New Emotion",
+        "name": "Emotion Name",
+        "namePlaceholder": "Emotion name",
+        "description": "Description",
+        "descriptionPlaceholder": "Text description of the emotion",
+        "image": "Emotion Image",
+        "chooseFile": "Choose File",
+        "noFileChosen": "No file chosen",
+        "submit": "Add Emotion",
+        "validationError": "Please fill in both name and description for the emotion"
+      },
+      "reactions": {
+        "title": "Reactions",
+        "helper": "This section is responsible for configuring the possible AI persona reactions to the actions selected by the user.",
+        "add": "Add Reaction",
+        "addTitle": "Add New Reaction",
+        "name": "Reaction Name",
+        "namePlaceholder": "Reaction name",
+        "description": "Description",
+        "descriptionPlaceholder": "Description of persona reaction",
+        "selectionLogic": "Selection Logic",
+        "selectionLogicPlaceholder": "Explain when this reaction should be offered to the user",
+        "selectionLogicLabel": "Selection logic:",
+        "submit": "Add Reaction",
+        "validationError": "Please fill in the reaction name and behavior details",
+        "goals": "Reaction Goals",
+        "goalsLabel": "Goals:",
+        "goalsPlaceholder": "Define the goals this reaction aims to achieve...",
+        "goalsHint": "Specify what this reaction is trying to accomplish in the conversation"
+      }
+    },
+    "scenarios": {
+      "title": "Scenario Reactions",
+      "description": "Additional persona behavior scenarios in different situations",
+      "add": "Add Scenario",
+      "addTitle": "Add New Scenario",
+      "condition": "Trigger Condition",
+      "conditionPlaceholder": "When this reaction is selected",
+      "reaction": "Persona Reaction",
+      "reactionPlaceholder": "How the persona behaves in this reaction",
+      "conditionLabel": "Condition",
+      "reactionLabel": "Reaction",
+      "submit": "Add Scenario",
+      "validationError": "Please fill in both condition and reaction for the scenario"
+    },
+    "evaluation": {
+      "title": "Evaluation Logic",
+      "description": "Categories and criteria for dialogue evaluation",
+      "promptSettingsTitle": "Prompt Configuration",
+      "promptSettingsDescription": "Assign evaluation prompts and models used for automated scoring.",
+      "add": "Add Category",
+      "addTitle": "Add Evaluation Category",
+      "finalSummaryRule": "Final Summary Rule",
+      "finalSummaryRulePlaceholder": "How the final PDF analysis is formed based on category scores",
+      "finalSummaryRuleNote": "Describe how the final analysis is formed for the user based on scores",
+      "categories": "Evaluation Categories",
+      "categoryName": "Category Name",
+      "categoryNamePlaceholder": "Evaluation category name",
+      "criteria": "Evaluation Criteria",
+      "criteriaPlaceholder": "How to evaluate this dialogue aspect",
+      "submit": "Add Category",
+      "validationError": "Please fill in both name and criteria for the category",
+      "instructionCreateTitle": "Create New Instruction for AI",
+      "instructionEditTitle": "Instruction for AI Configuration",
+      "nameLabel": "Name",
+      "namePlaceholder": "Enter name...",
+      "instructionLabel": "Instruction for AI",
+      "instructionPlaceholder": "Enter the instruction for AI...",
+      "instructionHint": "This is instruction for AI agent within criteria estimation",
+      "createInstructionButton": "Create Instruction",
+      "noInstructionTitle": "No Instruction Configured",
+      "noInstructionDescription": "Select an existing instruction above or create a new one.",
+      "createInstructionCta": "Create New Instruction for AI",
+      "availableInstructionsTitle": "Available Instructions for AI",
+      "selectedInstructionLabel": "Selected",
+      "adminDescriptionLabel": "Admin Description",
+      "adminDescriptionPlaceholder": "Enter admin description for this category...",
+      "categoryInstructionPlaceholder": "Enter instruction for AI...",
+      "createSuccess": "Instruction for AI created successfully",
+      "createError": "Failed to create instruction for AI",
+      "promptLoadedForEditing": "Prompt loaded for editing",
+      "viewPrompt": "View prompt",
+      "categoryFromPrompt": "Category from evaluation prompt: {{catName}}",
+      "deleteConfirm": "Are you sure you want to delete this instruction for AI?",
+      "deleteSuccess": "Instruction for AI deleted",
+      "deleteError": "Failed to delete instruction for AI",
+      "validationErrorFull": "Please fill in name, admin description, and instruction for AI",
+      "saveAsDraftLabel": "Save as Draft",
+      "saveAsDraftNote": "(Draft instructions are not used for evaluation)"
+    },
+    "aiAssistant": {
+      "title": "AI Assistant",
+      "description": "Case testing and debugging",
+      "testPersona": "Test Persona",
+      "testPersonaPlaceholder": "Select test persona",
+      "aiLog": "AI Log",
+      "aiLogTitle": "AI Agent Action Log",
+      "dialogue": "Dialogue",
+      "dialogueTitle": "Final Dialogue",
+      "messagePlaceholder": "Message for AI...",
+      "logMessages": {
+        "init": "[AI LOG] Initializing agent...",
+        "loadingPersona": "[AI LOG] Loading persona: {{name}}",
+        "processingTestPersona": "[AI LOG] Processing test persona: {{name}}",
+        "ready": "[AI LOG] Ready for dialogue"
+      },
+      "response": "AI assistant response based on test persona \"{{name}}\": {{message}}"
+    },
+    "finalEvaluation": {
+      "title": "Final Evaluation Instruction for AI",
+      "description": "View and manage the system-wide final evaluation instruction used for creating comprehensive final assessments",
+      "noPromptFound": "No Final Evaluation Instruction Found",
+      "noPromptDescription": "There is no system-wide final evaluation instruction configured yet",
+      "createPrompt": "Create Final Evaluation Instruction for AI",
+      "editPrompt": "Edit Instruction",
+      "usePrompt": "Use This Instruction",
+      "promptSelected": "Instruction Selected",
+      "promptSelectedDescription": "Final evaluation instruction has been assigned to this case",
+      "aboutFinalEvaluation": "About Final Evaluation",
+      "aboutDescription": "The final evaluation instruction is used to generate a comprehensive summary after the simulation completes. It takes into account all category evaluations and creates an overall assessment with:",
+      "aboutPoints": {
+        "summary": "Summary of key strengths and areas for improvement",
+        "score": "Overall score from 1-10",
+        "examples": "Specific examples from the conversation",
+        "recommendations": "Actionable recommendations"
+      },
+      "createTitle": "Create Final Evaluation Instruction for AI",
+      "editTitle": "Final Evaluation Instruction Configuration",
+      "currentPrompt": "Current Final Evaluation Instruction for AI",
+      "promptContent": "Final Evaluation Instruction for AI",
+      "namePlaceholder": "Enter final evaluation instruction name...",
+      "promptPlaceholder": "Enter the final evaluation instruction for AI that will analyze and summarize all evaluation categories...",
+      "creating": "Creating...",
+      "createPromptButton": "Create Instruction",
+      "saveInstructionButton": "Save Final Evaluation Instruction",
+      "saveChanges": "Save Changes",
+      "cancel": "Cancel",
+      "success": "Success",
+      "createSuccess": "Final evaluation instruction created successfully",
+      "createError": "Failed to create final evaluation instruction",
+      "deleteConfirm": "Are you sure you want to delete this final evaluation instruction for AI?",
+      "deleteSuccess": "Final evaluation instruction deleted",
+      "deleteError": "Failed to delete final evaluation instruction",
+      "availableInstructionsTitle": "Available Final Evaluation Instructions for AI",
+      "saveAsDraftLabel": "Save as Draft",
+      "saveAsDraftNote": "(Draft instructions are not used for final evaluation)",
+      "pdfNote": "After the final evaluation, the user will receive a PDF file with the test results.",
+      "promptUpdated": "Final evaluation instruction has been updated",
+      "status": {
+        "draft": "Draft",
+        "active": "Active"
+      }
+    },
+    "toast": {
+      "uploadError": "Failed to upload image",
+      "cropError": "Failed to crop image"
+    },
+    "validate": {
+      "button": "Validate",
+      "title": "Case validation",
+      "summary": "{{errors}} error(s), {{warnings}} warning(s)",
+      "noIssues": "No structural issues found",
+      "error": "Validation failed"
+    }
+  },
+  "simulationResults": {
+    "report": {
+      "title": "Evaluation Report",
+      "overallAssessment": "Overall Assessment",
+      "overallScore": "Overall Score",
+      "blockATitle": "Block A — Professional Competencies",
+      "blockBTitle": "Block B — Communication Indicators",
+      "competencyOverview": "Competency Overview",
+      "strengths": "Strengths",
+      "developmentAreas": "Development Areas",
+      "criticalMarkers": "Critical Markers",
+      "scoringScale": "Scoring Scale",
+      "whatScoreMeans": "What does this score mean?",
+      "whatScoreMeansBody": "Your performance is at the «{{level}}» level.",
+      "whatScoreMeansFallback": "The score reflects your performance against the rubric.",
+      "transcript": "Conversation Transcript",
+      "insightsTitle": "Evaluation Insights",
+      "valuesTitle": "Assessment by values",
+      "scoreBreakdownTitle": "How the score is calculated",
+      "blockSumLabel": "Raw sub-score sum (evidence)",
+      "blockScoreLabel": "Block score (1–5)",
+      "beforeGates": "Before gates",
+      "afterGates": "after gates",
+      "finalScoreLabel": "Final score",
+      "afterGuardrails": "After guardrails",
+      "scoreBreakdownNote": "Each block score is the average of its category ratings (1–5) shown above; the raw sub-score sum is the supporting evidence. The final is the weighted block scores, with gates and guardrails applied.",
+      "insight": {
+        "commercial": "Commercial reasoning",
+        "customer": "Customer understanding",
+        "execution": "Negotiation execution",
+        "communication": "Communication & rapport"
+      }
+    },
+    "pending": {
+      "title": "Evaluation pending confirmation",
+      "body": "Your qualitative summary is ready. Detailed scores will appear here once a reviewer confirms the evaluation."
+    },
+    "admin": {
+      "backToProfile": "Back to profile",
+      "reportForTitle": "User Report — {{name}}",
+      "pendingBadge": "Pending confirmation",
+      "confirmedBadge": "Confirmed",
+      "confirmButton": "Confirm & share with user",
+      "notReady": "The report is still generating",
+      "confirmHint": "After confirmation, detailed scores become available to the user in their simulation history.",
+      "confirmedToastTitle": "Report confirmed",
+      "confirmedToastBody": "The scored report is now visible to the user.",
+      "confirmErrorTitle": "Could not confirm report"
+    },
+    "loading": "Loading results...",
+    "errorTitle": "Loading Error",
+    "errorNotFound": "Simulation results not found",
+    "errorGeneric": "Failed to load simulation results",
+    "backToDashboard": "Back to Dashboard",
+    "processingResults": "Processing your results...",
+    "pollingAttempt": "Preparing your report — this usually takes a few minutes. You can keep this tab open.",
+    "generatingReport": "Generating your report, please wait...",
+    "errorTimeout": "Results processing timeout. Please try again later.",
+    "errorNoReport": "No report is available for this session.",
+    "delayedTitle": "Your report is on its way",
+    "delayedBody": "This one is taking a little longer than usual. We're on it — you'll get a notification here the moment it's ready. No need to redo the simulation.",
+    "noResultsTitle": "Results not found",
+    "noResultsDescription": "The simulation is not finished yet or the results were not saved.",
+    "headerTitle": "Simulation completed!",
+    "headerDescription": "{{name}} • {{durationLabel}}: {{duration}}",
+    "duration": {
+      "label": "Duration",
+      "hoursMinutes": "{{hours}} hr {{minutes}} min",
+      "hoursOnly": "{{hours}} hr",
+      "format": "{{minutes}} min {{seconds}} sec",
+      "minutesOnly": "{{minutes}} min",
+      "secondsOnly": "{{seconds}} sec",
+      "notAvailable": "N/A"
+    },
+    "notAvailable": "N/A",
+    "totalScoreLabel": "total score",
+    "scoreBadge": {
+      "excellent": "Excellent",
+      "good": "Good",
+      "satisfactory": "Satisfactory",
+      "needsImprovement": "Needs improvement"
+    },
+    "categoriesTitle": "Category metrics",
+    "statisticsTitle": "Detailed statistics",
+    "statistics": {
+      "messages": "Messages",
+      "minResponseTime": "Min. response time",
+      "secondsShort": "s",
+      "voiceUsage": "Voice usage",
+      "nonVerbal": "Non-verbal actions"
+    },
+    "feedbackTitle": "Feedback",
+    "feedback": {
+      "strongPoints": "Strengths:",
+      "improvements": "Opportunities for improvement:"
+    },
+    "actions": {
+      "downloadPdf": "Download PDF",
+      "downloadExcel": "Download Excel",
+      "fileUnavailable": "File unavailable",
+      "viewReport": "View Report",
+      "downloading": "Downloading...",
+      "acceptScore": "Accept score",
+      "rejectScore": "Reject score"
+    },
+    "confirmation": {
+      "acceptTitle": "Accept score?",
+      "cancelTitle": "Reject score?",
+      "acceptDescription": "Your score will be saved to your profile. These results will be included in overall statistics.",
+      "cancelDescription": "The score will be rejected, but the simulation data will remain stored for analysis.",
+      "back": "Go back",
+      "acceptConfirm": "Accept",
+      "cancelConfirm": "Reject score"
+    },
+    "feedbackForm": {
+      "label": "Add a comment",
+      "placeholder": "Share your thoughts about this evaluation...",
+      "submitError": "Failed to submit feedback. Please try again.",
+      "defaultAccept": "User accepted the score from simulation results.",
+      "defaultReject": "User rejected the score from simulation results.",
+      "promptAccept": "You can leave an optional comment about why the evaluation works for you.",
+      "promptReject": "Please explain why you disagree with this evaluation (optional).",
+      "capture": "Capture results screenshot",
+      "capturing": "Capturing...",
+      "captureAdded": "Screenshot added",
+      "removeScreenshot": "Remove screenshot",
+      "submit": "Submit",
+      "cancel": "Cancel",
+      "captureError": "Failed to capture results screenshot. Please try again.",
+      "actionMissing": "Select accept or reject before submitting."
+    }
+  },
+  "aiModels": {
+    "categories": {
+      "recommendedForAnalysis": "Recommended for Analysis",
+      "forEmotionalTone": "For Emotional Tone",
+      "advancedReasoning": "Advanced Reasoning",
+      "fastAndEfficient": "Fast & Efficient",
+      "otherProviders": "Other Providers"
+    },
+    "descriptions": {
+      "gpt41": "Best for deep analysis and comprehensive evaluation. Excellent reasoning capabilities and detailed feedback generation.",
+      "claude37Sonnet": "Ideal for thorough analysis with strong analytical skills. Great for complex evaluation scenarios requiring nuanced understanding.",
+      "claude3Opus": "Premium model for advanced analysis tasks. Provides highly detailed and insightful evaluations.",
+      "gpt4o": "Excellent for multi-modal analysis and comprehensive evaluations. Strong performance across various task types.",
+      "gemini25Pro": "Advanced reasoning model perfect for detailed analysis and evaluation tasks requiring deep understanding.",
+      "claude35Sonnet": "Excellent for emotional tone analysis and empathy assessment. Great at understanding subtle emotional cues.",
+      "claude35Haiku": "Fast and effective for emotional tone evaluation. Good balance between speed and emotional understanding."
+    }
+  },
+  "caseDetails": {
+    "notFound": {
+      "title": "Case not found",
+      "description": "The selected case is not available or does not exist."
+    },
+    "info": {
+      "duration": "Duration",
+      "participants": "Participants",
+      "level": "Level"
+    },
+    "aiPersona": {
+      "title": "AI Persona"
+    },
+    "objectives": {
+      "title": "Learning objectives"
+    },
+    "instructions": {
+      "title": "Instructions",
+      "allowed": "Allowed actions:",
+      "forbidden": "Forbidden actions:"
+    },
+    "equipment": {
+      "title": "Equipment test",
+      "description": "Check your equipment before starting the simulation",
+      "tabs": {
+        "audio": "Audio test",
+        "recording": "Voice recording",
+        "video": "Video test"
+      },
+      "audio": {
+        "title": "Audio playback test",
+        "description": "Press \"Start test\" to play a sample audio file",
+        "playing": "Playing...",
+        "start": "Start test",
+        "stop": "Finish test",
+        "success": "✓ Test audio is playing"
+      },
+      "recording": {
+        "title": "Voice recording test",
+        "description": "Record a test message and listen to the recording",
+        "stop": "Stop recording",
+        "start": "Start recording",
+        "play": "Play recording",
+        "speakHint": "Say something for the test",
+        "success": "✓ Recording saved successfully"
+      },
+      "video": {
+        "title": "Video test",
+        "description": "Watch a sample video to check playback quality",
+        "success": "✓ Test video is playing"
+      }
+    },
+    "access": {
+      "title": "Access restricted",
+      "description": "You don't have access to this case or your access period has expired. Contact your administrator to get access.",
+      "backToCases": "Back to cases"
+    },
+    "actions": {
+      "creatingChat": "Creating chat...",
+      "startSimulation": "Start simulation",
+      "starting": "Starting...",
+      "startWithAgent": "Start with agent"
+    },
+    "toast": {
+      "startErrorDefault": "Failed to start simulation. Please try again.",
+      "errorTitle": "Error",
+      "forbiddenTitle": "Access denied",
+      "forbiddenNoCase": "You don't have access to this case. Contact your administrator to get access.",
+      "forbiddenGeneric": "You don't have permission to start the simulation. Contact your administrator.",
+      "notFoundTitle": "Case not found",
+      "notFoundMessage": "This case is unavailable or does not exist. Try refreshing the page.",
+      "authTitle": "Authorization",
+      "authMessage": "Your session has expired. Please sign in again.",
+      "agentInDevTitle": "Feature in development",
+      "agentInDevFallback": "In development",
+      "agentStartedTitle": "Simulation started",
+      "agentStartedDescription": "Agent simulation started successfully",
+      "agentStartErrorDescription": "Failed to start simulation with agent"
+    },
+    "mock": {
+      "case1": {
+        "title": "Conflict management",
+        "description": "Learn to resolve workplace conflicts effectively through interactive simulations with AI characters.",
+        "duration": "45 min",
+        "difficulty": "Intermediate",
+        "participants": "1-2 participants",
+        "objective1": "Recognize signs of conflict at an early stage",
+        "objective2": "Apply active listening techniques",
+        "objective3": "Find compromise solutions",
+        "objective4": "Prevent conflict escalation",
+        "instruction1": "Carefully read the conflict scenario",
+        "instruction2": "Interact with the AI persona using a professional approach",
+        "instruction3": "Use various conflict resolution strategies",
+        "instruction4": "Stick to the time limit (45 minutes)",
+        "instruction5": "Forbidden to use aggressive language",
+        "instruction6": "Allowed to take pauses to think",
+        "personaName": "Anna Petrenko",
+        "personaRole": "Project Manager",
+        "personaDescription": "Experienced manager with 8 years of IT industry experience"
+      },
+      "case2": {
+        "title": "Leadership and motivation",
+        "description": "Develop leadership skills and the ability to motivate a team in difficult situations.",
+        "duration": "60 min",
+        "difficulty": "Advanced",
+        "participants": "1 participant",
+        "objective1": "Demonstrate leadership qualities",
+        "objective2": "Motivate a demotivated team",
+        "objective3": "Create a recovery plan after setbacks",
+        "objective4": "Apply emotional intelligence",
+        "instruction1": "Get acquainted with the team's situation after a failed release",
+        "instruction2": "Hold a motivational conversation with a key employee",
+        "instruction3": "Suggest concrete steps to improve the situation",
+        "instruction4": "Simulation duration: 60 minutes",
+        "instruction5": "Forbidden to blame or criticize",
+        "instruction6": "Allowed to focus on positive solutions",
+        "personaName": "Oleksii Kovalenko",
+        "personaRole": "Senior Developer",
+        "personaDescription": "Talented developer going through a confidence crisis after a failure"
+      }
+    }
+  },
+  "caseStart": {
+    "unknownError": "Unknown error",
+    "activating": "Activating your invitation…",
+    "title": {
+      "expired": "Invitation expired",
+      "invalid": "Invalid invitation",
+      "error": "Could not activate invitation"
+    },
+    "description": {
+      "expired": "This link has expired. Contact your administrator to get a new one.",
+      "invalid": "Link not found. It may be incorrect or already deleted.",
+      "error": "A technical error occurred while activating the invitation. Please try again later or contact your administrator."
+    },
+    "goToLogin": "Go to login page"
+  },
+  "feedbackManagement": {
+    "alt": {
+      "screenshotPreview": "Screenshot preview",
+      "feedbackScreenshot": "Feedback screenshot",
+      "screenshotFullView": "Screenshot full view"
+    }
+  }
+}

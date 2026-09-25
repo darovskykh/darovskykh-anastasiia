@@ -1,0 +1,566 @@
+// DEPRECATED: This file is a backup of UserManagement.tsx - should be removed
+// TODO: Remove this file after confirming current UserManagement.tsx is stable
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { AdminLayout } from '@/layouts/AdminLayout';
+import { TableLoadingSkeleton } from "@/components/LoadingStates";
+import { NoUsersFound, NoSearchResults } from "@/components/EmptyStates";
+import { 
+  Users, 
+  Search,
+  Filter,
+  Plus,
+  MoreHorizontal,
+  Eye,
+  Edit,
+  Trash2,
+  Copy,
+  Check,
+  RefreshCw,
+  UserPlus,
+  Shield,
+  ShieldCheck,
+  Ban
+} from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { useAuth } from '@/contexts/AuthContext';
+
+interface User {
+  id: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  role: 'Member' | 'Administrator';
+  lastLogin: string;
+  status: 'Active' | 'Blocked';
+  createdAt: string;
+}
+
+const UserManagement: React.FC = () => {
+  const { t } = useLanguage();
+  const { user: currentUser } = useAuth();
+  
+  // State management
+  const [users, setUsers] = useState<User[]>([
+    {
+      id: '1',
+      firstName: 'Олександр',
+      lastName: 'Коваленко',
+      email: 'o.kovalenko@techcorp.ua',
+      role: 'Member',
+      lastLogin: '2 години тому',
+      status: 'Active',
+      createdAt: '2024-01-15'
+    },
+    {
+      id: '2',
+      firstName: 'Марія',
+      lastName: 'Петренко',
+      email: 'm.petrenko@innovate.com',
+      role: 'Administrator',
+      lastLogin: '1 день тому',
+      status: 'Active',
+      createdAt: '2024-01-10'
+    },
+    {
+      id: '3',
+      firstName: 'Андрій',
+      lastName: 'Мельник',
+      email: 'a.melnyk@startup.io',
+      role: 'Member',
+      lastLogin: '1 тиждень тому',
+      status: 'Blocked',
+      createdAt: '2024-01-08'
+    },
+    {
+      id: '4',
+      firstName: 'Ірина',
+      lastName: 'Жовтенко',
+      email: 'i.zhovtenko@consulting.net',
+      role: 'Member',
+      lastLogin: '3 дні тому',
+      status: 'Active',
+      createdAt: '2024-01-12'
+    },
+    {
+      id: '5',
+      firstName: 'Дмитро',
+      lastName: 'Сидоренко',
+      email: 'd.sydorenko@enterprise.org',
+      role: 'Administrator',
+      lastLogin: 'Ніколи',
+      status: 'Active',
+      createdAt: '2024-01-20'
+    }
+  ]);
+  
+  const [searchQuery, setSearchQuery] = useState('');
+  const [roleFilter, setRoleFilter] = useState<string>('all');
+  const [statusFilter, setStatusFilter] = useState<string>('all');
+  const [showAddUserModal, setShowAddUserModal] = useState(false);
+  const [copiedPassword, setCopiedPassword] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  
+  // Add user form state
+  const [newUser, setNewUser] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    role: 'Member' as 'Member' | 'Administrator',
+    password: ''
+  });
+
+  // Filter users based on search and filters
+  const filteredUsers = users.filter(user => {
+    const matchesSearch = 
+      user.firstName.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      user.lastName.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      user.email.toLowerCase().includes(searchQuery.toLowerCase());
+    
+    const matchesRole = roleFilter === 'all' || user.role === roleFilter;
+    const matchesStatus = statusFilter === 'all' || user.status === statusFilter;
+    
+    return matchesSearch && matchesRole && matchesStatus;
+  });
+
+  const generatePassword = () => {
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
+    let password = '';
+    for (let i = 0; i < 12; i++) {
+      password += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    setNewUser({ ...newUser, password });
+  };
+
+  const copyPassword = async () => {
+    if (newUser.password) {
+      await navigator.clipboard.writeText(newUser.password);
+      setCopiedPassword(true);
+      setTimeout(() => setCopiedPassword(false), 2000);
+    }
+  };
+
+  const handleAddUser = () => {
+    const user: User = {
+      id: (users.length + 1).toString(),
+      firstName: newUser.firstName,
+      lastName: newUser.lastName,
+      email: newUser.email,
+      role: newUser.role,
+      lastLogin: 'Ніколи',
+      status: 'Active',
+      createdAt: new Date().toISOString().split('T')[0]
+    };
+    
+    setUsers([...users, user]);
+    setNewUser({ firstName: '', lastName: '', email: '', role: 'Member', password: '' });
+    setShowAddUserModal(false);
+    setCopiedPassword(false);
+  };
+
+  const toggleUserStatus = (userId: string) => {
+    setUsers(users.map(user => 
+      user.id === userId 
+        ? { ...user, status: user.status === 'Active' ? 'Blocked' as const : 'Active' as const }
+        : user
+    ));
+  };
+
+  // Mock case history data for user completion details
+  const [caseHistory] = useState([
+    { userId: '1', caseName: 'Управління конфліктами', completedAt: '2024-01-20', score: 87 },
+    { userId: '2', caseName: 'Лідерство та мотивація', completedAt: '2024-01-19', score: 92 },
+    { userId: '1', caseName: 'Ефективна комунікація', completedAt: '2024-01-15', score: 89 }
+  ]);
+
+  // Enhance user management by adding case completion details to user clicks
+  const handleUserClick = (userId: string) => {
+    const userCases = caseHistory.filter(run => run.userId === userId);
+    // You could navigate to user profile or show details modal
+    console.log('User cases:', userCases);
+  };
+
+  const deleteUser = (userId: string) => {
+    setUsers(users.filter(user => user.id !== userId));
+  };
+
+  const getStatusBadge = (status: string) => {
+    return status === 'Active' 
+      ? <Badge className="bg-success text-success-foreground">Активний</Badge>
+      : <Badge className="bg-destructive text-destructive-foreground">Заблокований</Badge>;
+  };
+
+  const getRoleBadge = (role: string) => {
+    return role === 'Administrator'
+      ? <Badge variant="outline" className="border-primary text-primary"><Shield className="w-3 h-3 mr-1" />Адміністратор</Badge>
+      : <Badge variant="outline"><Users className="w-3 h-3 mr-1" />Учасник</Badge>;
+  };
+
+  return (
+    <AdminLayout
+      title="Управління користувачами"
+      subtitle="Керування обліковими записами та правами доступу"
+    >
+      <div className="p-6 space-y-6 animate-fade-in">
+        {/* Header - Mobile Responsive */}
+        <div className="flex justify-end">
+        
+        <Dialog open={showAddUserModal} onOpenChange={setShowAddUserModal}>
+          <DialogTrigger asChild>
+            <Button className="bg-primary hover:bg-primary/90 btn-touch">
+              <UserPlus className="h-4 w-4 mr-2" />
+              <span className="hidden sm:inline">Додати користувача</span>
+              <span className="sm:hidden">Додати</span>
+            </Button>
+          </DialogTrigger>
+        </Dialog>
+        </div>
+
+      {/* Filters and Search */}
+      <Card>
+        <CardContent className="p-6">
+          <div className="flex flex-col md:flex-row gap-4">
+            {/* Search */}
+            <div className="relative flex-1">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
+              <Input
+                placeholder="Пошук користувачів..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="pl-10"
+              />
+            </div>
+            
+            {/* Role Filter */}
+            <Select value={roleFilter} onValueChange={setRoleFilter}>
+              <SelectTrigger className="w-full md:w-48">
+                <SelectValue placeholder="Фільтр за роллю" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">Всі ролі</SelectItem>
+                <SelectItem value="Member">Учасники</SelectItem>
+                <SelectItem value="Administrator">Адміністратори</SelectItem>
+              </SelectContent>
+            </Select>
+            
+            {/* Status Filter */}
+            <Select value={statusFilter} onValueChange={setStatusFilter}>
+              <SelectTrigger className="w-full md:w-48">
+                <SelectValue placeholder="Фільтр за статусом" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">Всі статуси</SelectItem>
+                <SelectItem value="Active">Активні</SelectItem>
+                <SelectItem value="Blocked">Заблоковані</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Users Table */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center justify-between">
+            <span>Список користувачів ({filteredUsers.length})</span>
+            <Button variant="outline" size="sm">
+              <RefreshCw className="h-4 w-4 mr-2" />
+              Оновити
+            </Button>
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="p-0">
+                {/* Mobile Card View */}
+                <div className="block sm:hidden space-y-4">
+                  {isLoading ? (
+                    <TableLoadingSkeleton />
+                  ) : filteredUsers.length === 0 ? (
+                    searchQuery || roleFilter !== 'all' || statusFilter !== 'all' ? (
+                      <NoSearchResults />
+                    ) : (
+                      <NoUsersFound />
+                    )
+                  ) : (
+                    filteredUsers.map((user) => (
+                      <Card key={user.id} className="p-4">
+                        <div className="space-y-3">
+                          <div className="flex items-center justify-between">
+                            <div className="flex items-center space-x-3">
+                              <Avatar className="h-10 w-10">
+                                <AvatarImage src={`/placeholder.svg`} alt={`${user.firstName} ${user.lastName}`} />
+                                <AvatarFallback>
+                                  {user.firstName[0]}{user.lastName[0]}
+                                </AvatarFallback>
+                              </Avatar>
+                              <div>
+                                <p className="font-medium text-foreground">{user.firstName} {user.lastName}</p>
+                                <p className="text-sm text-muted-foreground">{user.email}</p>
+                              </div>
+                            </div>
+                            {getStatusBadge(user.status)}
+                          </div>
+                          <div className="flex justify-between items-center text-sm">
+                            <div>
+                              <p className="text-muted-foreground">Роль: {getRoleBadge(user.role)}</p>
+                              <p className="text-muted-foreground">Останній вхід: <span className="text-foreground">{user.lastLogin}</span></p>
+                            </div>
+                            <div className="flex space-x-2">
+                              <Button variant="outline" size="sm" className="btn-touch" asChild>
+                                <Link to={`/admin-dashboard/users/${user.id}`}>
+                                  <Eye className="h-4 w-4" />
+                                </Link>
+                              </Button>
+                              <Button 
+                                variant="outline" 
+                                size="sm" 
+                                className="btn-touch"
+                                onClick={() => toggleUserStatus(user.id)}
+                              >
+                                {user.status === 'Active' ? <Ban className="h-4 w-4" /> : <Check className="h-4 w-4" />}
+                              </Button>
+                            </div>
+                          </div>
+                        </div>
+                      </Card>
+                    ))
+                  )}
+                </div>
+
+                {/* Desktop Table View */}
+                <div className="hidden sm:block table-mobile">
+                  {isLoading ? (
+                    <TableLoadingSkeleton />
+                  ) : filteredUsers.length === 0 ? (
+                    searchQuery || roleFilter !== 'all' || statusFilter !== 'all' ? (
+                      <NoSearchResults />
+                    ) : (
+                      <NoUsersFound />
+                    )
+                  ) : (
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead>ID</TableHead>
+                          <TableHead>Ім'я</TableHead>
+                          <TableHead>Email</TableHead>
+                          <TableHead>Роль</TableHead>
+                          <TableHead>Останній вхід</TableHead>
+                          <TableHead>Статус</TableHead>
+                          <TableHead className="text-right">Дії</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        {filteredUsers.map((user) => (
+                          <TableRow key={user.id} className="hover:bg-muted/50">
+                            <TableCell className="font-mono text-sm">{user.id}</TableCell>
+                            <TableCell>
+                              <div className="flex items-center space-x-3">
+                                <Avatar className="h-8 w-8">
+                                  <AvatarImage src={`/placeholder.svg`} alt={`${user.firstName} ${user.lastName}`} />
+                                  <AvatarFallback>
+                                    {user.firstName[0]}{user.lastName[0]}
+                                  </AvatarFallback>
+                                </Avatar>
+                                <div>
+                                  <div className="font-medium">{user.firstName} {user.lastName}</div>
+                                  <div className="text-sm text-muted-foreground">Створено: {user.createdAt}</div>
+                                </div>
+                              </div>
+                            </TableCell>
+                            <TableCell>{user.email}</TableCell>
+                            <TableCell>{getRoleBadge(user.role)}</TableCell>
+                            <TableCell className="text-sm">{user.lastLogin}</TableCell>
+                            <TableCell>{getStatusBadge(user.status)}</TableCell>
+                            <TableCell className="text-right">
+                              <DropdownMenu>
+                                <DropdownMenuTrigger asChild>
+                                  <Button variant="ghost" size="sm" className="btn-touch">
+                                    <MoreHorizontal className="h-4 w-4" />
+                                  </Button>
+                                </DropdownMenuTrigger>
+                                <DropdownMenuContent align="end" className="w-48">
+                                  <DropdownMenuItem asChild>
+                                    <Link to={`/admin-dashboard/users/${user.id}`} className="flex items-center">
+                                      <Eye className="h-4 w-4 mr-2" />
+                                      Переглянути профіль
+                                    </Link>
+                                  </DropdownMenuItem>
+                                  <DropdownMenuItem>
+                                    <Edit className="h-4 w-4 mr-2" />
+                                    Редагувати
+                                  </DropdownMenuItem>
+                                  <DropdownMenuItem onClick={() => toggleUserStatus(user.id)}>
+                                    {user.status === 'Active' 
+                                      ? <>
+                                          <Ban className="h-4 w-4 mr-2" />
+                                          Заблокувати
+                                        </>
+                                      : <>
+                                          <Shield className="h-4 w-4 mr-2" />
+                                          Розблокувати
+                                        </>
+                                    }
+                                  </DropdownMenuItem>
+                                  <DropdownMenuItem 
+                                    onClick={() => deleteUser(user.id)}
+                                    className="text-destructive"
+                                  >
+                                    <Trash2 className="h-4 w-4 mr-2" />
+                                    Видалити
+                                  </DropdownMenuItem>
+                                </DropdownMenuContent>
+                              </DropdownMenu>
+                            </TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  )}
+                </div>
+        </CardContent>
+      </Card>
+
+      {/* Add User Modal */}
+      <Dialog open={showAddUserModal} onOpenChange={setShowAddUserModal}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle>Додати нового користувача</DialogTitle>
+            <DialogDescription>
+              Створіть новий обліковий запис користувача в системі
+            </DialogDescription>
+          </DialogHeader>
+          
+          <div className="space-y-4 py-4">
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <Label htmlFor="firstName">Ім'я</Label>
+                <Input
+                  id="firstName"
+                  value={newUser.firstName}
+                  onChange={(e) => setNewUser({ ...newUser, firstName: e.target.value })}
+                  placeholder="Введіть ім'я"
+                />
+              </div>
+              <div>
+                <Label htmlFor="lastName">Прізвище</Label>
+                <Input
+                  id="lastName"
+                  value={newUser.lastName}
+                  onChange={(e) => setNewUser({ ...newUser, lastName: e.target.value })}
+                  placeholder="Введіть прізвище"
+                />
+              </div>
+            </div>
+            
+            <div>
+              <Label htmlFor="email">Email</Label>
+              <Input
+                id="email"
+                type="email"
+                value={newUser.email}
+                onChange={(e) => setNewUser({ ...newUser, email: e.target.value })}
+                placeholder="email@example.com"
+              />
+            </div>
+            
+            <div>
+              <Label htmlFor="role">Роль</Label>
+              <Select 
+                value={newUser.role} 
+                onValueChange={(value: 'Member' | 'Administrator') => setNewUser({ ...newUser, role: value })}
+              >
+                <SelectTrigger>
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="Member">
+                    <div className="flex items-center">
+                      <Users className="h-4 w-4 mr-2" />
+                      Учасник
+                    </div>
+                  </SelectItem>
+                  <SelectItem value="Administrator">
+                    <div className="flex items-center">
+                      <Shield className="h-4 w-4 mr-2" />
+                      Адміністратор
+                    </div>
+                  </SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+            
+            <div>
+              <Label htmlFor="password">Пароль</Label>
+              <div className="flex space-x-2">
+                <Input
+                  id="password"
+                  type="text"
+                  value={newUser.password}
+                  readOnly
+                  placeholder="Натисніть 'Генерувати' для створення паролю"
+                  className="flex-1"
+                />
+                <Button
+                  type="button"
+                  variant="outline"
+                  onClick={generatePassword}
+                  className="px-3"
+                >
+                  <RefreshCw className="h-4 w-4" />
+                </Button>
+                <Button
+                  type="button"
+                  variant="outline"
+                  onClick={copyPassword}
+                  disabled={!newUser.password}
+                  className="px-3"
+                >
+                  {copiedPassword ? (
+                    <Check className="h-4 w-4 text-success" />
+                  ) : (
+                    <Copy className="h-4 w-4" />
+                  )}
+                </Button>
+              </div>
+              {copiedPassword && (
+                <p className="text-sm text-success mt-1">Пароль скопійовано!</p>
+              )}
+            </div>
+          </div>
+          
+          <DialogFooter>
+            <Button 
+              variant="outline" 
+              onClick={() => {
+                setShowAddUserModal(false);
+                setNewUser({ firstName: '', lastName: '', email: '', role: 'Member', password: '' });
+                setCopiedPassword(false);
+              }}
+            >
+              Скасувати
+            </Button>
+            <Button 
+              onClick={handleAddUser}
+              disabled={!newUser.firstName || !newUser.lastName || !newUser.email || !newUser.password}
+            >
+              Створити користувача
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+      </div>
+    </AdminLayout>
+  );
+};
+
+export default UserManagement;

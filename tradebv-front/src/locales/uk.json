@@ -1,0 +1,1574 @@
+{
+  "notifications": {
+    "title": "Сповіщення",
+    "markAllRead": "Прочитати всі",
+    "empty": "Сповіщень поки немає"
+  },
+  "nav": {
+    "home": "На сайт",
+    "mhr": "Trade BV",
+    "dashboard": "Панель управління",
+    "courses": "Курси",
+    "profile": "Профіль",
+    "logout": "Вийти",
+    "login": "Увійти",
+    "settings": "Налаштування",
+    "language": "Мова",
+    "users": "Користувачі",
+    "cases": "Кейси",
+    "feedback": "Відгуки",
+    "desktopSidebarHint": "💡 На десктопі доступна бічна панель для швидкої навігації"
+  },
+  "welcome": {
+    "title": "Ласкаво просимо до ШІ навчальної платформи",
+    "subtitle": "Розвивайте навички за допомогою інтерактивних симуляцій з ШІ"
+  },
+  "home": {
+    "goToDashboard": "Перейти до навчання",
+    "startLearning": "Почати навчання",
+    "learnMore": "Дізнатися більше",
+    "features": {
+      "title": "Чому обирають нашу платформу?",
+      "subtitle": "Інноваційні технології ШІ для максимально ефективного навчання",
+      "aiPersonas": {
+        "title": "ШІ-персони",
+        "description": "Інтерактивні симуляції з розумними ШІ співрозмовниками"
+      },
+      "targetedLearning": {
+        "title": "Цільове навчання",
+        "description": "Персоналізовані сценарії для розвитку конкретних навичок"
+      },
+      "teamwork": {
+        "title": "Командна робота",
+        "description": "Навчання ефективної взаємодії в команді"
+      }
+    },
+    "courses": {
+      "title": "Популярні курси",
+      "subtitle": "Найбільш затребувані навчальні програми",
+      "viewAll": "Переглянути всі",
+      "students": "студентів",
+      "start": "Почати",
+      "noCourses": "Немає доступних курсів"
+    },
+    "cta": {
+      "title": "Готові розпочати навчання?",
+      "subtitle": "Приєднуйтесь до тисяч професіоналів, які вже підвищують свої навички"
+    }
+  },
+  "common": {
+    "loading": "Завантаження...",
+    "back": "Назад",
+    "pagination": {
+      "previous": "Попередня",
+      "next": "Наступна",
+      "goToPreviousPage": "Перейти на попередню сторінку",
+      "goToNextPage": "Перейти на наступну сторінку"
+    }
+  },
+  "login": {
+    "title": "Вхід до системи",
+    "description": "Увійдіть в систему",
+    "username": "Логін",
+    "password": "Пароль",
+    "submit": "Увійти",
+    "admin": "Адміністратор",
+    "member": "Учасник"
+  },
+  "admin": {
+    "sidebar": {
+      "title": "Панель aдміністратора",
+      "subtitle": "ШІ платформа навчання",
+      "navigation": "Навігація",
+      "home": "Головна",
+      "users": "Користувачі",
+      "caseManagement": "Управління кейсами",
+      "feedback": "Зворотний зв'язок"
+    },
+    "dashboard": {
+      "title": "Панель адміністратора",
+      "welcome": "Вітаємо",
+      "overview": "Огляд активності",
+      "filters": "Фільтри",
+      "search": "Пошук",
+      "casesLaunchedWeekly": "Кейси запущені за тиждень",
+      "recentActivity": "Остання активність",
+      "recentActivityDescription": "Нещодавні дії користувачів у системі",
+      "viewAll": "Переглянути все",
+      "viewLess": "Показати менше",
+      "noRecentActivity": "Немає нещодавньої активності",
+      "pendingReports": "Звіти, що очікують підтвердження",
+      "pendingReportsDescription": "Підтверджуйте оцінювання, щоб відкрити користувачам звіти з балами",
+      "reviewReport": "Переглянути",
+      "noPendingReports": "Немає звітів, що очікують підтвердження",
+      "loadingActivity": "Завантаження активності...",
+      "quickActions": "Швидкі дії",
+      "quickActionsDescription": "Основні операції адміністратора",
+      "createUser": "Створити користувача",
+      "createCase": "Створити кейс",
+      "viewFeedback": "Переглянути відгуки",
+      "systemAnalytics": "Аналітика системи",
+      "systemNotifications": "Системні сповіщення"
+    },
+    "activityActions": {
+      "startedSimulation": "Розпочав симуляцію",
+      "completedSimulation": "Завершив симуляцію",
+      "uploadedRecording": "Завантажив запис"
+    },
+    "timeAgo": {
+      "justNow": "щойно",
+      "minutesAgo": "{{count}} хв тому",
+      "hoursAgo": "{{count}} год тому",
+      "daysAgo": "{{count}} дн тому"
+    },
+    "stats": {
+      "totalUsers": "Загальна кількість користувачів",
+      "activeSimulations": "Активні симуляції",
+      "completedSimulations": "Завершені симуляції",
+      "totalChats": "Всього чатів",
+      "newUsersThisWeek": "нових користувачів за тиждень",
+      "newSimulationsThisWeek": "розпочато за тиждень",
+      "completedThisWeek": "завершено за тиждень",
+      "newChatsThisWeek": "нових чатів за тиждень"
+    },
+    "activities": {
+      "completedSimulation": "Завершив симуляцію",
+      "startedSimulation": "Розпочала симуляцію",
+      "leftFeedback": "Залишив відгук",
+      "registered": "Зареєструвалась",
+      "timeAgo": {
+        "minutes": "{{count}} хв тому",
+        "hours": "{{count}} год тому"
+      }
+    }
+  },
+  "member": {
+    "dashboard": {
+      "welcome": "Вітаємо",
+      "selectCase": "Натисніть «Почати виконувати», щоб продовжити",
+      "learningCases": "Навчальні кейси",
+      "searchCases": "Пошук кейсів...",
+      "startWorking": "Почати виконувати",
+      "loading": "Завантаження...",
+      "noCases": "Немає доступних кейсів",
+      "bannerSubtitle": "Завершіть призначений кейс до дедлайну",
+      "deadlineLabel": "Дедлайн",
+      "deadlineRemaining": "залишилось {{count}} днів",
+      "deadlinePassed": "Дедлайн минув",
+      "deadlineNone": "Без обмеження",
+      "statsAssigned": "Кейсів призначено",
+      "statsCompleted": "Завершено",
+      "statsDaysLeft": "Днів до дедлайну",
+      "sectionLearningCase": "Навчальний кейс",
+      "cardDefaultKind": "Переговорна симуляція",
+      "cardAccessUntil": "Доступ до {{date}}"
+    },
+    "caseIntro": {
+      "roleInSimulation": "Опис кейсу",
+      "personaDescription": "Ваша роль",
+      "caseOverview": "З ким ви спілкуєтесь",
+      "roleSubtitle": "Ваш контекст і комерційний бриф для цих переговорів",
+      "personaSubtitle": "Знайомство з вашим співрозмовником",
+      "overviewSubtitle": "Що чекає в цій симуляції",
+      "preparation": "Підготовка",
+      "case": "Кейс",
+      "stepBadge": "Крок {{current}} з {{total}}",
+      "starting": "Запуск...",
+      "continue": "Продовжити",
+      "back": "Назад",
+      "languageTitle": "Мова",
+      "languageSubtitle": "Оберіть мову, якою проходитимете симуляцію",
+      "languageLabel": "Мова симуляції",
+      "languageHint": "Цією мовою буде інтерфейс, розмова з персонажем і фінальний звіт. Змінити можна будь-коли у шапці.",
+      "languageSaveError": "Не вдалося зберегти мову. Спробуйте обрати ще раз."
+    },
+    "stats": {
+      "completedSimulations": "Завершено симуляцій",
+      "lastActivity": "Остання активність",
+      "overallProgress": "Загальний прогрес",
+      "daysAgo": "{{count}} дні тому"
+    }
+  },
+  "cases": {
+    "conflictManagement": {
+      "title": "Управління конфліктами",
+      "description": "Навчіться ефективно вирішувати конфлікти на робочому місці"
+    },
+    "leadership": {
+      "title": "Лідерство та мотивація",
+      "description": "Розвиток навичок лідерства та мотивації команди"
+    },
+    "communication": {
+      "title": "Ефективна комунікація",
+      "description": "Основи професійної комунікації в бізнес-середовищі"
+    },
+    "duration": "{{count}} хв",
+    "list": {
+      "title": "Кейси",
+      "subtitle": "Виберіть кейс для запуску симуляції",
+      "searchPlaceholder": "Пошук кейсів...",
+      "refresh": "Оновити",
+      "errorLoading": "Помилка завантаження кейсів",
+      "failedToLoad": "Не вдалося завантажити кейси",
+      "loading": "Завантаження кейсів...",
+      "noMatchingSearch": "За вашим запитом кейсів не знайдено.",
+      "noCases": "Немає доступних кейсів.",
+      "badgeAvailable": "Доступний",
+      "createdLabel": "Створено",
+      "startSimulation": "Розпочати симуляцію",
+      "accessDeniedTitle": "Доступ заборонено",
+      "accessDeniedBody": "У вас немає доступу до цього кейсу. Зверніться до адміністратора.",
+      "runErrorTitle": "Помилка",
+      "runErrorBody": "Не вдалося розпочати симуляцію. Спробуйте ще раз."
+    }
+  },
+  "status": {
+    "completed": "Завершено",
+    "active": "Активний",
+    "inProgress": "В процесі",
+    "available": "Доступний",
+    "unavailable": "Недоступний",
+    "feedback": "Відгук",
+    "new": "Новий",
+    "unknown": "Невідомо",
+    "draft": "Чернетка"
+  },
+  "users": {
+    "title": "Управління користувачами",
+    "subtitle": "Керування обліковими записами та правами доступу",
+    "addUser": "Додати користувача",
+    "addUserShort": "Додати",
+    "searchPlaceholder": "Пошук користувачів...",
+    "filterByRole": "Фільтр за роллю",
+    "filterByStatus": "Фільтр за статусом",
+    "allRoles": "Всі ролі",
+    "allStatuses": "Всі статуси",
+    "userList": "Список користувачів",
+    "refresh": "Оновити",
+    "table": {
+      "id": "ID",
+      "name": "Ім'я",
+      "email": "Email",
+      "username": "Ім'я користувача",
+      "role": "Роль",
+      "lastLogin": "Останній вхід",
+      "simulations": "Симуляції",
+      "status": "Статус",
+      "actions": "Дії",
+      "createdAt": "Створено",
+      "noName": "Без імені"
+    },
+    "roles": {
+      "user": "Учасник",
+      "admin": "Адміністратор",
+      "superadmin": "Супер-адміністратор"
+    },
+    "statuses": {
+      "active": "Активний",
+      "blocked": "Заблокований"
+    },
+    "lastLogin": {
+      "never": "Ніколи",
+      "now": "Зараз",
+      "hoursAgo": "{{count}} год тому",
+      "daysAgo": "{{count}} дн тому"
+    },
+    "actions": {
+      "viewProfile": "Переглянути профіль",
+      "edit": "Редагувати",
+      "block": "Заблокувати",
+      "unblock": "Розблокувати",
+      "delete": "Видалити"
+    },
+    "modal": {
+      "addTitle": "Додати нового користувача",
+      "addDescription": "Створіть новий обліковий запис користувача в системі",
+      "firstName": "Ім'я",
+      "firstNamePlaceholder": "Введіть ім'я",
+      "lastName": "Прізвище",
+      "lastNamePlaceholder": "Введіть прізвище",
+      "username": "Email",
+      "usernamePlaceholder": "user@example.com",
+      "role": "Роль",
+      "password": "Пароль",
+      "passwordPlaceholder": "Залиште порожнім для автогенерації",
+      "passwordCopied": "Пароль скопійовано!",
+      "cancel": "Скасувати",
+      "create": "Створити користувача",
+      "creating": "Створення..."
+    },
+    "toasts": {
+      "userCreated": "Користувач створений",
+      "userCreatedDesc": "Користувач {{username}} успішно створений.",
+      "generatedPassword": "Згенерований пароль",
+      "passwordDesc": "Пароль: {{password}}",
+      "statusUpdated": "Статус оновлено",
+      "statusUpdatedDesc": "Статус користувача змінено на {{status}}.",
+      "userDeleted": "Користувач видалений",
+      "userDeletedDesc": "Користувача видалено з системи.",
+      "error": "Помилка",
+      "errorCreating": "Помилка створення користувача",
+      "errorUpdating": "Помилка оновлення статусу",
+      "errorDeleting": "Помилка видалення користувача",
+      "errorLoading": "Не вдалося завантажити користувачів",
+      "cannotBlockAdmin": "Неможливо заблокувати адміністратора або суперадміністратора",
+      "cannotDeleteAdmin": "Неможливо видалити адміністратора або суперадміністратора"
+    },
+    "confirmDelete": "Ви впевнені, що хочете видалити цього користувача?",
+    "noUsersFound": "Користувачі не знайдені",
+    "noUsersFoundDesc": "Користувачі не відповідають вашим поточним критеріям пошуку. Спробуйте змінити фільтри або терміни пошуку.",
+    "noSearchResults": "Результати не знайдені",
+    "noSearchResultsDesc": "Ваш пошук не повернув жодних результатів. Спробуйте використовувати інші ключові слова або перевірте правопис."
+  },
+  "caseManagement": {
+    "title": "Управління кейсами",
+    "subtitle": "Керування навчальними кейсами та персонами",
+    "searchPlaceholder": "Пошук кейсів та персон...",
+    "refresh": "Оновити",
+    "tabs": {
+      "cases": "Кейси",
+      "personas": "Персони"
+    },
+    "addCase": "Додати кейс",
+    "addPersona": "Додати персону",
+    "loading": "Завантаження...",
+    "noCases": "Немає кейсів",
+    "noPersonas": "Немає персон",
+    "casesNotFound": "Кейси не знайдені",
+    "personasNotFound": "Персони не знайдені",
+    "case": {
+      "status": {
+        "draft": "Чернетка",
+        "active": "Активний"
+      },
+      "prompt": "Підказка",
+      "draftCopy": "Копія чернетки",
+      "actions": {
+        "run": "Запустити",
+        "edit": "Редагувати",
+        "delete": "Видалити",
+        "testWithAI": "ШІ-тест",
+        "createDraft": "Створити повну копію",
+        "applyChanges": "Застосувати зміни"
+      },
+      "createdAt": "Створено",
+      "evaluationPrompt": "Промпт оцінки",
+      "drafts": "Чернетки"
+    },
+    "persona": {
+      "status": {
+        "draft": "Чернетка",
+        "active": "Активний"
+      },
+      "goal": "Ціль",
+      "actions": "Дії",
+      "actionsCount": "Дії ({{count}})",
+      "emotions": "Емоції",
+      "createdAt": "Створено",
+      "edit": "Редагувати",
+      "delete": "Видалити",
+      "more": "ще"
+    },
+    "aiTestRunner": {
+      "title": "Тестування кейсу з ШІ",
+      "testPersonaLabel": "Тестова персона",
+      "selectPlaceholder": "Оберіть тестову персону",
+      "actions": {
+        "edit": "Редагувати персону",
+        "hideEdit": "Сховати редагування",
+        "run": "Запустити тест",
+        "running": "Тестування...",
+        "showTestPersona": "Додати тест-персону",
+        "hideTestPersona": "Сховати тест-персону",
+        "delete": "Видалити",
+        "cancel": "Скасувати",
+        "save": "Зберегти зміни",
+        "saving": "Збереження..."
+      },
+      "devStatus": {
+        "title": "Функціонал в розробці",
+        "description": "ШІ тестування кейсів знаходиться в розробці."
+      },
+      "collapsible": {
+        "log": "Лог дій ШІ",
+        "dialogue": "Фінальний діалог"
+      },
+      "editPersonaCard": {
+        "title": "Редагування персони",
+        "description": "Оновіть дані обраної тестової персони."
+      },
+      "testPersonaCard": {
+        "title": "Тест-персона",
+        "description": "Задайте характеристики для тестування кейсу з цією персоною."
+      },
+      "fields": {
+        "name": "Ім'я",
+        "role": "Роль",
+        "voice": "Голос",
+        "description": "Опис персонажа",
+        "goals": "Цілі персони",
+        "voiceSample": "Текст голосового повідомлення"
+      },
+      "placeholders": {
+        "name": "Приклад: Ірина",
+        "role": "Приклад: Керівниця відділу",
+        "description": "Опишіть риси характеру та контекст.",
+        "goals": "Що прагне досягти персона та які її очікування.",
+        "voiceSample": "Текст, який відображає стиль спілкування персони.",
+        "voiceSelect": "Оберіть голос"
+      },
+      "voiceSampleHint": "Функція генерації озвучення поки недоступна, але ви можете підготувати текст заздалегідь.",
+      "confirmDelete": "Ви впевнені, що хочете видалити цю персону?",
+      "toasts": {
+        "update": {
+          "title": "Персону оновлено",
+          "description": "Зміни до тестової персони збережено."
+        },
+        "delete": {
+          "title": "Персону видалено",
+          "description": "Тестову персону успішно видалено."
+        },
+        "error": {
+          "title": "Помилка",
+          "run": "Не вдалося запустити тест",
+          "update": "Не вдалося оновити персону",
+          "delete": "Не вдалося видалити персону",
+          "load": "Не вдалося завантажити персони"
+        }
+      }
+    },
+    "toasts": {
+      "caseDeleted": "Кейс видалено",
+      "caseDeletedDesc": "Кейс успішно видалено.",
+      "personaDeleted": "Персону видалено",
+      "personaDeletedDesc": "Персону успішно видалено.",
+      "error": "Помилка",
+      "errorDeleting": "Помилка видалення",
+      "errorLoading": "Не вдалося завантажити дані",
+      "draftCopyCreated": "Копію чернетки створено",
+      "draftCopyCreatedDesc": "Копію чернетки успішно створено. Перенаправлення...",
+      "errorCreatingDraft": "Не вдалося створити копію чернетки",
+      "changesApplied": "Зміни застосовано",
+      "errorApplyingChanges": "Не вдалося застосувати зміни",
+      "errorStartingSimulation": "Не вдалося запустити симуляцію"
+    },
+    "applyDraft": {
+      "title": "Застосувати зміни з чернетки?",
+      "description": "Ця дія замінить оригінальний кейс змінами з цієї чернетки. Після застосування змін чернетку буде видалено. Цю дію не можна скасувати.",
+      "cancel": "Скасувати",
+      "apply": "Застосувати зміни"
+    }
+  },
+  "feedback": {
+    "title": "Управління відгуками",
+    "subtitle": "Перегляд та управління відгуками користувачів",
+    "refresh": "Оновити",
+    "searchPlaceholder": "Пошук відгуків...",
+    "feedbackEntries": "Записи відгуків ({{count}})",
+    "table": {
+      "dateTime": "Дата/Час",
+      "user": "Користувач",
+      "page": "Сторінка",
+      "case": "Кейс",
+      "feedbackText": "Текст відгуку",
+      "screenshot": "Скріншот",
+      "status": "Статус",
+      "gradeAccepted": "Оцінка прийнята",
+      "actions": "Дії"
+    },
+    "screenshot": {
+      "noImage": "Немає зображення",
+      "error": "Помилка завантаження зображення",
+      "loadError": "Не вдалося завантажити скріншот",
+      "clickToView": "Натисніть для перегляду в повному розмірі",
+      "title": "Скріншот",
+      "zoomIn": "Наблизити",
+      "zoomOut": "Віддалити",
+      "reset": "Скинути масштаб",
+      "zoomLabel": "Рівень масштабу скріншота",
+      "zoomHint": "Масштабуйте повзунком чи кнопками, прокручуйте для переміщення."
+    },
+    "caseContext": {
+      "title": "Зміст кейсу",
+      "caseName": "Назва кейсу",
+      "description": "Опис"
+    },
+    "gradeStatus": {
+      "yes": "Так",
+      "no": "Ні",
+      "accepted": "Прийнято",
+      "notAccepted": "Не прийнято",
+      "notApplicable": "Н/Д"
+    },
+    "detail": {
+      "title": "Деталі відгуку",
+      "feedbackInfo": "Інформація про відгук",
+      "userInformation": "Інформація про користувача",
+      "name": "Ім'я",
+      "email": "Емейл",
+      "source": "Джерело",
+      "role": "Роль",
+      "submitted": "Надіслано",
+      "gradeAccepted": "Оцінка прийнята",
+      "caseId": "ID Кейсу",
+      "personaId": "ID Персони",
+      "chatId": "ID Чату",
+      "feedbackText": "Повний відгук",
+      "adminReview": "Огляд адміністратора",
+      "addReview": "Додати відгук",
+      "currentStatus": "Поточний статус",
+      "savedNotes": "Збережені нотатки",
+      "markAsReviewed": "Позначити як переглянуте",
+      "markAs": "Позначити як",
+      "reviewed": "Розглянуто",
+      "pending": "В очікуванні",
+      "adminNotes": "Нотатки адміністратора",
+      "addNotesPlaceholder": "Додайте свої нотатки щодо цього відгуку...",
+      "saveNotes": "Зберегти нотатки",
+      "saving": "Збереження...",
+      "characters": "символів"
+    },
+    "filters": {
+      "allStatus": "Всі статуси",
+      "pending": "⏳ В очікуванні",
+      "reviewed": "✓ Розглянуто",
+      "filterByStatus": "Фільтр за статусом",
+      "filterBySource": "Фільтр за джерелом",
+      "allSources": "Усі джерела"
+    },
+    "sourceTags": {
+      "simulation": "Сесія симуляції",
+      "simulationResults": "Результати симуляції",
+      "other": "Інше джерело"
+    },
+    "anonymous": "Анонімний",
+    "noResults": "Відгуки не знайдені",
+    "noFeedback": "Немає відгуків",
+    "noFeedbackAvailable": "Немає доступних відгуків\nВідгуки ще не були надіслані. Користувачі побачать свої відгуки тут після завершення симуляцій.",
+    "loading": "Завантаження...",
+    "error": "Помилка",
+    "errorLoading": "Не вдалося завантажити відгуки",
+    "toasts": {
+      "success": "Успіх",
+      "error": "Помилка",
+      "feedbackUpdated": "Відгук успішно оновлено",
+      "updateError": "Не вдалося оновити відгук"
+    }
+  },
+  "equipmentTest": {
+    "title": "Тест обладнання",
+    "description": "Перевіримо ваше обладнання перед початком симуляції",
+    "microphone": {
+      "title": "Мікрофон",
+      "description": "Тест запису звуку",
+      "recording": "Запис… говоріть у мікрофон",
+      "getReady": "Приготуйтесь говорити…",
+      "speakNow": "Говоріть зараз",
+      "success": "Микрофон працює правильно",
+      "noSpeechDetected": "Мовлення не виявлено. Будь ласка, говоріть чітко під час тесту.",
+      "noAudioDetected": "Звук не виявлено. Перевірте мікрофон і спробуйте знову.",
+      "testFailed": "Не вдалося виконати тест мікрофона. Спробуйте ще раз.",
+      "mp3NotSupported": "Ваш браузер не підтримує створення MP3-аудіо. Будь ласка, скористайтеся браузером з підтримкою MP3-запису.",
+      "selectDevice": "Оберіть мікрофон:",
+      "selectPlaceholder": "Оберіть мікрофон",
+      "audioLevel": "Рівень звуку",
+      "unsupported": "Доступ до мікрофона не підтримується в цьому браузері.",
+      "notFound": "Мікрофон не знайдено.",
+      "notReadable": "Мікрофон зайнятий або недоступний.",
+      "permissionDenied": "Доступ до мікрофона заборонено.",
+      "invalidState": "Мікрофон у некоректному стані."
+    },
+    "speakers": {
+      "title": "Динаміки",
+      "description": "Тест відтворення звуку"
+    },
+    "camera": {
+      "title": "Камера",
+      "description": "Тест відео запису"
+    },
+    "screen": {
+      "title": "Запис екрана",
+      "description": "Дозвольте запис екрана, щоб зберегти вигляд симуляції."
+    },
+    "status": {
+      "ready": "Готово",
+      "error": "Помилка",
+      "testing": "Тестування..."
+    },
+    "buttons": {
+      "testMicrophone": "Тест мікрофона",
+      "retryMicrophone": "Повторити",
+      "testAgain": "Протестувати знову",
+      "testSpeakers": "Тест звуку",
+      "testCamera": "Тест камери",
+      "testScreen": "Тест екрана",
+      "testing": "Тестування..."
+    },
+    "footer": {
+      "allTestsRequired": "Проведіть всі тести для продовження",
+      "startSimulation": "Почати симуляцію",
+      "waitingForTests": "Очікування тестів..."
+    },
+    "transcription": {
+      "label": "Розпізнаний текст:"
+    }
+  },
+  "userProfile": {
+    "title": "Профіль користувача",
+    "subtitle": "Управління обліковим записом та налаштуваннями",
+    "backToList": "Назад до списку",
+    "userNotFound": "Користувач не знайдений",
+    "loading": "Завантаження...",
+    "status": {
+      "active": "Активний",
+      "blocked": "Заблокований"
+    },
+    "role": {
+      "admin": "Адміністратор",
+      "user": "Учасник",
+      "superadmin": "Супер-адміністратор"
+    },
+    "basicInfo": {
+      "title": "Основна інформація",
+      "edit": "Редагувати",
+      "cancel": "Скасувати",
+      "save": "Зберегти",
+      "firstName": "Ім'я",
+      "lastName": "Прізвище",
+      "email": "Email",
+      "role": "Роль",
+      "password": "Пароль",
+      "id": "ID",
+      "created": "Створено",
+      "lastLogin": "Останній вхід",
+      "never": "Ніколи",
+      "status": "Статус"
+    },
+    "permissions": {
+      "title": "Управління дозволами",
+      "subtitle": "Налаштування доступу та обмежень користувача",
+      "caseAccess": "Доступ до кейсів",
+      "allCases": "Усі кейси",
+      "limitedCases": "Тільки призначені ({{count}})",
+      "noCases": "Без доступу",
+      "accountExpiry": "Термін дії акаунту",
+      "launchLimit": "Ліміт запусків на день",
+      "simulationsCount": "Максимальна тривалість сесії (хв)",
+      "simulationsCountPlaceholder": "Функціонал в розробці",
+      "noLimit": "Без обмежень",
+      "editNote": "Редагування розширених налаштувань буде доступно в наступних версіях",
+      "savePermissions": "Зберегти дозволи",
+      "resetToDefault": "Скинути до стандартних"
+    },
+    "recordings": {
+      "title": "Записи сесій",
+      "subtitle": "Аудіо та відео записи симуляцій користувача (функціонал в розробці)",
+      "mockBadge": "Mock данні",
+      "view": "Переглянути",
+      "viewReport": "Переглянути звіт",
+      "viewWebcam": "Переглянути вебкамеру",
+      "viewScreen": "Переглянути симуляцію",
+      "copyLink": "Скопіювати посилання",
+      "videoAudio": "Аудіо + Відео",
+      "videoOnly": "Лише відео",
+      "audioOnly": "Тільки аудіо",
+      "webcamLabel": "Запис з вебкамери",
+      "screenLabel": "Запис симуляції",
+      "complete": "Завершена",
+      "incomplete": "Не завершена",
+      "noRecordings": "Записи сесій не знайдені",
+      "loading": "Завантаження записів...",
+      "count": "{{count}} запис",
+      "count_plural": "{{count}} записи",
+      "count_many": "{{count}} записів"
+    },
+    "history": {
+      "title": "Історія симуляцій",
+      "subtitle": "Результати проходження навчальних кейсів",
+      "mockBadge": "Mock данні",
+      "date": "Дата",
+      "caseName": "Назва кейсу",
+      "status": "Статус",
+      "duration": "Тривалість",
+      "score": "Оцінка",
+      "actions": "Дії",
+      "viewLogs": "Переглянути логи",
+      "viewReport": "Переглянути звіт",
+      "viewRecording": "Переглянути запис",
+      "pendingReview": "Очікує підтвердження",
+      "confirmed": "Підтверджено",
+      "completed": "Завершено",
+      "incomplete": "Не завершено",
+      "noHistory": "Історія симуляцій не знайдена",
+      "loading": "Завантаження історії симуляцій...",
+      "count": "{{count}} симуляція",
+      "count_plural": "{{count}} симуляції",
+      "count_many": "{{count}} симуляцій",
+      "minLabel": "хв",
+      "secLabel": "сек"
+    },
+    "assignedCases": {
+      "title": "Призначені кейси",
+      "subtitle": "Кейси, доступні для проходження користувачем",
+      "loading": "Завантаження кейсів...",
+      "noCases": "Кейси не призначені",
+      "draft": "Чернетка",
+      "active": "Активний",
+      "created": "Створено",
+      "view": "Переглянути",
+      "assignCase": "Призначити кейс",
+      "allAccessNote": "Користувач має доступ до всіх кейсів"
+    },
+    "assignCaseModal": {
+      "title": "Призначити кейс",
+      "subtitle": "Додайте новий кейс для проходження користувачем",
+      "selectCase": "Виберіть кейс",
+      "placeholder": "Оберіть кейс для призначення",
+      "timeLimit": "Часовий ліміт (годин)",
+      "timeLimitNote": "Доступ до кейсу буде активний протягом вказаного часу",
+      "cancel": "Скасувати",
+      "assign": "Призначити кейс",
+      "invitationSent": "Запрошення надіслано",
+      "sendInvitation": "Відправити запрошення",
+      "copyAll": "Скопіювати усе",
+      "done": "Готово",
+      "emailLanguage": "Мова листа",
+      "firstName": "Ім'я",
+      "lastName": "Прізвище",
+      "email": "Email",
+      "firstNamePlaceholder": "Введіть ім'я",
+      "lastNamePlaceholder": "Введіть прізвище",
+      "editBodyLabel": "Редагувати тіло листа (HTML, доступні плейсхолдери: ",
+      "editorPlaceholder": "Текст листа...",
+      "previewLabel": "Попередній перегляд листа",
+      "previewFrom": "Від:",
+      "previewTo": "Кому:",
+      "previewSubject": "Тема:",
+      "resultMessage": "Лист надіслано на {{email}}. Збережіть або скопіюйте дані для входу нижче — ми не показуємо пароль повторно.",
+      "loginLabel": "Логін",
+      "passwordLabel": "Пароль",
+      "linkLabel": "Лінк",
+      "passwordAlreadyGenerated": "(згенерований раніше)",
+      "passwordNotAvailable": "(вже згенерований раніше)",
+      "toastCopied": "{{label}} скопійовано",
+      "toastCopyFailed": "Не вдалося скопіювати",
+      "credentialsLabel": "Креденшали",
+      "toastInvitationSent": "Запрошення відправлено",
+      "toastInvitationDescription": "Лист надіслано на {{email}}",
+      "toastInvitationFailed": "Не вдалося відправити запрошення",
+      "toastInvitationFailedDescription": "Спробуйте ще раз пізніше",
+      "previewName": "Ім'я Прізвище"
+    },
+    "passwordModal": {
+      "title": "Змінити пароль",
+      "subtitle": "Згенеруйте новий пароль для користувача",
+      "newPassword": "Новий пароль",
+      "placeholder": "Натисніть 'Генерувати' для створення паролю",
+      "generate": "Генерувати",
+      "copy": "Копіювати",
+      "cancel": "Скасувати",
+      "save": "Зберегти пароль",
+      "passwordChanged": "Пароль успішно змінено",
+      "passwordChangeError": "Не вдалося змінити пароль"
+    },
+    "caseSelection": {
+      "title": "Вибір кейсів",
+      "subtitle": "Виберіть кейси, до яких користувач матиме доступ",
+      "selectAll": "Вибрати всі",
+      "deselectAll": "Скасувати всі",
+      "selected": "Вибрано",
+      "noCases": "Немає доступних кейсів",
+      "draft": "Чернетка",
+      "cancel": "Скасувати",
+      "save": "Зберегти"
+    },
+    "toasts": {
+      "success": "Успіх",
+      "error": "Помилка",
+      "profileUpdated": "Профіль користувача оновлено",
+      "profileUpdateError": "Не вдалося оновити профіль",
+      "loadError": "Не вдалося завантажити дані користувача",
+      "permissionsUpdated": "Дозволи користувача оновлено",
+      "permissionsUpdateError": "Не вдалося оновити дозволи",
+      "caseAssigned": "Кейс успішно призначено",
+      "caseAssignError": "Не вдалося призначити кейс",
+      "caseUnassigned": "Кейс успішно видалено",
+      "caseUnassignError": "Не вдалося видалити кейс"
+    }
+  },
+  "simulation": {
+    "endSuggestion": {
+      "title": "Розмову можна завершити",
+      "description": "Схоже, ви досягли логічного завершення діалогу. Натисніть Finish щоб закрити симуляцію або продовжіть розмову.",
+      "finish": "Finish"
+    },
+    "loadingCase": "Завантаження кейсу...",
+    "errors": {
+      "forbiddenTitle": "Доступ заборонено",
+      "forbiddenMessage": "У вас немає доступу до цього кейсу. Зверніться до адміністратора для отримання доступу.",
+      "notFoundTitle": "Кейс не знайдено",
+      "notFoundMessage": "Даний кейс недоступний або не існує. Можливо, його було видалено.",
+      "authTitle": "Авторизація",
+      "authMessage": "Сесія закінчилась. Будь ласка, увійдіть знову.",
+      "loadErrorTitle": "Помилка завантаження",
+      "loadErrorMessage": "Не вдалося завантажити кейс. Спробуйте оновити сторінку."
+    },
+    "backToCases": "Повернутися до кейсів",
+    "titleWithCase": "Симуляція: {{title}}",
+    "sidebar": {
+      "userRole": "Ваша роль",
+      "botMessage": "Повідомлення від бота",
+      "introForUser": "Інтро для користувача",
+      "personaDescription": "Опис персони"
+    },
+    "personaNameFallback": "ШІ Асистент",
+    "personaAltFallback": "ШІ",
+    "initialBotMessage": "Привіт! Давайте розпочнемо симуляцію.",
+    "endButton": "Завершити",
+    "ending": "Завершаємо...",
+    "inputPlaceholder": "Введіть вашу відповідь...",
+    "connectionError": "Помилка з'єднання з сервером. Будь ласка, перезавантажте сторінку.",
+    "connectionReconnecting": "Зв'язок втрачено. Перепідключаємось — ваше повідомлення надішлеться автоматично.",
+    "replyTimeout": "Не вдалося отримати відповідь вчасно. Перевірте зв'язок і надішліть повідомлення ще раз.",
+    "errorGeneric": "Щось пішло не так. Спробуйте надіслати повідомлення ще раз.",
+    "nonVerbalActionsButton": "Невербальні дії",
+    "nonVerbalActions": {
+      "lookAround": "Озирнутися",
+      "nod": "Кивнути",
+      "shakeHead": "Похитати головою",
+      "pauseThink": "Зробити паузу",
+      "showConfusion": "Показати замішання"
+    },
+    "endReminder": {
+      "message": "Якщо ви готові завершити розмову, будь ласка, натисніть «Завершити».",
+      "dismiss": "Закрити"
+    },
+    "endDialog": {
+      "title": "Завершити симуляцію?",
+      "description": "Ви впевнені, що хочете завершити поточну симуляцію? Весь прогрес буде збережено.",
+      "recordingWarning": "⚠️ Запис відео буде зупинено та завантажено.",
+      "continue": "Продовжити",
+      "endSimulation": "Завершити симуляцію"
+    },
+    "beforeUnloadWarning": "Відбувається запис відео. Якщо ви вийдете зараз, запис буде зупинено та завантажено.",
+    "feedbackDialog": {
+      "title": "Зворотний зв'язок",
+      "description": "Поділіться своїми враженнями та пропозиціями щодо симуляції",
+      "label": "Ваш відгук",
+      "placeholder": "Опишіть ваші враження, пропозиції або проблеми...",
+      "cancel": "Скасувати",
+      "submit": "Надіслати",
+      "addScreenshot": "Додати скріншот",
+      "capturingScreenshot": "Захоплення...",
+      "screenshotAdded": "✓ Скріншот додано"
+    },
+    "personaInfo": {
+      "title": "Інформація про персону",
+      "description": "Детальна інформація про ШІ-персону в цій симуляції",
+      "aboutPersona": "Про персону",
+      "goals": "Цілі",
+      "currentState": "Поточний стан",
+      "online": "Онлайн",
+      "feedback": "Відгук",
+      "availableEmotions": "Доступні емоції",
+      "nonVerbalActions": "Невербальні дії",
+      "simulationContext": "Контекст симуляції",
+      "case": "Кейс",
+      "close": "Закрити",
+      "role": "Роль",
+      "noDescription": "Опис відсутній",
+      "noGoals": "Цілі відсутні"
+    },
+    "inputMode": {
+      "text": "Текст",
+      "audio": "Аудіо",
+      "audioRecording": "Запис аудіо"
+    },
+    "stepButtons": {
+      "step1": "1. Опис кейсу",
+      "step2": "2. Ваша роль",
+      "step3": "3. З ким ви спілкуєтесь"
+    },
+    "actionButtons": {
+      "Visit production site": "Відвідати виробництво",
+      "Show detailed price proposal": "Показати ціновий розрахунок",
+      "Share internal volume commitment": "Поділитись зобовʼязанням по обʼєму",
+      "Summarise and move to closure": "Підбити підсумки та закрити"
+    },
+    "rightPanel": {
+      "actions": "Дії",
+      "brief": "Ваш бриф",
+      "progress": "Прогрес",
+      "currentPhase": "Поточна фаза",
+      "phaseHint": "Фаза {{current}} з {{total}} — {{name}}"
+    },
+    "confirmAction": {
+      "title": "Підтвердити дію",
+      "description": "Ви впевнені, що хочете виконати цю дію? Її буде відправлено в чат.",
+      "cancel": "Скасувати",
+      "confirm": "Так, виконати"
+    },
+    "navigation": {
+      "button": "Навігація по симуляції",
+      "title": "Навігація по симуляції",
+      "description": "Дотримуйтесь цих кроків під час симуляції",
+      "empty": "Навігацію для цієї симуляції не вказано."
+    },
+    "nonVerbalActionsMobile": "Дії",
+    "voiceMessage": "Голосове повідомлення",
+    "recordingActive": "Запис активний...",
+    "userLabel": "Ви",
+    "micAccessError": "Не вдалося отримати доступ до мікрофона",
+    "timerWarning": {
+      "title": "Попередження про час",
+      "message": "У вас залишилось 10 хвилин для відправки повідомлення",
+      "ok": "Зрозуміло"
+    },
+    "divider": {
+      "postVisit": "Візит відбувся, розмова продовжується після візиту"
+    },
+    "aiThinkingLong": "{{name}} ще думає, дайте ще секунду…",
+    "finishingResults": "Завершуємо симуляцію та готуємо ваші результати. Це може зайняти до хвилини…"
+  },
+  "videoRecorder": {
+    "consentDialog": {
+      "title": "Згода на запис",
+      "description": "Для запису симуляції необхідний доступ до вашої веб-камери та мікрофону. Запис буде збережено разом з результатами симуляції.",
+      "question": "Ви даєте згоду на запис відео та аудіо?",
+      "decline": "Відмовитися",
+      "accept": "Погоджуюся"
+    },
+    "recording": {
+      "started": "Запис розпочався",
+      "startedDesc": "Ваша веб-камера записує симуляцію",
+      "stopped": "Запис зупинено",
+      "stoppedDesc": "Завантажуємо відео на сервер...",
+      "inProgress": "Йде запис симуляції"
+    },
+    "upload": {
+      "progress": "Завантаження запису на сервер...",
+      "completed": "Завантаження завершено",
+      "completedDesc": "Відео успішно збережено ({{size}} MB)"
+    },
+    "errors": {
+      "cameraAccess": "Помилка",
+      "cameraAccessDesc": "Не вдалося отримати доступ до камери. Перевірте дозволи.",
+      "stopRecording": "Помилка",
+      "stopRecordingDesc": "Не вдалося зупинити запис",
+      "uploadFailed": "Помилка завантаження",
+      "uploadFailedDesc": "Не вдалося завантажити відео на сервер"
+    },
+    "confirmCloseWhileRecording": "Запис зупиниться при закритті браузера. Ви впевнені?"
+  },
+  "sessionRecorder": {
+    "title": "Запис симуляції",
+    "description": "Записує екран симуляції та чат для перегляду пізніше.",
+    "start": "Почати запис екрану",
+    "stop": "Зупинити запис екрану",
+    "inProgress": "Йде запис екрану...",
+    "uploading": "Завантаження запису симуляції...",
+    "uploadCompleted": "Запис симуляції збережено",
+    "uploadCompletedDesc": "Запис екрану завантажено ({{size}} MB)",
+    "uploadFailed": "Помилка завантаження",
+    "uploadFailedDesc": "Не вдалося завантажити запис симуляції",
+    "startFailed": "Не вдається почати запис екрану",
+    "startFailedDesc": "Браузер заблокував захоплення екрана. Дозвольте доступ і спробуйте ще раз.",
+    "stopFailed": "Не вдається зупинити запис екрану",
+    "stopFailedDesc": "Роботу рекордера не зупинено коректно"
+  },
+  "caseEditor": {
+    "title": {
+      "edit": "Редагувати кейс",
+      "create": "Створити новий кейс"
+    },
+    "back": "Назад",
+    "testDraft": "Тестувати чернетку",
+    "testCase": "Тестувати кейс",
+    "saveDraft": "Зберегти чернетку",
+    "saveCase": "Зберегти кейс",
+    "saving": "Збереження...",
+    "draftCopy": "Чернетка копії",
+    "applying": "Застосування...",
+    "applyDraft": "Опублікувати чернетку",
+    "applyChanges": "Застосувати зміни",
+    "cancel": "Скасувати",
+    "saveChanges": "Зберегти зміни",
+    "applyDraftTitle": "Застосувати зміни чернетки?",
+    "applyDraftDescription": "Ця дія замінить оригінальний кейс змінами з цієї чернетки. Чернетка буде видалена після застосування змін. Цю дію не можна скасувати.",
+    "finalEvaluationSystem": "Підсумкове оцінювання (Система)",
+    "toasts": {
+      "caseUpdated": "Кейс оновлено",
+      "caseCreated": "Кейс створено",
+      "loadError": "Не вдалося завантажити кейс",
+      "saveError": "Не вдалося зберегти кейс"
+    },
+    "tabs": {
+      "basic": "Основні",
+      "persona": "Персона",
+      "scenarios": "Сценарії",
+      "evaluation": "Оцінка",
+      "finalEvaluation": "Підсумкове оцінювання"
+    },
+    "basic": {
+      "title": "Основна інформація",
+      "description": "Основні дані про навчальний кейс",
+      "caseTitle": "Назва кейсу",
+      "caseTitlePlaceholder": "Введіть назву кейсу",
+      "userDescription": "Інтро для користувача",
+      "userDescriptionPlaceholder": "Опис, який бачить кінцевий користувач",
+      "userDescriptionHint": "Текст, що відображається користувачеві в описі.",
+      "roleInSimulation": "Опис кейсу",
+      "roleInSimulationPlaceholder": "Введіть опис кейсу",
+      "roleInSimulationHint": "Загальний опис ситуації кейсу для користувача.",
+      "personaDescription": "Ваша роль",
+      "personaDescriptionPlaceholder": "Введіть опис ролі користувача",
+      "personaDescriptionHint": "Опишіть роль, яку буде виконувати користувач у симуляції.",
+      "caseOverview": "З ким ви спілкуєтесь",
+      "caseOverviewPlaceholder": "Введіть опис співрозмовника",
+      "caseOverviewHint": "Опис персони, з якою спілкуватиметься користувач.",
+      "aiDescription": "Флоу розмови",
+      "aiDescriptionPlaceholder": "Повний контекст для роботи ШІ, включаючи цілі та поведінку діалогу",
+      "aiDescriptionHint": "Опис контексту роботи штучного інтелекту, включно з цілями та логікою діалогу.",
+      "evaluationPrompt": "Промпт оцінювання",
+      "evaluationPromptPlaceholder": "Оберіть промпт оцінювання",
+      "noEvaluationPrompt": "Немає оціночного промпту",
+      "evaluationModel": "ШІ модель для оцінювання",
+      "selectAIModel": "Оберіть модель ШІ",
+      "aiModelForCategories": "Модель ШІ для оцінювання за категоріями",
+      "finalEvaluationPrompt": "Підсумкова інструкція для ШІ",
+      "finalEvaluationPromptPlaceholder": "Оберіть підсумкову інструкцію для ШІ",
+      "noFinalEvaluationPrompt": "Підсумкову інструкцію для ШІ не знайдено",
+      "finalEvaluationModel": "ШІ модель для підсумкового оцінювання",
+      "aiModelForFinalSummary": "Модель ШІ для підсумкового оцінювання",
+      "llm1Model": "LLM 1 модель",
+      "llm1ModelHint": "Основна модель ШІ для обробки кейсу",
+      "llm2Model": "LLM 2 модель",
+      "llm2ModelHint": "Додаткова модель ШІ для обробки кейсу",
+      "userActions": {
+        "title": "Дії користувача",
+        "helper": "Перелік дій, котрі доступні користувачеві для вибору.",
+        "add": "Додати дію",
+        "addTitle": "Додати дію користувача",
+        "name": "Назва дії",
+        "namePlaceholder": "Введіть назву дії",
+        "descriptionLabel": "Опис",
+        "descriptionPlaceholder": "Опишіть, що робить ця дія для користувача",
+        "shortDescriptionLabel": "Короткий підпис для кнопки",
+        "shortDescriptionPlaceholder": "Напр. Запросити візит на виробництво",
+        "shortDescriptionHint": "Показується під назвою кнопки у правій панелі симуляції.",
+        "chatMessageLabel": "Chat action log",
+        "chatMessagePlaceholder": "Напр. Я хотів би відвідати ваше виробництво",
+        "chatMessageHint": "Цей текст буде відправлено в чат як повідомлення користувача після підтвердження дії. Можна додати маркери <!-- uk --> ... <!-- en --> ... для локалізації.",
+        "popupTextLabel": "Pop-up text",
+        "popupTextPlaceholder": "Напр. Visit the customer's processing operation to understand trimming...",
+        "popupTextHint": "Текст у попапі підтвердження. Якщо пусто — буде показано загальний 'Ви впевнені?'. Можна додати маркери <!-- uk --> ... <!-- en --> ... для локалізації.",
+        "submit": "Додати дію",
+        "emptyState": "Дій ще не додано.",
+        "validationError": "Будь ласка, заповніть назву та опис дії",
+        "editTitle": "Редагувати дію користувача",
+        "update": "Оновити дію",
+        "cancel": "Скасувати",
+        "updateSuccess": "Дію успішно оновлено"
+      },
+      "scenarioBehaviorRulesCoarse": "Правила поведінки сценарію (загальні)",
+      "scenarioBehaviorRulesCoarsePlaceholder": "Введіть загальні правила поведінки для сценарію...",
+      "scenarioBehaviorRulesCoarseHint": "Визначте загальні поведінкові вказівки, яким повинен слідувати ШІ під час сценарію",
+      "scenarioBehaviorRulesFull": "Правила поведінки сценарію (повні)",
+      "scenarioBehaviorRulesFullPlaceholder": "Введіть детальні правила поведінки для сценарію...",
+      "scenarioBehaviorRulesFullHint": "Надайте вичерпні поведінкові інструкції, включаючи специфічні реакції, умови та граничні випадки",
+      "simulationNavigation": "Навігація по симуляції",
+      "simulationNavigationPlaceholder": "Додайте інструкцію для користувача (кроки, час, на що звернути увагу)",
+      "simulationNavigationHint": "Приклад: 1) Почни з привітання та надішли перше повідомлення; 2) Слідкуй за таймером і заверши в межах часу.",
+      "briefItems": {
+        "title": "Брифінг (права панель симуляції)",
+        "hint": "Пари label/value, які показуються в блоці «Ваш бриф» праворуч від чату. Напр. Reference price → €4.50/kg.",
+        "add": "Додати рядок",
+        "labelPlaceholder": "Reference price",
+        "valuePlaceholder": "€4.50/kg"
+      },
+      "phases": {
+        "title": "Фази (Progress widget)",
+        "hint": "Фази симуляції, які показуються у віджеті прогресу. Виберіть реакції персони, які мапляться на кожну фазу.",
+        "add": "Додати фазу",
+        "idPlaceholder": "opening",
+        "namePlaceholder": "Opening",
+        "reactionsLabel": "Реакції в цій фазі:",
+        "noReactions": "Спочатку додайте реакції персони у вкладці «Персона»."
+      }
+    },
+    "persona": {
+      "title": "Персона",
+      "description": "Налаштування ШІ-персони для цього кейсу (1 персона = 1 кейс)",
+      "name": "Ім'я персони",
+      "namePlaceholder": "Ім'я персони",
+      "role": "Роль",
+      "rolePlaceholder": "наприклад, Керівник, Менеджер, Працівник",
+      "roleExample": "наприклад, Керівник, Менеджер, Працівник",
+      "voice": "Голос",
+      "voicePlaceholder": "Оберіть голос",
+      "voiceSampleLabel": "Текст для прослуховування",
+      "voiceSamplePlaceholder": "Введіть текст для озвучення вибраним голосом",
+      "voiceSampleHint": "Використайте стандартне речення або введіть власну фразу, щоб прослухати обраний голос.",
+      "voiceSampleButton": "Прослухати голос",
+      "voiceSampleGenerating": "Створюємо зразок...",
+      "voiceSampleDefault": "This is a sample voice test",
+      "voiceSampleError": "Не вдалося згенерувати зразок голосу. Спробуйте ще раз.",
+      "personaDescription": "Опис персони",
+      "personaDescriptionPlaceholder": "Хто вони, їхня роль та поведінка",
+      "goalDescription": "Цілі персони",
+      "goalDescriptionPlaceholder": "Опишіть цілі персони (кожна ціль з нового рядка)",
+      "goalDescriptionHint": "Опишіть цілі для персони. Кожна ціль повинна бути вказана в новій стрічці",
+      "styleAndLanguage": "Стиль і мова",
+      "styleAndLanguagePlaceholder": "Опишіть стиль комунікації та мовні переваги...",
+      "behaviorConstraints": "Обмеження поведінки",
+      "behaviorConstraintsPlaceholder": "Визначте поведінкові межі та обмеження...",
+      "internalReasoning": "Внутрішнє міркування",
+      "internalReasoningPlaceholder": "Опишіть процес внутрішнього міркування...",
+      "noImage": "Немає зображення",
+      "uploading": "Завантаження...",
+      "cropper": {
+        "title": "Налаштувати зображення",
+        "subtitle": "Перетягніть, щоб відцентрувати обличчя, використовуйте повзунок для зуму",
+        "zoom": "Масштаб",
+        "cancel": "Скасувати",
+        "save": "Зберегти обрізку"
+      },
+      "reactionName": "Назва реакції",
+      "reactionNamePlaceholder": "Введіть назву реакції",
+      "reactionDescription": "Опис",
+      "reactionDescriptionPlaceholder": "Опишіть цю реакцію",
+      "reactionPrompt": "Опишіть поведінку",
+      "reactionPromptPlaceholder": "Опишіть, як повинна поводитися персона для цієї реакції",
+      "addReaction": "Додати реакцію",
+      "promptLabel": "Поведінка:",
+      "emotions": {
+        "title": "Емоції персони",
+        "add": "Додати емоцію",
+        "addTitle": "Додати нову емоцію",
+        "name": "Назва емоції",
+        "namePlaceholder": "Назва емоції",
+        "description": "Опис",
+        "descriptionPlaceholder": "Текстовий опис емоції",
+        "image": "Зображення емоції",
+        "chooseFile": "Оберіть файл",
+        "noFileChosen": "Файл не обрано",
+        "submit": "Додати емоцію",
+        "validationError": "Будь ласка, заповніть назву та опис емоції"
+      },
+      "reactions": {
+        "title": "Реакції",
+        "helper": "Даний розділ відповідає за конфігурування можливих реакцій ШІ персони на обрані користувачем дії.",
+        "add": "Додати реакцію",
+        "addTitle": "Додати нову реакцію",
+        "name": "Назва реакції",
+        "namePlaceholder": "Назва реакції",
+        "description": "Опис",
+        "descriptionPlaceholder": "Опис реакції персони",
+        "selectionLogic": "Логіка вибору",
+        "selectionLogicPlaceholder": "Поясніть, коли ця реакція повинна бути доступною користувачу",
+        "selectionLogicLabel": "Логіка вибору:",
+        "submit": "Додати реакцію",
+        "validationError": "Будь ласка, заповніть назву реакції та опишіть поведінку",
+        "goals": "Цілі реакції",
+        "goalsLabel": "Цілі:",
+        "goalsPlaceholder": "Визначте цілі, яких має досягти ця реакція...",
+        "goalsHint": "Вкажіть, чого намагається досягти ця реакція в розмові"
+      }
+    },
+    "scenarios": {
+      "title": "Сценарії-реакції",
+      "description": "Додаткові сценарії поведінки персони в різних ситуаціях",
+      "add": "Додати сценарій",
+      "addTitle": "Додати новий сценарій",
+      "condition": "Умова спрацювання",
+      "conditionPlaceholder": "Коли ця реакція вибирається",
+      "reaction": "Реакція персони",
+      "reactionPlaceholder": "Як поводиться персона в цій реакції",
+      "conditionLabel": "Умова",
+      "reactionLabel": "Реакція",
+      "submit": "Додати сценарій",
+      "validationError": "Будь ласка, заповніть умову та реакцію сценарію"
+    },
+    "evaluation": {
+      "title": "Логіка оцінювання",
+      "description": "Категорії та критерії для оцінювання діалогу",
+      "promptSettingsTitle": "Налаштування промптів",
+      "promptSettingsDescription": "Призначте промпти оцінювання та моделі, що використовуються для автоматичного оцінювання.",
+      "add": "Додати категорію",
+      "addTitle": "Додати категорію оцінки",
+      "finalSummaryRule": "Правило підведення підсумку",
+      "finalSummaryRulePlaceholder": "Як формується фінальний аналіз в PDF на основі оцінок по категоріях",
+      "finalSummaryRuleNote": "Опишіть, як на основі оцінок формується фінальний аналіз для користувача",
+      "categories": "Категорії оцінювання",
+      "categoryName": "Назва категорії",
+      "categoryNamePlaceholder": "Назва категорії оцінки",
+      "criteria": "Критерії оцінювання",
+      "criteriaPlaceholder": "Як оцінювати цей аспект діалогу",
+      "submit": "Додати категорію",
+      "validationError": "Будь ласка, заповніть назву та критерії категорії",
+      "instructionCreateTitle": "Створити нову інструкцію для ШІ",
+      "instructionEditTitle": "Налаштування інструкції для ШІ",
+      "nameLabel": "Назва",
+      "namePlaceholder": "Введіть назву...",
+      "instructionLabel": "Інструкція для ШІ",
+      "instructionPlaceholder": "Введіть інструкцію для ШІ...",
+      "instructionHint": "Це інструкція для агента штучного інтелекту в рамках оцінки критеріїв",
+      "createInstructionButton": "Створити інструкцію",
+      "noInstructionTitle": "Інструкцію не налаштовано",
+      "noInstructionDescription": "Оберіть наявну інструкцію вище або створіть нову.",
+      "createInstructionCta": "Створити нову інструкцію для ШІ",
+      "availableInstructionsTitle": "Доступні інструкції для ШІ",
+      "selectedInstructionLabel": "Вибрано",
+      "adminDescriptionLabel": "Адміністративний опис",
+      "adminDescriptionPlaceholder": "Введіть адміністративний опис для цієї категорії...",
+      "categoryInstructionPlaceholder": "Введіть інструкцію для ШІ...",
+      "createSuccess": "Інструкцію для ШІ успішно створено",
+      "createError": "Не вдалося створити інструкцію для ШІ",
+      "promptLoadedForEditing": "Промпт завантажено для редагування",
+      "viewPrompt": "Переглянути промпт",
+      "categoryFromPrompt": "Категорія з промпту оцінювання: {{catName}}",
+      "deleteConfirm": "Ви впевнені, що хочете видалити цю інструкцію для ШІ?",
+      "deleteSuccess": "Інструкцію для ШІ видалено",
+      "deleteError": "Не вдалося видалити інструкцію для ШІ",
+      "validationErrorFull": "Будь ласка, заповніть назву, адміністративний опис та інструкцію для ШІ",
+      "saveAsDraftLabel": "Зберегти як чернетку",
+      "saveAsDraftNote": "(Чернеткові інструкції не використовуються для оцінювання)"
+    },
+    "aiAssistant": {
+      "title": "ШІ-асистент",
+      "description": "Тестування та відладка кейсу",
+      "testPersona": "Тестова персона",
+      "testPersonaPlaceholder": "Оберіть тестову персону",
+      "aiLog": "Лог ШІ",
+      "aiLogTitle": "Лог дій ШІ-агента",
+      "dialogue": "Діалог",
+      "dialogueTitle": "Підсумковий діалог",
+      "messagePlaceholder": "Повідомлення для ШІ...",
+      "logMessages": {
+        "init": "[AI LOG] Ініціалізація агента...",
+        "loadingPersona": "[AI LOG] Завантаження персони: {{name}}",
+        "processingTestPersona": "[AI LOG] Обробка тестової персони: {{name}}",
+        "ready": "[AI LOG] Готовність до діалогу"
+      },
+      "response": "Відповідь ШІ-асистента на основі тестової персони \"{{name}}\": {{message}}"
+    },
+    "finalEvaluation": {
+      "title": "Підсумкова інструкція для ШІ",
+      "description": "Перегляд і керування системною підсумковою інструкцією для ШІ, яка використовується для створення комплексних підсумкових оцінювань",
+      "noPromptFound": "Підсумкову інструкцію для ШІ не знайдено",
+      "noPromptDescription": "Системну підсумкову інструкцію для ШІ ще не налаштовано",
+      "createPrompt": "Створити підсумкову інструкцію для ШІ",
+      "editPrompt": "Редагувати інструкцію",
+      "usePrompt": "Використати цю інструкцію",
+      "promptSelected": "Інструкцію вибрано",
+      "promptSelectedDescription": "Підсумкову інструкцію для ШІ призначено для цього кейсу",
+      "aboutFinalEvaluation": "Про підсумкове оцінювання",
+      "aboutDescription": "Підсумкова інструкція для ШІ використовується для створення комплексного резюме після завершення симуляції. Вона враховує всі оцінки за категоріями та формує загальну оцінку з:",
+      "aboutPoints": {
+        "summary": "Резюме ключових сильних сторін та областей для покращення",
+        "score": "Загальна оцінка від 1 до 10",
+        "examples": "Конкретні приклади з розмови",
+        "recommendations": "Практичні рекомендації"
+      },
+      "createTitle": "Створити підсумкову інструкцію для ШІ",
+      "editTitle": "Налаштування підсумкової інструкції для ШІ",
+      "currentPrompt": "Поточна підсумкова інструкція для ШІ",
+      "promptContent": "Підсумкова інструкція для ШІ",
+      "namePlaceholder": "Введіть назву підсумкової інструкції для ШІ...",
+      "promptPlaceholder": "Введіть підсумкову інструкцію для ШІ, яка аналізує та узагальнює всі категорії оцінювання...",
+      "creating": "Створення...",
+      "createPromptButton": "Створити інструкцію",
+      "saveInstructionButton": "Зберегти підсумкову інструкцію",
+      "saveChanges": "Зберегти зміни",
+      "cancel": "Скасувати",
+      "success": "Успіх",
+      "createSuccess": "Підсумкову інструкцію для ШІ успішно створено",
+      "createError": "Не вдалося створити підсумкову інструкцію для ШІ",
+      "deleteConfirm": "Ви впевнені, що хочете видалити цю підсумкову інструкцію для ШІ?",
+      "deleteSuccess": "Підсумкову інструкцію для ШІ видалено",
+      "deleteError": "Не вдалося видалити підсумкову інструкцію для ШІ",
+      "availableInstructionsTitle": "Доступні підсумкові інструкції для ШІ",
+      "saveAsDraftLabel": "Зберегти як чернетку",
+      "saveAsDraftNote": "(Чернеткові інструкції не використовуються для підсумкового оцінювання)",
+      "pdfNote": "Після фінальної оцінки користувач отримає PDF файл з результатами проходження тесту.",
+      "promptUpdated": "Підсумкову інструкцію для ШІ оновлено",
+      "status": {
+        "draft": "Чернетка",
+        "active": "Активний"
+      }
+    },
+    "toast": {
+      "uploadError": "Не вдалося завантажити зображення",
+      "cropError": "Не вдалося обрізати зображення"
+    },
+    "validate": {
+      "button": "Перевірити",
+      "title": "Перевірка кейса",
+      "summary": "{{errors}} помилок, {{warnings}} попереджень",
+      "noIssues": "Структурних проблем не знайдено",
+      "error": "Помилка перевірки"
+    }
+  },
+  "simulationResults": {
+    "report": {
+      "title": "Звіт по оцінюванню",
+      "overallAssessment": "Загальна оцінка",
+      "overallScore": "Підсумковий бал",
+      "blockATitle": "Блок А — Професійні компетенції",
+      "blockBTitle": "Блок Б — Комунікативні індикатори",
+      "competencyOverview": "Огляд компетенцій",
+      "strengths": "Сильні сторони",
+      "developmentAreas": "Зони розвитку",
+      "criticalMarkers": "Критичні маркери",
+      "scoringScale": "Шкала оцінювання",
+      "whatScoreMeans": "Що означає ваш бал?",
+      "whatScoreMeansBody": "Ваш результат відповідає рівню «{{level}}».",
+      "whatScoreMeansFallback": "Бал відображає вашу продуктивність за заданою рубрикою.",
+      "transcript": "Транскрипт розмови"
+    },
+    "loading": "Завантаження результатів...",
+    "errorTitle": "Помилка завантаження",
+    "errorNotFound": "Результати симуляції не знайдено",
+    "errorGeneric": "Не вдалося завантажити результати симуляції",
+    "backToDashboard": "Повернутися до панелі",
+    "processingResults": "Обробка ваших результатів...",
+    "pollingAttempt": "Готуємо ваш звіт — зазвичай це кілька хвилин. Можете не закривати вкладку.",
+    "generatingReport": "Генерація вашого звіту, будь ласка зачекайте...",
+    "errorTimeout": "Час очікування обробки результатів вичерпано. Спробуйте пізніше.",
+    "errorNoReport": "Звіт для цієї сесії недоступний.",
+    "delayedTitle": "Ваш звіт готується",
+    "delayedBody": "Цей звіт формується трохи довше, ніж зазвичай. Ми вже цим займаємось — щойно він буде готовий, ви отримаєте сповіщення тут. Проходити симуляцію заново не потрібно.",
+    "noResultsTitle": "Результати не знайдено",
+    "noResultsDescription": "Симуляція ще не завершена або результати не збережені.",
+    "headerTitle": "Симуляцію завершено!",
+    "headerDescription": "{{name}} • {{durationLabel}}: {{duration}}",
+    "duration": {
+      "label": "Тривалість",
+      "hoursMinutes": "{{hours}} год {{minutes}} хв",
+      "hoursOnly": "{{hours}} год",
+      "format": "{{minutes}} хв {{seconds}} сек",
+      "minutesOnly": "{{minutes}} хв",
+      "secondsOnly": "{{seconds}} сек",
+      "notAvailable": "Н/Д"
+    },
+    "notAvailable": "Н/Д",
+    "totalScoreLabel": "загальний бал",
+    "scoreBadge": {
+      "excellent": "Відмінно",
+      "good": "Добре",
+      "satisfactory": "Задовільно",
+      "needsImprovement": "Потребує покращення"
+    },
+    "categoriesTitle": "Показники за категоріями",
+    "statisticsTitle": "Детальна статистика",
+    "statistics": {
+      "messages": "Повідомлень",
+      "minResponseTime": "Мін. час відповіді",
+      "secondsShort": "с",
+      "voiceUsage": "Використання голосу",
+      "nonVerbal": "Невербальні дії"
+    },
+    "feedbackTitle": "Зворотний зв'язок",
+    "feedback": {
+      "strongPoints": "Сильні сторони:",
+      "improvements": "Можливості для покращення:"
+    },
+    "actions": {
+      "downloadPdf": "Завантажити PDF",
+      "downloadExcel": "Завантажити Excel",
+      "fileUnavailable": "Файл недоступний",
+      "viewReport": "Переглянути звіт",
+      "downloading": "Завантаження...",
+      "acceptScore": "Прийняти оцінку",
+      "rejectScore": "Скасувати оцінку"
+    },
+    "confirmation": {
+      "acceptTitle": "Прийняти оцінку?",
+      "cancelTitle": "Скасувати оцінку?",
+      "acceptDescription": "Ваша оцінка буде збережена в профілі. Ці результати будуть враховані в загальній статистиці.",
+      "cancelDescription": "Оцінка буде скасована, але дані про проходження симуляції збережуться для аналізу.",
+      "back": "Повернутися",
+      "acceptConfirm": "Прийняти",
+      "cancelConfirm": "Скасувати оцінку"
+    },
+    "feedbackForm": {
+      "label": "Додайте коментар",
+      "placeholder": "Поділіться думками щодо цієї оцінки...",
+      "submitError": "Не вдалося надіслати зворотний зв'язок. Спробуйте ще раз.",
+      "defaultAccept": "Користувач прийняв оцінку з результатів симуляції.",
+      "defaultReject": "Користувач відхилив оцінку з результатів симуляції.",
+      "promptAccept": "Ви можете додати коментар щодо того, чому оцінка для вас підходить (необов'язково).",
+      "promptReject": "Будь ласка, опишіть, чому ви не згодні з цією оцінкою (необов'язково).",
+      "capture": "Захопити скріншот результатів",
+      "capturing": "Захоплення...",
+      "captureAdded": "Скріншот додано",
+      "removeScreenshot": "Видалити скріншот",
+      "submit": "Надіслати",
+      "cancel": "Скасувати",
+      "captureError": "Не вдалося зробити скріншот результатів. Спробуйте ще раз.",
+      "actionMissing": "Оберіть, приймаєте чи відхиляєте оцінку, перш ніж надсилати."
+    }
+  },
+  "aiModels": {
+    "categories": {
+      "recommendedForAnalysis": "Рекомендовано для аналізу",
+      "forEmotionalTone": "Для емоційного тону",
+      "advancedReasoning": "Просунуте мислення",
+      "fastAndEfficient": "Швидко та ефективно",
+      "otherProviders": "Інші провайдери"
+    },
+    "descriptions": {
+      "gpt41": "Найкраще для глибокого аналізу та комплексного оцінювання. Відмінні можливості міркування та генерації детальних відгуків.",
+      "claude37Sonnet": "Ідеально для ретельного аналізу з сильними аналітичними навичками. Чудово підходить для складних сценаріїв оцінювання, що вимагають нюансного розуміння.",
+      "claude3Opus": "Преміум модель для просунутих завдань аналізу. Надає дуже детальні та інформативні оцінки.",
+      "gpt4o": "Відмінно для багатомодального аналізу та комплексних оцінювань. Сильна продуктивність у різних типах завдань.",
+      "gemini25Pro": "Просунута модель міркування, ідеальна для детального аналізу та завдань оцінювання, що вимагають глибокого розуміння.",
+      "claude35Sonnet": "Відмінно для аналізу емоційного тону та оцінки емпатії. Чудово розуміє тонкі емоційні сигнали.",
+      "claude35Haiku": "Швидко та ефективно для оцінювання емоційного тону. Добрий баланс між швидкістю та розумінням емоцій."
+    }
+  },
+  "caseDetails": {
+    "notFound": {
+      "title": "Кейс не знайдено",
+      "description": "Вибраний кейс недоступний або не існує."
+    },
+    "info": {
+      "duration": "Тривалість",
+      "participants": "Учасники",
+      "level": "Рівень"
+    },
+    "aiPersona": {
+      "title": "ШІ Персона"
+    },
+    "objectives": {
+      "title": "Цілі навчання"
+    },
+    "instructions": {
+      "title": "Інструкції для проходження",
+      "allowed": "Дозволені дії:",
+      "forbidden": "Заборонені дії:"
+    },
+    "equipment": {
+      "title": "Тест обладнання",
+      "description": "Перевірте ваше обладнання перед початком симуляції",
+      "tabs": {
+        "audio": "Тест звуку",
+        "recording": "Запис голосу",
+        "video": "Тест відео"
+      },
+      "audio": {
+        "title": "Тест відтворення звуку",
+        "description": "Натисніть \"Розпочати тест\" щоб прослухати тестовий аудіофайл",
+        "playing": "Відтворення...",
+        "start": "Розпочати тест",
+        "stop": "Закінчити тест",
+        "success": "✓ Відтворюється тестовий аудіо файл"
+      },
+      "recording": {
+        "title": "Тест запису голосу",
+        "description": "Записати тестове повідомлення та прослухати запис",
+        "stop": "Зупинити запис",
+        "start": "Розпочати запис",
+        "play": "Відтворити запис",
+        "speakHint": "Скажіть щось для тесту",
+        "success": "✓ Запис збережено успішно"
+      },
+      "video": {
+        "title": "Тест відео",
+        "description": "Переглянути тестове відео для перевірки якості відтворення",
+        "success": "✓ Відтворюється тестове відео"
+      }
+    },
+    "access": {
+      "title": "Доступ обмежено",
+      "description": "У вас немає доступу до цього кейсу або термін доступу закінчився. Зверніться до адміністратора для отримання доступу.",
+      "backToCases": "Повернутися до кейсів"
+    },
+    "actions": {
+      "creatingChat": "Створення чату...",
+      "startSimulation": "Почати симуляцію",
+      "starting": "Запуск...",
+      "startWithAgent": "Запустити з агентом"
+    },
+    "toast": {
+      "startErrorDefault": "Не вдалося розпочати симуляцію. Спробуйте ще раз.",
+      "errorTitle": "Помилка",
+      "forbiddenTitle": "Доступ заборонено",
+      "forbiddenNoCase": "У вас немає доступу до цього кейсу. Зверніться до адміністратора для отримання доступу.",
+      "forbiddenGeneric": "У вас недостатньо прав для запуску симуляції. Зверніться до адміністратора.",
+      "notFoundTitle": "Кейс не знайдено",
+      "notFoundMessage": "Даний кейс недоступний або не існує. Спробуйте оновити сторінку.",
+      "authTitle": "Авторизація",
+      "authMessage": "Сесія закінчилась. Будь ласка, увійдіть знову.",
+      "agentInDevTitle": "Функція в розробці",
+      "agentInDevFallback": "В розробці",
+      "agentStartedTitle": "Симуляція запущена",
+      "agentStartedDescription": "Симуляція з агентом успішно розпочата",
+      "agentStartErrorDescription": "Не вдалося запустити симуляцію з агентом"
+    },
+    "mock": {
+      "case1": {
+        "title": "Управління конфліктами",
+        "description": "Навчіться ефективно вирішувати конфлікти на робочому місці через інтерактивні симуляції з ШІ персонажами.",
+        "duration": "45 хв",
+        "difficulty": "Intermediate",
+        "participants": "1-2 учасники",
+        "objective1": "Розпізнавати ознаки конфлікту на ранній стадії",
+        "objective2": "Застосовувати техніки активного слухання",
+        "objective3": "Знаходити компромісні рішення",
+        "objective4": "Запобігати ескалації конфлікту",
+        "instruction1": "Уважно прочитайте сценарій конфлікту",
+        "instruction2": "Взаємодійте з ШІ персоною, використовуючи професійний підхід",
+        "instruction3": "Використовуйте різні стратегії вирішення конфлікту",
+        "instruction4": "Дотримуйтесь часових обмежень (45 хвилин)",
+        "instruction5": "Заборонено використовувати агресивну мову",
+        "instruction6": "Дозволено робити паузи для обдумування",
+        "personaName": "Анна Петренко",
+        "personaRole": "Менеджер проекту",
+        "personaDescription": "Досвідчений менеджер з 8-річним стажем роботи в IT сфері"
+      },
+      "case2": {
+        "title": "Лідерство та мотивація",
+        "description": "Розвивайте навички лідерства та вміння мотивувати команду в складних ситуаціях.",
+        "duration": "60 хв",
+        "difficulty": "Advanced",
+        "participants": "1 учасник",
+        "objective1": "Демонструвати лідерські якості",
+        "objective2": "Мотивувати демотивовану команду",
+        "objective3": "Створювати план відновлення після невдач",
+        "objective4": "Застосовувати емоційний інтелект",
+        "instruction1": "Ознайомтесь із ситуацією команди після невдалого релізу",
+        "instruction2": "Проведіть мотиваційну розмову з ключовим співробітником",
+        "instruction3": "Запропонуйте конкретні кроки для покращення ситуації",
+        "instruction4": "Тривалість симуляції: 60 хвилин",
+        "instruction5": "Заборонено звинувачувати або критикувати",
+        "instruction6": "Дозволено фокусуватись на позитивних рішеннях",
+        "personaName": "Олексій Коваленко",
+        "personaRole": "Старший розробник",
+        "personaDescription": "Талановитий розробник, який переживає кризу впевненості після невдачі"
+      }
+    }
+  },
+  "caseStart": {
+    "unknownError": "Невідома помилка",
+    "activating": "Активуємо ваше запрошення…",
+    "title": {
+      "expired": "Запрошення прострочене",
+      "invalid": "Невірне запрошення",
+      "error": "Не вдалося активувати запрошення"
+    },
+    "description": {
+      "expired": "Термін дії цього посилання закінчився. Зверніться до адміністратора, щоб надіслав нове.",
+      "invalid": "Посилання не знайдене. Можливо, воно неправильне або вже видалене.",
+      "error": "Сталася технічна помилка при активації запрошення. Спробуйте пізніше або зверніться до адміністратора."
+    },
+    "goToLogin": "На сторінку входу"
+  },
+  "feedbackManagement": {
+    "alt": {
+      "screenshotPreview": "Прев'ю скріншота",
+      "feedbackScreenshot": "Скріншот відгуку",
+      "screenshotFullView": "Повний перегляд скріншота"
+    }
+  }
+}

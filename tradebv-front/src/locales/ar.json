@@ -1,0 +1,1568 @@
+{
+  "notifications": {
+    "title": "الإشعارات",
+    "markAllRead": "تحديد الكل كمقروء",
+    "empty": "لا توجد إشعارات بعد"
+  },
+  "nav": {
+    "home": "إلى الموقع",
+    "mhr": "Trade BV",
+    "dashboard": "لوحة التحكم",
+    "courses": "الدورات",
+    "profile": "الملف الشخصي",
+    "logout": "تسجيل الخروج",
+    "login": "تسجيل الدخول",
+    "settings": "الإعدادات",
+    "language": "اللغة",
+    "users": "المستخدمون",
+    "cases": "الحالات",
+    "feedback": "الملاحظات",
+    "desktopSidebarHint": "💡 على الكمبيوتر تتوفر شريط جانبي للتنقل السريع"
+  },
+  "welcome": {
+    "title": "مرحبًا بكم في منصة التعلم بالذكاء الاصطناعي",
+    "subtitle": "طوّر مهاراتك من خلال محاكاة تفاعلية مع الذكاء الاصطناعي"
+  },
+  "home": {
+    "goToDashboard": "الانتقال إلى التعلم",
+    "startLearning": "ابدأ التعلم",
+    "learnMore": "اعرف المزيد",
+    "features": {
+      "title": "لماذا تختار منصتنا؟",
+      "subtitle": "تقنيات ذكاء اصطناعي مبتكرة من أجل تعلم فعّال إلى أقصى حد",
+      "aiPersonas": {
+        "title": "شخصيات الذكاء الاصطناعي",
+        "description": "محاكاة تفاعلية مع محاورين أذكياء يعملون بالذكاء الاصطناعي"
+      },
+      "targetedLearning": {
+        "title": "تعلم موجه",
+        "description": "سيناريوهات مخصصة لتطوير مهارات محددة"
+      },
+      "teamwork": {
+        "title": "العمل الجماعي",
+        "description": "تعلم التفاعل الفعّال داخل الفريق"
+      }
+    },
+    "courses": {
+      "title": "الدورات الشائعة",
+      "subtitle": "أكثر البرامج التدريبية طلبًا",
+      "viewAll": "عرض الكل",
+      "students": "طالبًا",
+      "start": "ابدأ",
+      "noCourses": "لا توجد دورات متاحة"
+    },
+    "cta": {
+      "title": "هل أنت مستعد لبدء التعلم؟",
+      "subtitle": "انضم إلى آلاف المحترفين الذين يطورون مهاراتهم بالفعل"
+    }
+  },
+  "common": {
+    "loading": "جارٍ التحميل...",
+    "back": "Back",
+    "pagination": {
+      "previous": "السابق",
+      "next": "التالي",
+      "goToPreviousPage": "الانتقال إلى الصفحة السابقة",
+      "goToNextPage": "الانتقال إلى الصفحة التالية"
+    }
+  },
+  "login": {
+    "title": "تسجيل الدخول إلى النظام",
+    "description": "سجّل الدخول إلى النظام",
+    "username": "اسم المستخدم",
+    "password": "كلمة المرور",
+    "submit": "تسجيل الدخول",
+    "admin": "مسؤول",
+    "member": "مشارك"
+  },
+  "admin": {
+    "sidebar": {
+      "title": "لوحة المسؤول",
+      "subtitle": "منصة التعلم بالذكاء الاصطناعي",
+      "navigation": "التنقل",
+      "home": "الرئيسية",
+      "users": "المستخدمون",
+      "caseManagement": "إدارة الحالات",
+      "feedback": "الملاحظات"
+    },
+    "dashboard": {
+      "title": "لوحة المسؤول",
+      "welcome": "أهلًا بك",
+      "overview": "نظرة عامة على النشاط",
+      "filters": "المرشحات",
+      "search": "بحث",
+      "casesLaunchedWeekly": "الحالات التي تم إطلاقها هذا الأسبوع",
+      "recentActivity": "النشاط الأخير",
+      "recentActivityDescription": "الإجراءات الأخيرة للمستخدمين في النظام",
+      "viewAll": "عرض الكل",
+      "viewLess": "عرض أقل",
+      "noRecentActivity": "لا يوجد نشاط حديث",
+      "loadingActivity": "جارٍ تحميل النشاط...",
+      "quickActions": "إجراءات سريعة",
+      "quickActionsDescription": "العمليات الرئيسية للمسؤول",
+      "createUser": "إنشاء مستخدم",
+      "createCase": "إنشاء حالة",
+      "viewFeedback": "عرض الملاحظات",
+      "systemAnalytics": "تحليلات النظام",
+      "systemNotifications": "إشعارات النظام"
+    },
+    "activityActions": {
+      "startedSimulation": "بدأ المحاكاة",
+      "completedSimulation": "أنهى المحاكاة",
+      "uploadedRecording": "حمّل تسجيلًا"
+    },
+    "timeAgo": {
+      "justNow": "الآن",
+      "minutesAgo": "قبل {{count}} دقيقة",
+      "hoursAgo": "قبل {{count}} ساعة",
+      "daysAgo": "قبل {{count}} يوم"
+    },
+    "stats": {
+      "totalUsers": "إجمالي المستخدمين",
+      "activeSimulations": "المحاكاة النشطة",
+      "completedSimulations": "المحاكاة المنجزة",
+      "totalChats": "إجمالي المحادثات",
+      "newUsersThisWeek": "مستخدمون جدد هذا الأسبوع",
+      "newSimulationsThisWeek": "بدأت هذا الأسبوع",
+      "completedThisWeek": "اكتملت هذا الأسبوع",
+      "newChatsThisWeek": "محادثات جديدة هذا الأسبوع"
+    },
+    "activities": {
+      "completedSimulation": "أنهى المحاكاة",
+      "startedSimulation": "بدأت المحاكاة",
+      "leftFeedback": "ترك ملاحظة",
+      "registered": "سجّلت",
+      "timeAgo": {
+        "minutes": "قبل {{count}} دقيقة",
+        "hours": "قبل {{count}} ساعة"
+      }
+    }
+  },
+  "member": {
+    "dashboard": {
+      "welcome": "أهلًا بك",
+      "selectCase": "اضغط «ابدأ» للمتابعة",
+      "learningCases": "الحالات التدريبية",
+      "searchCases": "بحث في الحالات...",
+      "startWorking": "ابدأ",
+      "loading": "جارٍ التحميل...",
+      "noCases": "لا توجد حالات متاحة",
+      "bannerSubtitle": "أكمل الحالة المُسندة قبل الموعد النهائي",
+      "deadlineLabel": "الموعد النهائي",
+      "deadlineRemaining": "تبقّى {{count}} يومًا",
+      "deadlinePassed": "انقضى الموعد النهائي",
+      "deadlineNone": "بدون حد",
+      "statsAssigned": "الحالات المُسندة",
+      "statsCompleted": "مكتمل",
+      "statsDaysLeft": "أيام حتى الموعد النهائي",
+      "sectionLearningCase": "حالة تدريبية",
+      "cardDefaultKind": "محاكاة تفاوض",
+      "cardAccessUntil": "الوصول حتى {{date}}"
+    },
+    "caseIntro": {
+      "roleInSimulation": "وصف الحالة",
+      "personaDescription": "دورك",
+      "caseOverview": "مع من تتحدث",
+      "roleSubtitle": "سياقك والملخص التجاري لهذه المفاوضات",
+      "personaSubtitle": "تعرّف على محاورك",
+      "overviewSubtitle": "ما الذي ينتظرك في هذه المحاكاة",
+      "preparation": "التحضير",
+      "case": "الحالة",
+      "stepBadge": "الخطوة {{current}} من {{total}}",
+      "starting": "جارٍ البدء...",
+      "continue": "متابعة",
+      "back": "رجوع",
+      "languageTitle": "اللغة",
+      "languageSubtitle": "اختر اللغة التي ستُجري بها المحاكاة",
+      "languageLabel": "لغة المحاكاة",
+      "languageHint": "تحدد هذه اللغة الواجهة والمحادثة مع الشخصية والتقرير النهائي. يمكنك تغييرها في أي وقت من الأعلى.",
+      "languageSaveError": "تعذر حفظ اللغة. يرجى اختيارها مرة أخرى."
+    },
+    "stats": {
+      "completedSimulations": "المحاكاة المنجزة",
+      "lastActivity": "آخر نشاط",
+      "overallProgress": "التقدم الإجمالي",
+      "daysAgo": "قبل {{count}} يوم"
+    }
+  },
+  "cases": {
+    "conflictManagement": {
+      "title": "إدارة النزاعات",
+      "description": "تعلّم حل النزاعات في مكان العمل بفعالية"
+    },
+    "leadership": {
+      "title": "القيادة والتحفيز",
+      "description": "تطوير مهارات القيادة وتحفيز الفريق"
+    },
+    "communication": {
+      "title": "التواصل الفعّال",
+      "description": "أساسيات التواصل المهني في بيئات الأعمال"
+    },
+    "duration": "{{count}} دقيقة",
+    "list": {
+      "title": "Cases",
+      "subtitle": "Choose a case to start simulation",
+      "searchPlaceholder": "Search cases...",
+      "refresh": "Refresh",
+      "errorLoading": "Error loading cases",
+      "failedToLoad": "Failed to load cases",
+      "loading": "Loading cases...",
+      "noMatchingSearch": "No cases found matching your search.",
+      "noCases": "No cases available.",
+      "badgeAvailable": "Available",
+      "createdLabel": "Created",
+      "startSimulation": "Start Simulation",
+      "accessDeniedTitle": "Access denied",
+      "accessDeniedBody": "You don't have access to this case. Contact your administrator.",
+      "runErrorTitle": "Error",
+      "runErrorBody": "Failed to start simulation. Please try again."
+    }
+  },
+  "status": {
+    "completed": "مكتمل",
+    "active": "نشط",
+    "inProgress": "قيد التنفيذ",
+    "available": "متاح",
+    "unavailable": "غير متاح",
+    "feedback": "ملاحظة",
+    "new": "جديد",
+    "unknown": "غير معروف",
+    "draft": "مسودة"
+  },
+  "users": {
+    "title": "إدارة المستخدمين",
+    "subtitle": "إدارة الحسابات وصلاحيات الوصول",
+    "addUser": "إضافة مستخدم",
+    "addUserShort": "إضافة",
+    "searchPlaceholder": "البحث عن مستخدمين...",
+    "filterByRole": "تصفية حسب الدور",
+    "filterByStatus": "تصفية حسب الحالة",
+    "allRoles": "كل الأدوار",
+    "allStatuses": "كل الحالات",
+    "userList": "قائمة المستخدمين",
+    "refresh": "تحديث",
+    "table": {
+      "id": "المعرّف",
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "username": "اسم المستخدم",
+      "role": "الدور",
+      "lastLogin": "آخر تسجيل دخول",
+      "simulations": "المحاكاة",
+      "status": "الحالة",
+      "actions": "الإجراءات",
+      "createdAt": "تم الإنشاء",
+      "noName": "بدون اسم"
+    },
+    "roles": {
+      "user": "مشارك",
+      "admin": "مسؤول",
+      "superadmin": "مسؤول رئيسي"
+    },
+    "statuses": {
+      "active": "نشط",
+      "blocked": "محظور"
+    },
+    "lastLogin": {
+      "never": "أبدًا",
+      "now": "الآن",
+      "hoursAgo": "قبل {{count}} ساعة",
+      "daysAgo": "قبل {{count}} يوم"
+    },
+    "actions": {
+      "viewProfile": "عرض الملف الشخصي",
+      "edit": "تعديل",
+      "block": "حظر",
+      "unblock": "إلغاء الحظر",
+      "delete": "حذف"
+    },
+    "modal": {
+      "addTitle": "إضافة مستخدم جديد",
+      "addDescription": "أنشئ حسابًا جديدًا للمستخدم في النظام",
+      "firstName": "الاسم",
+      "firstNamePlaceholder": "أدخل الاسم",
+      "lastName": "اسم العائلة",
+      "lastNamePlaceholder": "أدخل اسم العائلة",
+      "username": "البريد الإلكتروني",
+      "usernamePlaceholder": "user@example.com",
+      "role": "الدور",
+      "password": "كلمة المرور",
+      "passwordPlaceholder": "اتركها فارغة لإنشائها تلقائيًا",
+      "passwordCopied": "تم نسخ كلمة المرور!",
+      "cancel": "إلغاء",
+      "create": "إنشاء مستخدم",
+      "creating": "جارٍ الإنشاء..."
+    },
+    "toasts": {
+      "userCreated": "تم إنشاء المستخدم",
+      "userCreatedDesc": "تم إنشاء المستخدم {{username}} بنجاح.",
+      "generatedPassword": "كلمة مرور تم إنشاؤها",
+      "passwordDesc": "كلمة المرور: {{password}}",
+      "statusUpdated": "تم تحديث الحالة",
+      "statusUpdatedDesc": "تم تغيير حالة المستخدم إلى {{status}}.",
+      "userDeleted": "تم حذف المستخدم",
+      "userDeletedDesc": "تم حذف المستخدم من النظام.",
+      "error": "خطأ",
+      "errorCreating": "خطأ في إنشاء المستخدم",
+      "errorUpdating": "خطأ في تحديث الحالة",
+      "errorDeleting": "خطأ في حذف المستخدم",
+      "errorLoading": "تعذّر تحميل المستخدمين",
+      "cannotBlockAdmin": "لا يمكن حظر مسؤول أو مسؤول رئيسي",
+      "cannotDeleteAdmin": "لا يمكن حذف مسؤول أو مسؤول رئيسي"
+    },
+    "confirmDelete": "هل أنت متأكد من رغبتك في حذف هذا المستخدم؟",
+    "noUsersFound": "لم يتم العثور على مستخدمين",
+    "noUsersFoundDesc": "المستخدمون لا يطابقون معايير البحث الحالية. جرّب تغيير المرشحات أو كلمات البحث.",
+    "noSearchResults": "لا توجد نتائج",
+    "noSearchResultsDesc": "لم يُرجع بحثك أي نتائج. جرّب كلمات مفتاحية أخرى أو تحقق من الإملاء."
+  },
+  "caseManagement": {
+    "title": "إدارة الحالات",
+    "subtitle": "إدارة الحالات التدريبية والشخصيات",
+    "searchPlaceholder": "بحث في الحالات والشخصيات...",
+    "refresh": "تحديث",
+    "tabs": {
+      "cases": "الحالات",
+      "personas": "الشخصيات"
+    },
+    "addCase": "إضافة حالة",
+    "addPersona": "إضافة شخصية",
+    "loading": "جارٍ التحميل...",
+    "noCases": "لا توجد حالات",
+    "noPersonas": "لا توجد شخصيات",
+    "casesNotFound": "لم يتم العثور على حالات",
+    "personasNotFound": "لم يتم العثور على شخصيات",
+    "case": {
+      "status": {
+        "draft": "مسودة",
+        "active": "نشط"
+      },
+      "prompt": "Prompt",
+      "draftCopy": "نسخة مسودة",
+      "actions": {
+        "run": "تشغيل",
+        "edit": "تعديل",
+        "delete": "حذف",
+        "testWithAI": "اختبار بالذكاء الاصطناعي",
+        "createDraft": "إنشاء نسخة كاملة",
+        "applyChanges": "تطبيق التغييرات"
+      },
+      "createdAt": "تم الإنشاء",
+      "evaluationPrompt": "Prompt التقييم",
+      "drafts": "المسودات"
+    },
+    "persona": {
+      "status": {
+        "draft": "مسودة",
+        "active": "نشط"
+      },
+      "goal": "الهدف",
+      "actions": "الإجراءات",
+      "actionsCount": "الإجراءات ({{count}})",
+      "emotions": "المشاعر",
+      "createdAt": "تم الإنشاء",
+      "edit": "تعديل",
+      "delete": "حذف",
+      "more": "المزيد"
+    },
+    "aiTestRunner": {
+      "title": "اختبار الحالة بالذكاء الاصطناعي",
+      "testPersonaLabel": "شخصية اختبارية",
+      "selectPlaceholder": "اختر شخصية اختبارية",
+      "actions": {
+        "edit": "تعديل الشخصية",
+        "hideEdit": "إخفاء التعديل",
+        "run": "تشغيل الاختبار",
+        "running": "جارٍ الاختبار...",
+        "showTestPersona": "إضافة شخصية اختبارية",
+        "hideTestPersona": "إخفاء الشخصية الاختبارية",
+        "delete": "حذف",
+        "cancel": "إلغاء",
+        "save": "حفظ التغييرات",
+        "saving": "جارٍ الحفظ..."
+      },
+      "devStatus": {
+        "title": "ميزة قيد التطوير",
+        "description": "اختبار الحالات بالذكاء الاصطناعي قيد التطوير."
+      },
+      "collapsible": {
+        "log": "سجل إجراءات الذكاء الاصطناعي",
+        "dialogue": "الحوار النهائي"
+      },
+      "editPersonaCard": {
+        "title": "تعديل الشخصية",
+        "description": "حدّث بيانات الشخصية الاختبارية المختارة."
+      },
+      "testPersonaCard": {
+        "title": "شخصية اختبارية",
+        "description": "حدد الخصائص لاختبار الحالة بهذه الشخصية."
+      },
+      "fields": {
+        "name": "الاسم",
+        "role": "الدور",
+        "voice": "الصوت",
+        "description": "وصف الشخصية",
+        "goals": "أهداف الشخصية",
+        "voiceSample": "نص الرسالة الصوتية"
+      },
+      "placeholders": {
+        "name": "مثال: إيرينا",
+        "role": "مثال: رئيسة قسم",
+        "description": "صف سمات الشخصية والسياق.",
+        "goals": "ما الذي تسعى إليه الشخصية وما توقعاتها.",
+        "voiceSample": "نص يعكس أسلوب تواصل الشخصية.",
+        "voiceSelect": "اختر صوتًا"
+      },
+      "voiceSampleHint": "ميزة توليد الصوت غير متاحة بعد، لكن يمكنك إعداد النص مسبقًا.",
+      "confirmDelete": "هل أنت متأكد من رغبتك في حذف هذه الشخصية؟",
+      "toasts": {
+        "update": {
+          "title": "تم تحديث الشخصية",
+          "description": "تم حفظ التغييرات على الشخصية الاختبارية."
+        },
+        "delete": {
+          "title": "تم حذف الشخصية",
+          "description": "تم حذف الشخصية الاختبارية بنجاح."
+        },
+        "error": {
+          "title": "خطأ",
+          "run": "تعذّر تشغيل الاختبار",
+          "update": "تعذّر تحديث الشخصية",
+          "delete": "تعذّر حذف الشخصية",
+          "load": "تعذّر تحميل الشخصيات"
+        }
+      }
+    },
+    "toasts": {
+      "caseDeleted": "تم حذف الحالة",
+      "caseDeletedDesc": "تم حذف الحالة بنجاح.",
+      "personaDeleted": "تم حذف الشخصية",
+      "personaDeletedDesc": "تم حذف الشخصية بنجاح.",
+      "error": "خطأ",
+      "errorDeleting": "خطأ في الحذف",
+      "errorLoading": "تعذّر تحميل البيانات",
+      "draftCopyCreated": "تم إنشاء نسخة مسودة",
+      "draftCopyCreatedDesc": "تم إنشاء نسخة المسودة بنجاح. جارٍ إعادة التوجيه...",
+      "errorCreatingDraft": "تعذّر إنشاء نسخة المسودة",
+      "changesApplied": "تم تطبيق التغييرات",
+      "errorApplyingChanges": "تعذّر تطبيق التغييرات",
+      "errorStartingSimulation": "تعذّر بدء المحاكاة"
+    },
+    "applyDraft": {
+      "title": "تطبيق التغييرات من المسودة؟",
+      "description": "سيستبدل هذا الإجراء الحالة الأصلية بالتغييرات الموجودة في هذه المسودة. بعد تطبيق التغييرات سيتم حذف المسودة. لا يمكن التراجع عن هذا الإجراء.",
+      "cancel": "إلغاء",
+      "apply": "تطبيق التغييرات"
+    }
+  },
+  "feedback": {
+    "title": "إدارة الملاحظات",
+    "subtitle": "عرض وإدارة ملاحظات المستخدمين",
+    "refresh": "تحديث",
+    "searchPlaceholder": "بحث في الملاحظات...",
+    "feedbackEntries": "إدخالات الملاحظات ({{count}})",
+    "table": {
+      "dateTime": "التاريخ/الوقت",
+      "user": "المستخدم",
+      "page": "الصفحة",
+      "case": "الحالة",
+      "feedbackText": "نص الملاحظة",
+      "screenshot": "لقطة الشاشة",
+      "status": "الحالة",
+      "gradeAccepted": "التقييم مقبول",
+      "actions": "الإجراءات"
+    },
+    "screenshot": {
+      "noImage": "لا توجد صورة",
+      "error": "خطأ في تحميل الصورة",
+      "loadError": "تعذّر تحميل لقطة الشاشة",
+      "clickToView": "اضغط لعرضها بالحجم الكامل",
+      "title": "لقطة الشاشة",
+      "zoomIn": "تقريب",
+      "zoomOut": "تبعيد",
+      "reset": "إعادة ضبط التكبير",
+      "zoomLabel": "مستوى تكبير لقطة الشاشة",
+      "zoomHint": "اضبط التكبير بشريط التمرير أو الأزرار، واسحب للتنقل."
+    },
+    "caseContext": {
+      "title": "محتوى الحالة",
+      "caseName": "اسم الحالة",
+      "description": "الوصف"
+    },
+    "gradeStatus": {
+      "yes": "نعم",
+      "no": "لا",
+      "accepted": "مقبول",
+      "notAccepted": "غير مقبول",
+      "notApplicable": "غير منطبق"
+    },
+    "detail": {
+      "title": "تفاصيل الملاحظة",
+      "feedbackInfo": "معلومات الملاحظة",
+      "userInformation": "معلومات المستخدم",
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "source": "المصدر",
+      "role": "الدور",
+      "submitted": "تم الإرسال",
+      "gradeAccepted": "التقييم مقبول",
+      "caseId": "معرّف الحالة",
+      "personaId": "معرّف الشخصية",
+      "chatId": "معرّف المحادثة",
+      "feedbackText": "الملاحظة الكاملة",
+      "adminReview": "مراجعة المسؤول",
+      "addReview": "إضافة ملاحظة",
+      "currentStatus": "الحالة الحالية",
+      "savedNotes": "الملاحظات المحفوظة",
+      "markAsReviewed": "وضع علامة كمراجعة",
+      "markAs": "وضع علامة كـ",
+      "reviewed": "تمت المراجعة",
+      "pending": "قيد الانتظار",
+      "adminNotes": "ملاحظات المسؤول",
+      "addNotesPlaceholder": "أضف ملاحظاتك حول هذا التعليق...",
+      "saveNotes": "حفظ الملاحظات",
+      "saving": "جارٍ الحفظ...",
+      "characters": "حرفًا"
+    },
+    "filters": {
+      "allStatus": "كل الحالات",
+      "pending": "⏳ قيد الانتظار",
+      "reviewed": "✓ تمت المراجعة",
+      "filterByStatus": "تصفية حسب الحالة",
+      "filterBySource": "تصفية حسب المصدر",
+      "allSources": "كل المصادر"
+    },
+    "sourceTags": {
+      "simulation": "جلسة محاكاة",
+      "simulationResults": "نتائج المحاكاة",
+      "other": "مصدر آخر"
+    },
+    "anonymous": "مجهول",
+    "noResults": "لم يتم العثور على ملاحظات",
+    "noFeedback": "لا توجد ملاحظات",
+    "noFeedbackAvailable": "لا توجد ملاحظات متاحة\nلم يتم إرسال ملاحظات بعد. سيرى المستخدمون ملاحظاتهم هنا بعد إكمال المحاكاة.",
+    "loading": "جارٍ التحميل...",
+    "error": "خطأ",
+    "errorLoading": "تعذّر تحميل الملاحظات",
+    "toasts": {
+      "success": "نجاح",
+      "error": "خطأ",
+      "feedbackUpdated": "تم تحديث الملاحظة بنجاح",
+      "updateError": "تعذّر تحديث الملاحظة"
+    }
+  },
+  "equipmentTest": {
+    "title": "اختبار المعدات",
+    "description": "سنتحقق من معداتك قبل بدء المحاكاة",
+    "microphone": {
+      "title": "الميكروفون",
+      "description": "اختبار تسجيل الصوت",
+      "recording": "جارٍ التسجيل… تحدث في الميكروفون",
+      "getReady": "استعد للتحدث…",
+      "speakNow": "تحدث الآن",
+      "success": "الميكروفون يعمل بشكل صحيح",
+      "noSpeechDetected": "لم يتم اكتشاف كلام. من فضلك تحدث بوضوح أثناء الاختبار.",
+      "noAudioDetected": "لم يتم اكتشاف صوت. تحقق من الميكروفون وحاول مجددًا.",
+      "testFailed": "تعذّر إجراء اختبار الميكروفون. حاول مجددًا.",
+      "mp3NotSupported": "متصفحك لا يدعم إنشاء صوت MP3. استخدم متصفحًا يدعم تسجيل MP3.",
+      "selectDevice": "اختر الميكروفون:",
+      "selectPlaceholder": "اختر الميكروفون",
+      "audioLevel": "مستوى الصوت",
+      "unsupported": "الوصول إلى الميكروفون غير مدعوم في هذا المتصفح.",
+      "notFound": "لم يتم العثور على ميكروفون.",
+      "notReadable": "الميكروفون مشغول أو غير متاح.",
+      "permissionDenied": "تم رفض الوصول إلى الميكروفون.",
+      "invalidState": "الميكروفون في حالة غير صحيحة."
+    },
+    "speakers": {
+      "title": "السماعات",
+      "description": "اختبار تشغيل الصوت"
+    },
+    "camera": {
+      "title": "الكاميرا",
+      "description": "اختبار تسجيل الفيديو"
+    },
+    "screen": {
+      "title": "تسجيل الشاشة",
+      "description": "اسمح بتسجيل الشاشة للحفاظ على مظهر المحاكاة."
+    },
+    "status": {
+      "ready": "جاهز",
+      "error": "خطأ",
+      "testing": "جارٍ الاختبار..."
+    },
+    "buttons": {
+      "testMicrophone": "اختبار الميكروفون",
+      "retryMicrophone": "إعادة المحاولة",
+      "testAgain": "اختبر مجددًا",
+      "testSpeakers": "اختبار الصوت",
+      "testCamera": "اختبار الكاميرا",
+      "testScreen": "اختبار الشاشة",
+      "testing": "جارٍ الاختبار..."
+    },
+    "footer": {
+      "allTestsRequired": "أكمل جميع الاختبارات للمتابعة",
+      "startSimulation": "بدء المحاكاة",
+      "waitingForTests": "في انتظار الاختبارات..."
+    },
+    "transcription": {
+      "label": "النص المعرَّف:"
+    }
+  },
+  "userProfile": {
+    "title": "ملف المستخدم",
+    "subtitle": "إدارة الحساب والإعدادات",
+    "backToList": "العودة إلى القائمة",
+    "userNotFound": "لم يتم العثور على المستخدم",
+    "loading": "جارٍ التحميل...",
+    "status": {
+      "active": "نشط",
+      "blocked": "محظور"
+    },
+    "role": {
+      "admin": "مسؤول",
+      "user": "مشارك",
+      "superadmin": "مسؤول رئيسي"
+    },
+    "basicInfo": {
+      "title": "المعلومات الأساسية",
+      "edit": "تعديل",
+      "cancel": "إلغاء",
+      "save": "حفظ",
+      "firstName": "الاسم",
+      "lastName": "اسم العائلة",
+      "email": "البريد الإلكتروني",
+      "role": "الدور",
+      "password": "كلمة المرور",
+      "id": "المعرّف",
+      "created": "تم الإنشاء",
+      "lastLogin": "آخر تسجيل دخول",
+      "never": "أبدًا",
+      "status": "الحالة"
+    },
+    "permissions": {
+      "title": "إدارة الصلاحيات",
+      "subtitle": "إعداد وصول المستخدم وقيوده",
+      "caseAccess": "الوصول إلى الحالات",
+      "allCases": "كل الحالات",
+      "limitedCases": "المُسندة فقط ({{count}})",
+      "noCases": "بدون وصول",
+      "accountExpiry": "صلاحية الحساب",
+      "launchLimit": "حد التشغيلات في اليوم",
+      "simulationsCount": "الحد الأقصى لمدة الجلسة (دقيقة)",
+      "simulationsCountPlaceholder": "ميزة قيد التطوير",
+      "noLimit": "بدون حد",
+      "editNote": "ستتاح تعديلات الإعدادات المتقدمة في الإصدارات القادمة",
+      "savePermissions": "حفظ الصلاحيات",
+      "resetToDefault": "إعادة الضبط إلى الافتراضي"
+    },
+    "recordings": {
+      "title": "تسجيلات الجلسات",
+      "subtitle": "تسجيلات الصوت والفيديو لمحاكاة المستخدم (ميزة قيد التطوير)",
+      "mockBadge": "بيانات تجريبية",
+      "view": "عرض",
+      "viewReport": "عرض التقرير",
+      "viewWebcam": "عرض كاميرا الويب",
+      "viewScreen": "عرض المحاكاة",
+      "copyLink": "نسخ الرابط",
+      "videoAudio": "صوت + فيديو",
+      "videoOnly": "فيديو فقط",
+      "audioOnly": "صوت فقط",
+      "webcamLabel": "تسجيل كاميرا الويب",
+      "screenLabel": "تسجيل المحاكاة",
+      "complete": "مكتمل",
+      "incomplete": "غير مكتمل",
+      "noRecordings": "لم يتم العثور على تسجيلات للجلسات",
+      "loading": "جارٍ تحميل التسجيلات...",
+      "count": "{{count}} تسجيل",
+      "count_plural": "{{count}} تسجيلات",
+      "count_many": "{{count}} تسجيلًا"
+    },
+    "history": {
+      "title": "سجل المحاكاة",
+      "subtitle": "نتائج إنجاز الحالات التدريبية",
+      "mockBadge": "بيانات تجريبية",
+      "date": "التاريخ",
+      "caseName": "اسم الحالة",
+      "status": "الحالة",
+      "duration": "المدة",
+      "score": "التقييم",
+      "actions": "الإجراءات",
+      "viewLogs": "عرض السجلات",
+      "viewReport": "عرض التقرير",
+      "viewRecording": "عرض التسجيل",
+      "completed": "مكتمل",
+      "incomplete": "غير مكتمل",
+      "noHistory": "لم يتم العثور على سجل للمحاكاة",
+      "loading": "جارٍ تحميل سجل المحاكاة...",
+      "count": "{{count}} محاكاة",
+      "count_plural": "{{count}} محاكاتان",
+      "count_many": "{{count}} محاكاة",
+      "minLabel": "د",
+      "secLabel": "ث"
+    },
+    "assignedCases": {
+      "title": "الحالات المُسندة",
+      "subtitle": "الحالات المتاحة للمستخدم لإنجازها",
+      "loading": "جارٍ تحميل الحالات...",
+      "noCases": "لا توجد حالات مُسندة",
+      "draft": "مسودة",
+      "active": "نشط",
+      "created": "تم الإنشاء",
+      "view": "عرض",
+      "assignCase": "إسناد حالة",
+      "allAccessNote": "للمستخدم وصول إلى جميع الحالات"
+    },
+    "assignCaseModal": {
+      "title": "إسناد حالة",
+      "subtitle": "أضف حالة جديدة لينجزها المستخدم",
+      "selectCase": "اختر حالة",
+      "placeholder": "اختر الحالة المراد إسنادها",
+      "timeLimit": "الحد الزمني (ساعات)",
+      "timeLimitNote": "سيظل الوصول إلى الحالة فعّالًا خلال الوقت المحدد",
+      "cancel": "إلغاء",
+      "assign": "إسناد الحالة",
+      "invitationSent": "تم إرسال الدعوة",
+      "sendInvitation": "إرسال الدعوة",
+      "copyAll": "نسخ الكل",
+      "done": "تم",
+      "emailLanguage": "لغة البريد",
+      "firstName": "الاسم الأول",
+      "lastName": "اسم العائلة",
+      "email": "البريد الإلكتروني",
+      "firstNamePlaceholder": "أدخل الاسم الأول",
+      "lastNamePlaceholder": "أدخل اسم العائلة",
+      "editBodyLabel": "تحرير نص الرسالة (HTML، العناصر النائبة المتاحة: ",
+      "editorPlaceholder": "نص الرسالة...",
+      "previewLabel": "معاينة الرسالة",
+      "previewFrom": "من:",
+      "previewTo": "إلى:",
+      "previewSubject": "الموضوع:",
+      "resultMessage": "تم إرسال الرسالة إلى {{email}}. احفظ أو انسخ بيانات تسجيل الدخول أدناه — لن نعرض كلمة المرور مرة أخرى.",
+      "loginLabel": "اسم المستخدم",
+      "passwordLabel": "كلمة المرور",
+      "linkLabel": "الرابط",
+      "passwordAlreadyGenerated": "(تم إنشاؤها سابقًا)",
+      "passwordNotAvailable": "(تم إنشاؤها بالفعل سابقًا)",
+      "toastCopied": "تم نسخ {{label}}",
+      "toastCopyFailed": "تعذر النسخ",
+      "credentialsLabel": "بيانات الاعتماد",
+      "toastInvitationSent": "تم إرسال الدعوة",
+      "toastInvitationDescription": "تم إرسال الرسالة إلى {{email}}",
+      "toastInvitationFailed": "تعذر إرسال الدعوة",
+      "toastInvitationFailedDescription": "يرجى المحاولة مرة أخرى لاحقًا",
+      "previewName": "Name Surname"
+    },
+    "passwordModal": {
+      "title": "تغيير كلمة المرور",
+      "subtitle": "أنشئ كلمة مرور جديدة للمستخدم",
+      "newPassword": "كلمة مرور جديدة",
+      "placeholder": "اضغط «إنشاء» لتوليد كلمة المرور",
+      "generate": "إنشاء",
+      "copy": "نسخ",
+      "cancel": "إلغاء",
+      "save": "حفظ كلمة المرور",
+      "passwordChanged": "تم تغيير كلمة المرور بنجاح",
+      "passwordChangeError": "تعذّر تغيير كلمة المرور"
+    },
+    "caseSelection": {
+      "title": "اختيار الحالات",
+      "subtitle": "اختر الحالات التي سيكون للمستخدم وصول إليها",
+      "selectAll": "تحديد الكل",
+      "deselectAll": "إلغاء تحديد الكل",
+      "selected": "محدد",
+      "noCases": "لا توجد حالات متاحة",
+      "draft": "مسودة",
+      "cancel": "إلغاء",
+      "save": "حفظ"
+    },
+    "toasts": {
+      "success": "نجاح",
+      "error": "خطأ",
+      "profileUpdated": "تم تحديث ملف المستخدم",
+      "profileUpdateError": "تعذّر تحديث الملف",
+      "loadError": "تعذّر تحميل بيانات المستخدم",
+      "permissionsUpdated": "تم تحديث صلاحيات المستخدم",
+      "permissionsUpdateError": "تعذّر تحديث الصلاحيات",
+      "caseAssigned": "تم إسناد الحالة بنجاح",
+      "caseAssignError": "تعذّر إسناد الحالة",
+      "caseUnassigned": "تم حذف الحالة بنجاح",
+      "caseUnassignError": "تعذّر حذف الحالة"
+    }
+  },
+  "simulation": {
+    "endSuggestion": {
+      "title": "يمكنك إنهاء هذه المحادثة",
+      "description": "يبدو أن الحوار وصل إلى نهاية طبيعية. اضغط Finish لإنهاء المحاكاة، أو استمر في الحديث.",
+      "finish": "Finish"
+    },
+    "loadingCase": "جارٍ تحميل الحالة...",
+    "errors": {
+      "forbiddenTitle": "تم رفض الوصول",
+      "forbiddenMessage": "ليس لديك وصول إلى هذه الحالة. اتصل بالمسؤول للحصول على الوصول.",
+      "notFoundTitle": "لم يتم العثور على الحالة",
+      "notFoundMessage": "هذه الحالة غير متاحة أو غير موجودة. قد تكون قد حُذفت.",
+      "authTitle": "التفويض",
+      "authMessage": "انتهت الجلسة. من فضلك سجّل الدخول مجددًا.",
+      "loadErrorTitle": "خطأ في التحميل",
+      "loadErrorMessage": "تعذّر تحميل الحالة. حاول تحديث الصفحة."
+    },
+    "backToCases": "العودة إلى الحالات",
+    "titleWithCase": "المحاكاة: {{title}}",
+    "sidebar": {
+      "userRole": "دورك",
+      "botMessage": "رسالة من البوت",
+      "introForUser": "مقدمة للمستخدم",
+      "personaDescription": "وصف الشخصية"
+    },
+    "personaNameFallback": "مساعد الذكاء الاصطناعي",
+    "personaAltFallback": "ذكاء اصطناعي",
+    "initialBotMessage": "مرحبًا! لنبدأ المحاكاة.",
+    "endButton": "إنهاء",
+    "ending": "جارٍ الإنهاء...",
+    "inputPlaceholder": "اكتب ردك...",
+    "connectionError": "خطأ في الاتصال بالخادم. من فضلك أعد تحميل الصفحة.",
+    "connectionReconnecting": "انقطع الاتصال. جارٍ إعادة الاتصال — ستُرسل رسالتك تلقائيًا.",
+    "replyTimeout": "لم يصل الرد في الوقت المناسب. تحقق من الاتصال وأرسل الرسالة مرة أخرى.",
+    "errorGeneric": "حدث خطأ ما. حاول إرسال الرسالة مرة أخرى.",
+    "nonVerbalActionsButton": "إجراءات غير لفظية",
+    "nonVerbalActions": {
+      "lookAround": "النظر حولك",
+      "nod": "الإيماء",
+      "shakeHead": "هز الرأس",
+      "pauseThink": "أخذ استراحة",
+      "showConfusion": "إظهار الارتباك"
+    },
+    "endReminder": {
+      "message": "إذا كنت مستعدًا لإنهاء المحادثة، فيرجى الضغط على «إنهاء».",
+      "dismiss": "إغلاق"
+    },
+    "endDialog": {
+      "title": "إنهاء المحاكاة؟",
+      "description": "هل أنت متأكد من رغبتك في إنهاء المحاكاة الحالية؟ سيتم حفظ كل التقدم.",
+      "recordingWarning": "⚠️ سيتم إيقاف تسجيل الفيديو ورفعه.",
+      "continue": "متابعة",
+      "endSimulation": "إنهاء المحاكاة"
+    },
+    "beforeUnloadWarning": "يجري تسجيل الفيديو. إذا غادرت الآن، سيتم إيقاف التسجيل ورفعه.",
+    "feedbackDialog": {
+      "title": "ملاحظات",
+      "description": "شارك انطباعاتك واقتراحاتك حول المحاكاة",
+      "label": "ملاحظتك",
+      "placeholder": "صف انطباعاتك أو اقتراحاتك أو المشاكل...",
+      "cancel": "إلغاء",
+      "submit": "إرسال",
+      "addScreenshot": "إضافة لقطة شاشة",
+      "capturingScreenshot": "جارٍ الالتقاط...",
+      "screenshotAdded": "✓ تمت إضافة لقطة الشاشة"
+    },
+    "personaInfo": {
+      "title": "معلومات الشخصية",
+      "description": "معلومات تفصيلية عن شخصية الذكاء الاصطناعي في هذه المحاكاة",
+      "aboutPersona": "عن الشخصية",
+      "goals": "الأهداف",
+      "currentState": "الحالة الحالية",
+      "online": "متصل",
+      "feedback": "ملاحظة",
+      "availableEmotions": "المشاعر المتاحة",
+      "nonVerbalActions": "الإجراءات غير اللفظية",
+      "simulationContext": "سياق المحاكاة",
+      "case": "الحالة",
+      "close": "إغلاق",
+      "role": "الدور",
+      "noDescription": "لا يوجد وصف",
+      "noGoals": "لا توجد أهداف"
+    },
+    "inputMode": {
+      "text": "نص",
+      "audio": "صوت",
+      "audioRecording": "تسجيل صوتي"
+    },
+    "stepButtons": {
+      "step1": "1. وصف الحالة",
+      "step2": "2. دورك",
+      "step3": "3. مع من تتحدث"
+    },
+    "actionButtons": {
+      "Visit production site": "زيارة الإنتاج",
+      "Show detailed price proposal": "عرض تفاصيل التسعير",
+      "Share internal volume commitment": "مشاركة الالتزام بالكميات",
+      "Summarise and move to closure": "تلخيص وإغلاق"
+    },
+    "rightPanel": {
+      "actions": "الإجراءات",
+      "brief": "ملخصك",
+      "progress": "التقدم",
+      "currentPhase": "المرحلة الحالية",
+      "phaseHint": "المرحلة {{current}} من {{total}} — {{name}}"
+    },
+    "confirmAction": {
+      "title": "تأكيد الإجراء",
+      "description": "هل أنت متأكد من رغبتك في تنفيذ هذا الإجراء؟ سيتم إرساله إلى المحادثة.",
+      "cancel": "إلغاء",
+      "confirm": "نعم، نفّذ"
+    },
+    "navigation": {
+      "button": "التنقل في المحاكاة",
+      "title": "التنقل في المحاكاة",
+      "description": "اتبع هذه الخطوات أثناء المحاكاة",
+      "empty": "لم يتم تحديد تنقل لهذه المحاكاة."
+    },
+    "nonVerbalActionsMobile": "الإجراءات",
+    "voiceMessage": "رسالة صوتية",
+    "recordingActive": "التسجيل نشط...",
+    "userLabel": "أنت",
+    "micAccessError": "تعذّر الوصول إلى الميكروفون",
+    "timerWarning": {
+      "title": "تحذير بشأن الوقت",
+      "message": "لديك 10 دقائق متبقية لإرسال الرسالة",
+      "ok": "مفهوم"
+    },
+    "divider": {
+      "postVisit": "The visit took place, the conversation continues after the visit"
+    },
+    "aiThinkingLong": "يستغرق {{name}} وقتًا أطول من المعتاد، أمهله لحظة…",
+    "finishingResults": "نُنهي المحاكاة ونُجهّز نتائجك. قد يستغرق ذلك حتى دقيقة…"
+  },
+  "videoRecorder": {
+    "consentDialog": {
+      "title": "الموافقة على التسجيل",
+      "description": "لتسجيل المحاكاة يلزم الوصول إلى كاميرا الويب والميكروفون. سيتم حفظ التسجيل مع نتائج المحاكاة.",
+      "question": "هل توافق على تسجيل الفيديو والصوت؟",
+      "decline": "رفض",
+      "accept": "أوافق"
+    },
+    "recording": {
+      "started": "بدأ التسجيل",
+      "startedDesc": "كاميرا الويب الخاصة بك تسجّل المحاكاة",
+      "stopped": "تم إيقاف التسجيل",
+      "stoppedDesc": "جارٍ رفع الفيديو إلى الخادم...",
+      "inProgress": "جارٍ تسجيل المحاكاة"
+    },
+    "upload": {
+      "progress": "جارٍ رفع التسجيل إلى الخادم...",
+      "completed": "اكتمل الرفع",
+      "completedDesc": "تم حفظ الفيديو بنجاح ({{size}} MB)"
+    },
+    "errors": {
+      "cameraAccess": "خطأ",
+      "cameraAccessDesc": "تعذّر الوصول إلى الكاميرا. تحقق من الأذونات.",
+      "stopRecording": "خطأ",
+      "stopRecordingDesc": "تعذّر إيقاف التسجيل",
+      "uploadFailed": "فشل الرفع",
+      "uploadFailedDesc": "تعذّر رفع الفيديو إلى الخادم"
+    },
+    "confirmCloseWhileRecording": "Recording will stop when you close the browser. Are you sure?"
+  },
+  "sessionRecorder": {
+    "title": "تسجيل المحاكاة",
+    "description": "يسجّل شاشة المحاكاة والمحادثة للمراجعة لاحقًا.",
+    "start": "بدء تسجيل الشاشة",
+    "stop": "إيقاف تسجيل الشاشة",
+    "inProgress": "جارٍ تسجيل الشاشة...",
+    "uploading": "جارٍ رفع تسجيل المحاكاة...",
+    "uploadCompleted": "تم حفظ تسجيل المحاكاة",
+    "uploadCompletedDesc": "تم رفع تسجيل الشاشة ({{size}} MB)",
+    "uploadFailed": "فشل الرفع",
+    "uploadFailedDesc": "تعذّر رفع تسجيل المحاكاة",
+    "startFailed": "تعذّر بدء تسجيل الشاشة",
+    "startFailedDesc": "حظر المتصفح التقاط الشاشة. اسمح بالوصول وحاول مرة أخرى.",
+    "stopFailed": "تعذّر إيقاف تسجيل الشاشة",
+    "stopFailedDesc": "لم يتم إيقاف عمل المسجّل بشكل صحيح"
+  },
+  "caseEditor": {
+    "title": {
+      "edit": "تعديل الحالة",
+      "create": "إنشاء حالة جديدة"
+    },
+    "back": "رجوع",
+    "testDraft": "اختبار المسودة",
+    "testCase": "اختبار الحالة",
+    "saveDraft": "حفظ المسودة",
+    "saveCase": "حفظ الحالة",
+    "saving": "جارٍ الحفظ...",
+    "draftCopy": "مسودة النسخة",
+    "applying": "جارٍ التطبيق...",
+    "applyDraft": "نشر المسودة",
+    "applyChanges": "تطبيق التغييرات",
+    "cancel": "إلغاء",
+    "saveChanges": "حفظ التغييرات",
+    "applyDraftTitle": "تطبيق تغييرات المسودة؟",
+    "applyDraftDescription": "سيستبدل هذا الإجراء الحالة الأصلية بالتغييرات الموجودة في هذه المسودة. ستُحذف المسودة بعد تطبيق التغييرات. لا يمكن التراجع عن هذا الإجراء.",
+    "finalEvaluationSystem": "التقييم النهائي (النظام)",
+    "toasts": {
+      "caseUpdated": "تم تحديث الحالة",
+      "caseCreated": "تم إنشاء الحالة",
+      "loadError": "تعذّر تحميل الحالة",
+      "saveError": "تعذّر حفظ الحالة"
+    },
+    "tabs": {
+      "basic": "أساسي",
+      "persona": "الشخصية",
+      "scenarios": "السيناريوهات",
+      "evaluation": "التقييم",
+      "finalEvaluation": "التقييم النهائي"
+    },
+    "basic": {
+      "title": "المعلومات الأساسية",
+      "description": "البيانات الأساسية عن الحالة التدريبية",
+      "caseTitle": "اسم الحالة",
+      "caseTitlePlaceholder": "أدخل اسم الحالة",
+      "userDescription": "مقدمة للمستخدم",
+      "userDescriptionPlaceholder": "الوصف الذي يراه المستخدم النهائي",
+      "userDescriptionHint": "النص المعروض للمستخدم في الوصف.",
+      "roleInSimulation": "وصف الحالة",
+      "roleInSimulationPlaceholder": "أدخل وصف الحالة",
+      "roleInSimulationHint": "وصف عام لموقف الحالة بالنسبة للمستخدم.",
+      "personaDescription": "دورك",
+      "personaDescriptionPlaceholder": "أدخل وصف دور المستخدم",
+      "personaDescriptionHint": "صف الدور الذي سيؤديه المستخدم في المحاكاة.",
+      "caseOverview": "مع من تتحدث",
+      "caseOverviewPlaceholder": "أدخل وصف المحاور",
+      "caseOverviewHint": "وصف الشخصية التي سيتحدث معها المستخدم.",
+      "aiDescription": "تدفق المحادثة",
+      "aiDescriptionPlaceholder": "السياق الكامل لعمل الذكاء الاصطناعي، بما في ذلك الأهداف وسلوك الحوار",
+      "aiDescriptionHint": "وصف سياق عمل الذكاء الاصطناعي، بما في ذلك الأهداف ومنطق الحوار.",
+      "evaluationPrompt": "Prompt التقييم",
+      "evaluationPromptPlaceholder": "اختر prompt التقييم",
+      "noEvaluationPrompt": "لا يوجد prompt تقييم",
+      "evaluationModel": "نموذج الذكاء الاصطناعي للتقييم",
+      "selectAIModel": "اختر نموذج الذكاء الاصطناعي",
+      "aiModelForCategories": "نموذج الذكاء الاصطناعي للتقييم حسب الفئات",
+      "finalEvaluationPrompt": "التعليمة النهائية للذكاء الاصطناعي",
+      "finalEvaluationPromptPlaceholder": "اختر التعليمة النهائية للذكاء الاصطناعي",
+      "noFinalEvaluationPrompt": "لم يتم العثور على التعليمة النهائية للذكاء الاصطناعي",
+      "finalEvaluationModel": "نموذج الذكاء الاصطناعي للتقييم النهائي",
+      "aiModelForFinalSummary": "نموذج الذكاء الاصطناعي للتقييم النهائي",
+      "llm1Model": "نموذج LLM 1",
+      "llm1ModelHint": "النموذج الرئيسي للذكاء الاصطناعي لمعالجة الحالة",
+      "llm2Model": "نموذج LLM 2",
+      "llm2ModelHint": "نموذج إضافي للذكاء الاصطناعي لمعالجة الحالة",
+      "userActions": {
+        "title": "إجراءات المستخدم",
+        "helper": "قائمة الإجراءات المتاحة للمستخدم للاختيار منها.",
+        "add": "إضافة إجراء",
+        "addTitle": "إضافة إجراء للمستخدم",
+        "name": "اسم الإجراء",
+        "namePlaceholder": "أدخل اسم الإجراء",
+        "descriptionLabel": "الوصف",
+        "descriptionPlaceholder": "صف ما يفعله هذا الإجراء للمستخدم",
+        "shortDescriptionLabel": "تسمية قصيرة للزر",
+        "shortDescriptionPlaceholder": "مثال: دعوة لزيارة الإنتاج",
+        "shortDescriptionHint": "تظهر تحت اسم الزر في اللوحة اليمنى للمحاكاة.",
+        "chatMessageLabel": "Chat action log",
+        "chatMessagePlaceholder": "مثال: أرغب في زيارة إنتاجكم",
+        "chatMessageHint": "سيتم إرسال هذا النص إلى المحادثة كرسالة من المستخدم بعد تأكيد الإجراء. يمكن إضافة علامات <!-- uk --> ... <!-- en --> ... للتعريب.",
+        "popupTextLabel": "Pop-up text",
+        "popupTextPlaceholder": "مثال: Visit the customer's processing operation to understand trimming...",
+        "popupTextHint": "نص نافذة التأكيد. إذا كان فارغًا سيتم عرض «هل أنت متأكد؟» عام. يمكن إضافة علامات <!-- uk --> ... <!-- en --> ... للتعريب.",
+        "submit": "إضافة إجراء",
+        "emptyState": "لم تتم إضافة إجراءات بعد.",
+        "validationError": "من فضلك املأ اسم الإجراء ووصفه",
+        "editTitle": "تعديل إجراء المستخدم",
+        "update": "تحديث الإجراء",
+        "cancel": "إلغاء",
+        "updateSuccess": "تم تحديث الإجراء بنجاح"
+      },
+      "scenarioBehaviorRulesCoarse": "قواعد سلوك السيناريو (عامة)",
+      "scenarioBehaviorRulesCoarsePlaceholder": "أدخل قواعد السلوك العامة للسيناريو...",
+      "scenarioBehaviorRulesCoarseHint": "حدد التوجيهات السلوكية العامة التي يجب أن يتبعها الذكاء الاصطناعي خلال السيناريو",
+      "scenarioBehaviorRulesFull": "قواعد سلوك السيناريو (الكاملة)",
+      "scenarioBehaviorRulesFullPlaceholder": "أدخل قواعد سلوك مفصلة للسيناريو...",
+      "scenarioBehaviorRulesFullHint": "قدّم تعليمات سلوكية شاملة، بما في ذلك ردود فعل محددة وشروط وحالات حدية",
+      "simulationNavigation": "التنقل في المحاكاة",
+      "simulationNavigationPlaceholder": "أضف تعليمات للمستخدم (الخطوات، الوقت، ما يجب الانتباه إليه)",
+      "simulationNavigationHint": "مثال: 1) ابدأ بالتحية وأرسل أول رسالة؛ 2) راقب المؤقت وأنهِ ضمن الوقت المحدد.",
+      "briefItems": {
+        "title": "الإحاطة (اللوحة اليمنى للمحاكاة)",
+        "hint": "أزواج label/value تُعرض في كتلة «ملخصك» على يمين المحادثة. مثال: Reference price → €4.50/kg.",
+        "add": "إضافة سطر",
+        "labelPlaceholder": "Reference price",
+        "valuePlaceholder": "€4.50/kg"
+      },
+      "phases": {
+        "title": "المراحل (Progress widget)",
+        "hint": "مراحل المحاكاة التي تُعرض في عنصر التقدم. اختر ردود فعل الشخصية التي تنطبق على كل مرحلة.",
+        "add": "إضافة مرحلة",
+        "idPlaceholder": "opening",
+        "namePlaceholder": "Opening",
+        "reactionsLabel": "ردود الفعل في هذه المرحلة:",
+        "noReactions": "أضف أولًا ردود فعل الشخصية في علامة التبويب «الشخصية»."
+      }
+    },
+    "persona": {
+      "title": "الشخصية",
+      "description": "إعداد شخصية الذكاء الاصطناعي لهذه الحالة (شخصية واحدة = حالة واحدة)",
+      "name": "اسم الشخصية",
+      "namePlaceholder": "اسم الشخصية",
+      "role": "الدور",
+      "rolePlaceholder": "مثلًا، رئيس، مدير، موظف",
+      "roleExample": "مثلًا، رئيس، مدير، موظف",
+      "voice": "الصوت",
+      "voicePlaceholder": "اختر صوتًا",
+      "voiceSampleLabel": "نص للاستماع",
+      "voiceSamplePlaceholder": "أدخل نصًا لتشغيله بالصوت المختار",
+      "voiceSampleHint": "استخدم جملة قياسية أو أدخل جملتك للاستماع إلى الصوت المختار.",
+      "voiceSampleButton": "استماع للصوت",
+      "voiceSampleGenerating": "جارٍ إنشاء العينة...",
+      "voiceSampleDefault": "This is a sample voice test",
+      "voiceSampleError": "تعذّر إنشاء عينة الصوت. حاول مرة أخرى.",
+      "personaDescription": "وصف الشخصية",
+      "personaDescriptionPlaceholder": "من هم، ودورهم وسلوكهم",
+      "goalDescription": "أهداف الشخصية",
+      "goalDescriptionPlaceholder": "صف أهداف الشخصية (كل هدف في سطر جديد)",
+      "goalDescriptionHint": "صف أهداف الشخصية. يجب أن يكون كل هدف في سطر جديد",
+      "styleAndLanguage": "الأسلوب واللغة",
+      "styleAndLanguagePlaceholder": "صف أسلوب التواصل والتفضيلات اللغوية...",
+      "behaviorConstraints": "قيود السلوك",
+      "behaviorConstraintsPlaceholder": "حدد الحدود والقيود السلوكية...",
+      "internalReasoning": "التفكير الداخلي",
+      "internalReasoningPlaceholder": "صف عملية التفكير الداخلي...",
+      "noImage": "لا توجد صورة",
+      "uploading": "جارٍ التحميل...",
+      "cropper": {
+        "title": "ضبط الصورة",
+        "subtitle": "اسحب لتوسيط الوجه، استخدم شريط التمرير للتكبير",
+        "zoom": "تكبير",
+        "cancel": "إلغاء",
+        "save": "حفظ القص"
+      },
+      "reactionName": "اسم رد الفعل",
+      "reactionNamePlaceholder": "أدخل اسم رد الفعل",
+      "reactionDescription": "الوصف",
+      "reactionDescriptionPlaceholder": "صف رد الفعل هذا",
+      "reactionPrompt": "صف السلوك",
+      "reactionPromptPlaceholder": "صف كيف يجب أن تتصرف الشخصية في رد الفعل هذا",
+      "addReaction": "إضافة رد فعل",
+      "promptLabel": "السلوك:",
+      "emotions": {
+        "title": "مشاعر الشخصية",
+        "add": "إضافة شعور",
+        "addTitle": "إضافة شعور جديد",
+        "name": "اسم الشعور",
+        "namePlaceholder": "اسم الشعور",
+        "description": "الوصف",
+        "descriptionPlaceholder": "وصف نصي للشعور",
+        "image": "صورة الشعور",
+        "chooseFile": "اختر ملفًا",
+        "noFileChosen": "لم يتم اختيار ملف",
+        "submit": "إضافة شعور",
+        "validationError": "من فضلك املأ اسم الشعور ووصفه"
+      },
+      "reactions": {
+        "title": "ردود الفعل",
+        "helper": "يهتم هذا القسم بإعداد ردود الفعل الممكنة لشخصية الذكاء الاصطناعي على الإجراءات التي يختارها المستخدم.",
+        "add": "إضافة رد فعل",
+        "addTitle": "إضافة رد فعل جديد",
+        "name": "اسم رد الفعل",
+        "namePlaceholder": "اسم رد الفعل",
+        "description": "الوصف",
+        "descriptionPlaceholder": "وصف رد فعل الشخصية",
+        "selectionLogic": "منطق الاختيار",
+        "selectionLogicPlaceholder": "اشرح متى يجب أن يكون رد الفعل هذا متاحًا للمستخدم",
+        "selectionLogicLabel": "منطق الاختيار:",
+        "submit": "إضافة رد فعل",
+        "validationError": "من فضلك املأ اسم رد الفعل وصف السلوك",
+        "goals": "أهداف رد الفعل",
+        "goalsLabel": "الأهداف:",
+        "goalsPlaceholder": "حدد الأهداف التي يجب أن يحققها رد الفعل هذا...",
+        "goalsHint": "اذكر ما يحاول رد الفعل هذا تحقيقه في المحادثة"
+      }
+    },
+    "scenarios": {
+      "title": "سيناريوهات-ردود فعل",
+      "description": "سيناريوهات إضافية لسلوك الشخصية في مواقف مختلفة",
+      "add": "إضافة سيناريو",
+      "addTitle": "إضافة سيناريو جديد",
+      "condition": "شرط التفعيل",
+      "conditionPlaceholder": "متى يتم اختيار رد الفعل هذا",
+      "reaction": "رد فعل الشخصية",
+      "reactionPlaceholder": "كيف تتصرف الشخصية في رد الفعل هذا",
+      "conditionLabel": "الشرط",
+      "reactionLabel": "رد الفعل",
+      "submit": "إضافة سيناريو",
+      "validationError": "من فضلك املأ شرط ورد فعل السيناريو"
+    },
+    "evaluation": {
+      "title": "منطق التقييم",
+      "description": "الفئات والمعايير لتقييم الحوار",
+      "promptSettingsTitle": "إعدادات الـ Prompts",
+      "promptSettingsDescription": "حدد prompts التقييم والنماذج المستخدمة للتقييم التلقائي.",
+      "add": "إضافة فئة",
+      "addTitle": "إضافة فئة تقييم",
+      "finalSummaryRule": "قاعدة الملخص النهائي",
+      "finalSummaryRulePlaceholder": "كيف يتم تكوين التحليل النهائي في PDF بناءً على تقييمات الفئات",
+      "finalSummaryRuleNote": "صف كيف يتم تكوين التحليل النهائي للمستخدم بناءً على التقييمات",
+      "categories": "فئات التقييم",
+      "categoryName": "اسم الفئة",
+      "categoryNamePlaceholder": "اسم فئة التقييم",
+      "criteria": "معايير التقييم",
+      "criteriaPlaceholder": "كيف يتم تقييم هذا الجانب من الحوار",
+      "submit": "إضافة فئة",
+      "validationError": "من فضلك املأ اسم ومعايير الفئة",
+      "instructionCreateTitle": "إنشاء تعليمة جديدة للذكاء الاصطناعي",
+      "instructionEditTitle": "إعدادات تعليمة الذكاء الاصطناعي",
+      "nameLabel": "الاسم",
+      "namePlaceholder": "أدخل الاسم...",
+      "instructionLabel": "تعليمة الذكاء الاصطناعي",
+      "instructionPlaceholder": "أدخل تعليمة الذكاء الاصطناعي...",
+      "instructionHint": "هذه تعليمة لوكيل الذكاء الاصطناعي ضمن تقييم المعايير",
+      "createInstructionButton": "إنشاء تعليمة",
+      "noInstructionTitle": "لم تُضبط أي تعليمة",
+      "noInstructionDescription": "اختر تعليمة موجودة أعلاه أو أنشئ واحدة جديدة.",
+      "createInstructionCta": "إنشاء تعليمة جديدة للذكاء الاصطناعي",
+      "availableInstructionsTitle": "التعليمات المتاحة للذكاء الاصطناعي",
+      "selectedInstructionLabel": "تم اختيارها",
+      "adminDescriptionLabel": "الوصف الإداري",
+      "adminDescriptionPlaceholder": "أدخل الوصف الإداري لهذه الفئة...",
+      "categoryInstructionPlaceholder": "أدخل تعليمة الذكاء الاصطناعي...",
+      "createSuccess": "تم إنشاء تعليمة الذكاء الاصطناعي بنجاح",
+      "createError": "تعذّر إنشاء تعليمة الذكاء الاصطناعي",
+      "promptLoadedForEditing": "تم تحميل الـ prompt للتعديل",
+      "viewPrompt": "عرض الـ prompt",
+      "categoryFromPrompt": "فئة من prompt التقييم: {{catName}}",
+      "deleteConfirm": "هل أنت متأكد من رغبتك في حذف تعليمة الذكاء الاصطناعي هذه؟",
+      "deleteSuccess": "تم حذف تعليمة الذكاء الاصطناعي",
+      "deleteError": "تعذّر حذف تعليمة الذكاء الاصطناعي",
+      "validationErrorFull": "من فضلك املأ الاسم والوصف الإداري وتعليمة الذكاء الاصطناعي",
+      "saveAsDraftLabel": "حفظ كمسودة",
+      "saveAsDraftNote": "(تعليمات المسودة لا تُستخدم للتقييم)"
+    },
+    "aiAssistant": {
+      "title": "مساعد الذكاء الاصطناعي",
+      "description": "اختبار وتصحيح الحالة",
+      "testPersona": "شخصية اختبارية",
+      "testPersonaPlaceholder": "اختر شخصية اختبارية",
+      "aiLog": "سجل الذكاء الاصطناعي",
+      "aiLogTitle": "سجل إجراءات وكيل الذكاء الاصطناعي",
+      "dialogue": "الحوار",
+      "dialogueTitle": "الحوار النهائي",
+      "messagePlaceholder": "رسالة للذكاء الاصطناعي...",
+      "logMessages": {
+        "init": "[AI LOG] جارٍ تهيئة الوكيل...",
+        "loadingPersona": "[AI LOG] جارٍ تحميل الشخصية: {{name}}",
+        "processingTestPersona": "[AI LOG] جارٍ معالجة الشخصية الاختبارية: {{name}}",
+        "ready": "[AI LOG] جاهز للحوار"
+      },
+      "response": "رد مساعد الذكاء الاصطناعي بناءً على الشخصية الاختبارية \"{{name}}\": {{message}}"
+    },
+    "finalEvaluation": {
+      "title": "التعليمة النهائية للذكاء الاصطناعي",
+      "description": "عرض وإدارة التعليمة النهائية للنظام للذكاء الاصطناعي، التي تُستخدم لإنشاء تقييمات نهائية شاملة",
+      "noPromptFound": "لم يتم العثور على التعليمة النهائية للذكاء الاصطناعي",
+      "noPromptDescription": "لم يتم إعداد التعليمة النهائية للنظام للذكاء الاصطناعي بعد",
+      "createPrompt": "إنشاء تعليمة نهائية للذكاء الاصطناعي",
+      "editPrompt": "تعديل التعليمة",
+      "usePrompt": "استخدم هذه التعليمة",
+      "promptSelected": "تم اختيار التعليمة",
+      "promptSelectedDescription": "تم تعيين التعليمة النهائية للذكاء الاصطناعي لهذه الحالة",
+      "aboutFinalEvaluation": "عن التقييم النهائي",
+      "aboutDescription": "تُستخدم التعليمة النهائية للذكاء الاصطناعي لإنشاء ملخص شامل بعد انتهاء المحاكاة. تأخذ في الاعتبار جميع تقييمات الفئات وتشكّل تقييمًا عامًا يتضمن:",
+      "aboutPoints": {
+        "summary": "ملخص أبرز نقاط القوة ومجالات التحسين",
+        "score": "تقييم عام من 1 إلى 10",
+        "examples": "أمثلة ملموسة من المحادثة",
+        "recommendations": "توصيات عملية"
+      },
+      "createTitle": "إنشاء تعليمة نهائية للذكاء الاصطناعي",
+      "editTitle": "إعدادات التعليمة النهائية للذكاء الاصطناعي",
+      "currentPrompt": "التعليمة النهائية الحالية للذكاء الاصطناعي",
+      "promptContent": "التعليمة النهائية للذكاء الاصطناعي",
+      "namePlaceholder": "أدخل اسم التعليمة النهائية للذكاء الاصطناعي...",
+      "promptPlaceholder": "أدخل تعليمة نهائية للذكاء الاصطناعي تحلل وتلخص جميع فئات التقييم...",
+      "creating": "جارٍ الإنشاء...",
+      "createPromptButton": "إنشاء تعليمة",
+      "saveInstructionButton": "حفظ التعليمة النهائية",
+      "saveChanges": "حفظ التغييرات",
+      "cancel": "إلغاء",
+      "success": "نجاح",
+      "createSuccess": "تم إنشاء التعليمة النهائية للذكاء الاصطناعي بنجاح",
+      "createError": "تعذّر إنشاء التعليمة النهائية للذكاء الاصطناعي",
+      "deleteConfirm": "هل أنت متأكد من رغبتك في حذف هذه التعليمة النهائية للذكاء الاصطناعي؟",
+      "deleteSuccess": "تم حذف التعليمة النهائية للذكاء الاصطناعي",
+      "deleteError": "تعذّر حذف التعليمة النهائية للذكاء الاصطناعي",
+      "availableInstructionsTitle": "التعليمات النهائية المتاحة للذكاء الاصطناعي",
+      "saveAsDraftLabel": "حفظ كمسودة",
+      "saveAsDraftNote": "(تعليمات المسودة لا تُستخدم للتقييم النهائي)",
+      "pdfNote": "بعد التقييم النهائي سيتلقى المستخدم ملف PDF بنتائج إنجاز الاختبار.",
+      "promptUpdated": "تم تحديث التعليمة النهائية للذكاء الاصطناعي",
+      "status": {
+        "draft": "مسودة",
+        "active": "نشط"
+      }
+    },
+    "toast": {
+      "uploadError": "Failed to upload image",
+      "cropError": "Failed to crop image"
+    },
+    "validate": {
+      "button": "Validate",
+      "title": "Case validation",
+      "summary": "{{errors}} error(s), {{warnings}} warning(s)",
+      "noIssues": "No structural issues found",
+      "error": "Validation failed"
+    }
+  },
+  "simulationResults": {
+    "report": {
+      "title": "تقرير التقييم",
+      "overallAssessment": "التقييم العام",
+      "overallScore": "الدرجة النهائية",
+      "blockATitle": "الكتلة A — الكفاءات المهنية",
+      "blockBTitle": "الكتلة B — مؤشرات التواصل",
+      "competencyOverview": "نظرة عامة على الكفاءات",
+      "strengths": "نقاط القوة",
+      "developmentAreas": "مجالات التطوير",
+      "criticalMarkers": "المؤشرات الحرجة",
+      "scoringScale": "مقياس التقييم",
+      "whatScoreMeans": "ماذا تعني درجتك؟",
+      "whatScoreMeansBody": "تتطابق نتيجتك مع مستوى «{{level}}».",
+      "whatScoreMeansFallback": "تعكس الدرجة أداءك وفقًا للمعيار المحدد.",
+      "transcript": "نص المحادثة"
+    },
+    "loading": "جارٍ تحميل النتائج...",
+    "errorTitle": "خطأ في التحميل",
+    "errorNotFound": "لم يتم العثور على نتائج المحاكاة",
+    "errorGeneric": "تعذّر تحميل نتائج المحاكاة",
+    "backToDashboard": "العودة إلى اللوحة",
+    "processingResults": "جارٍ معالجة نتائجك...",
+    "pollingAttempt": "جارٍ إعداد تقريرك — يستغرق ذلك عادةً بضع دقائق. يمكنك إبقاء هذه الصفحة مفتوحة.",
+    "generatingReport": "جارٍ توليد تقريرك، من فضلك انتظر...",
+    "errorTimeout": "انتهت مهلة معالجة النتائج. حاول لاحقًا.",
+    "errorNoReport": "لا يتوفر تقرير لهذه الجلسة.",
+    "delayedTitle": "تقريرك في الطريق",
+    "delayedBody": "يستغرق هذا وقتًا أطول قليلًا من المعتاد. نحن نعمل عليه — ستصلك إشعار هنا بمجرد أن يصبح جاهزًا. لا حاجة لإعادة المحاكاة.",
+    "noResultsTitle": "لم يتم العثور على نتائج",
+    "noResultsDescription": "لم تنتهِ المحاكاة بعد أو لم يتم حفظ النتائج.",
+    "headerTitle": "اكتملت المحاكاة!",
+    "headerDescription": "{{name}} • {{durationLabel}}: {{duration}}",
+    "duration": {
+      "label": "المدة",
+      "hoursMinutes": "{{hours}} س {{minutes}} د",
+      "hoursOnly": "{{hours}} س",
+      "format": "{{minutes}} د {{seconds}} ث",
+      "minutesOnly": "{{minutes}} د",
+      "secondsOnly": "{{seconds}} ث",
+      "notAvailable": "غير متاح"
+    },
+    "notAvailable": "غير متاح",
+    "totalScoreLabel": "الدرجة الإجمالية",
+    "scoreBadge": {
+      "excellent": "ممتاز",
+      "good": "جيد",
+      "satisfactory": "مرضٍ",
+      "needsImprovement": "يحتاج إلى تحسين"
+    },
+    "categoriesTitle": "المؤشرات حسب الفئات",
+    "statisticsTitle": "إحصائيات مفصّلة",
+    "statistics": {
+      "messages": "الرسائل",
+      "minResponseTime": "أدنى زمن استجابة",
+      "secondsShort": "ث",
+      "voiceUsage": "استخدام الصوت",
+      "nonVerbal": "إجراءات غير لفظية"
+    },
+    "feedbackTitle": "الملاحظات",
+    "feedback": {
+      "strongPoints": "نقاط القوة:",
+      "improvements": "فرص التحسين:"
+    },
+    "actions": {
+      "downloadPdf": "تنزيل PDF",
+      "downloadExcel": "تنزيل Excel",
+      "fileUnavailable": "الملف غير متاح",
+      "viewReport": "عرض التقرير",
+      "downloading": "جارٍ التنزيل...",
+      "acceptScore": "قبول التقييم",
+      "rejectScore": "رفض التقييم"
+    },
+    "confirmation": {
+      "acceptTitle": "قبول التقييم؟",
+      "cancelTitle": "رفض التقييم؟",
+      "acceptDescription": "سيتم حفظ تقييمك في الملف الشخصي. ستُحتسب هذه النتائج في الإحصائيات العامة.",
+      "cancelDescription": "سيتم رفض التقييم، لكن سيتم الاحتفاظ ببيانات المحاكاة للتحليل.",
+      "back": "عودة",
+      "acceptConfirm": "قبول",
+      "cancelConfirm": "رفض التقييم"
+    },
+    "feedbackForm": {
+      "label": "أضف تعليقًا",
+      "placeholder": "شارك أفكارك حول هذا التقييم...",
+      "submitError": "تعذّر إرسال الملاحظة. حاول مرة أخرى.",
+      "defaultAccept": "قبل المستخدم التقييم من نتائج المحاكاة.",
+      "defaultReject": "رفض المستخدم التقييم من نتائج المحاكاة.",
+      "promptAccept": "يمكنك إضافة تعليق عن سبب مناسبة التقييم لك (اختياري).",
+      "promptReject": "من فضلك صف لماذا لا توافق على هذا التقييم (اختياري).",
+      "capture": "التقاط شاشة النتائج",
+      "capturing": "جارٍ الالتقاط...",
+      "captureAdded": "تمت إضافة لقطة الشاشة",
+      "removeScreenshot": "إزالة لقطة الشاشة",
+      "submit": "إرسال",
+      "cancel": "إلغاء",
+      "captureError": "تعذّر التقاط شاشة النتائج. حاول مرة أخرى.",
+      "actionMissing": "اختر القبول أو الرفض قبل الإرسال."
+    }
+  },
+  "aiModels": {
+    "categories": {
+      "recommendedForAnalysis": "موصى به للتحليل",
+      "forEmotionalTone": "للنبرة العاطفية",
+      "advancedReasoning": "تفكير متقدم",
+      "fastAndEfficient": "سريع وفعّال",
+      "otherProviders": "موفّرون آخرون"
+    },
+    "descriptions": {
+      "gpt41": "الأفضل للتحليل العميق والتقييمات المعقدة. قدرات ممتازة في التفكير وتوليد ملاحظات تفصيلية.",
+      "claude37Sonnet": "مثالي للتحليل الدقيق بقدرات تحليلية قوية. ممتاز لسيناريوهات التقييم المعقدة التي تتطلب فهمًا دقيقًا.",
+      "claude3Opus": "نموذج مميز لمهام التحليل المتقدمة. يقدم تقييمات مفصلة وغنية بالمعلومات.",
+      "gpt4o": "ممتاز للتحليل متعدد الوسائط والتقييمات المعقدة. أداء قوي عبر مختلف أنواع المهام.",
+      "gemini25Pro": "نموذج تفكير متقدم، مثالي للتحليل المفصّل ومهام التقييم التي تتطلب فهمًا عميقًا.",
+      "claude35Sonnet": "ممتاز لتحليل النبرة العاطفية وتقييم التعاطف. يفهم الإشارات العاطفية الدقيقة بشكل رائع.",
+      "claude35Haiku": "سريع وفعّال لتقييم النبرة العاطفية. توازن جيد بين السرعة وفهم المشاعر."
+    }
+  },
+  "caseDetails": {
+    "notFound": {
+      "title": "Case not found",
+      "description": "The selected case is not available or does not exist."
+    },
+    "info": {
+      "duration": "Duration",
+      "participants": "Participants",
+      "level": "Level"
+    },
+    "aiPersona": {
+      "title": "AI Persona"
+    },
+    "objectives": {
+      "title": "Learning objectives"
+    },
+    "instructions": {
+      "title": "Instructions",
+      "allowed": "Allowed actions:",
+      "forbidden": "Forbidden actions:"
+    },
+    "equipment": {
+      "title": "Equipment test",
+      "description": "Check your equipment before starting the simulation",
+      "tabs": {
+        "audio": "Audio test",
+        "recording": "Voice recording",
+        "video": "Video test"
+      },
+      "audio": {
+        "title": "Audio playback test",
+        "description": "Press \"Start test\" to play a sample audio file",
+        "playing": "Playing...",
+        "start": "Start test",
+        "stop": "Finish test",
+        "success": "✓ Test audio is playing"
+      },
+      "recording": {
+        "title": "Voice recording test",
+        "description": "Record a test message and listen to the recording",
+        "stop": "Stop recording",
+        "start": "Start recording",
+        "play": "Play recording",
+        "speakHint": "Say something for the test",
+        "success": "✓ Recording saved successfully"
+      },
+      "video": {
+        "title": "Video test",
+        "description": "Watch a sample video to check playback quality",
+        "success": "✓ Test video is playing"
+      }
+    },
+    "access": {
+      "title": "Access restricted",
+      "description": "You don't have access to this case or your access period has expired. Contact your administrator to get access.",
+      "backToCases": "Back to cases"
+    },
+    "actions": {
+      "creatingChat": "Creating chat...",
+      "startSimulation": "Start simulation",
+      "starting": "Starting...",
+      "startWithAgent": "Start with agent"
+    },
+    "toast": {
+      "startErrorDefault": "Failed to start simulation. Please try again.",
+      "errorTitle": "Error",
+      "forbiddenTitle": "Access denied",
+      "forbiddenNoCase": "You don't have access to this case. Contact your administrator to get access.",
+      "forbiddenGeneric": "You don't have permission to start the simulation. Contact your administrator.",
+      "notFoundTitle": "Case not found",
+      "notFoundMessage": "This case is unavailable or does not exist. Try refreshing the page.",
+      "authTitle": "Authorization",
+      "authMessage": "Your session has expired. Please sign in again.",
+      "agentInDevTitle": "Feature in development",
+      "agentInDevFallback": "In development",
+      "agentStartedTitle": "Simulation started",
+      "agentStartedDescription": "Agent simulation started successfully",
+      "agentStartErrorDescription": "Failed to start simulation with agent"
+    },
+    "mock": {
+      "case1": {
+        "title": "Conflict management",
+        "description": "Learn to resolve workplace conflicts effectively through interactive simulations with AI characters.",
+        "duration": "45 min",
+        "difficulty": "Intermediate",
+        "participants": "1-2 participants",
+        "objective1": "Recognize signs of conflict at an early stage",
+        "objective2": "Apply active listening techniques",
+        "objective3": "Find compromise solutions",
+        "objective4": "Prevent conflict escalation",
+        "instruction1": "Carefully read the conflict scenario",
+        "instruction2": "Interact with the AI persona using a professional approach",
+        "instruction3": "Use various conflict resolution strategies",
+        "instruction4": "Stick to the time limit (45 minutes)",
+        "instruction5": "Forbidden to use aggressive language",
+        "instruction6": "Allowed to take pauses to think",
+        "personaName": "Anna Petrenko",
+        "personaRole": "Project Manager",
+        "personaDescription": "Experienced manager with 8 years of IT industry experience"
+      },
+      "case2": {
+        "title": "Leadership and motivation",
+        "description": "Develop leadership skills and the ability to motivate a team in difficult situations.",
+        "duration": "60 min",
+        "difficulty": "Advanced",
+        "participants": "1 participant",
+        "objective1": "Demonstrate leadership qualities",
+        "objective2": "Motivate a demotivated team",
+        "objective3": "Create a recovery plan after setbacks",
+        "objective4": "Apply emotional intelligence",
+        "instruction1": "Get acquainted with the team's situation after a failed release",
+        "instruction2": "Hold a motivational conversation with a key employee",
+        "instruction3": "Suggest concrete steps to improve the situation",
+        "instruction4": "Simulation duration: 60 minutes",
+        "instruction5": "Forbidden to blame or criticize",
+        "instruction6": "Allowed to focus on positive solutions",
+        "personaName": "Oleksii Kovalenko",
+        "personaRole": "Senior Developer",
+        "personaDescription": "Talented developer going through a confidence crisis after a failure"
+      }
+    }
+  },
+  "caseStart": {
+    "unknownError": "Unknown error",
+    "activating": "Activating your invitation…",
+    "title": {
+      "expired": "Invitation expired",
+      "invalid": "Invalid invitation",
+      "error": "Could not activate invitation"
+    },
+    "description": {
+      "expired": "This link has expired. Contact your administrator to get a new one.",
+      "invalid": "Link not found. It may be incorrect or already deleted.",
+      "error": "A technical error occurred while activating the invitation. Please try again later or contact your administrator."
+    },
+    "goToLogin": "Go to login page"
+  },
+  "feedbackManagement": {
+    "alt": {
+      "screenshotPreview": "Screenshot preview",
+      "feedbackScreenshot": "Feedback screenshot",
+      "screenshotFullView": "Screenshot full view"
+    }
+  }
+}

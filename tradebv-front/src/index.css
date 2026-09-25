@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AI Learning Platform Design System */
+
+@layer base {
+  :root {
+    /* Core brand colors - Professional learning platform */
+    --background: 240 10% 98%;
+    --foreground: 240 10% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 8%;
+
+    /* Primary - Deep blue for trust and professionalism */
+    --primary: 220 90% 56%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 220 90% 48%;
+    --primary-light: 220 90% 96%;
+
+    /* Secondary - Sophisticated navy */
+    --secondary: 240 30% 96%;
+    --secondary-foreground: 240 30% 16%;
+
+    /* Muted tones for subtle elements */
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 5% 45%;
+
+    /* Accent - Warm orange for engagement */
+    --accent: 25 85% 60%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 25 85% 96%;
+
+    /* Success - Green for completed states */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --success-light: 142 76% 96%;
+
+    /* Warning - Amber for attention */
+    --warning: 43 96% 56%;
+    --warning-foreground: 43 96% 8%;
+    --warning-light: 43 96% 96%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 220 90% 56%;
+
+    /* Gradients for modern appeal */
+    --gradient-primary: linear-gradient(135deg, hsl(220 90% 56%), hsl(240 90% 64%));
+    --gradient-accent: linear-gradient(135deg, hsl(25 85% 60%), hsl(35 85% 68%));
+    --gradient-subtle: linear-gradient(180deg, hsl(240 10% 98%), hsl(240 5% 96%));
+
+    /* Shadows for depth */
+    --shadow-soft: 0 2px 8px hsl(240 10% 8% / 0.08);
+    --shadow-medium: 0 8px 25px hsl(240 10% 8% / 0.12);
+    --shadow-strong: 0 16px 40px hsl(240 10% 8% / 0.16);
+
+    /* Animation timings */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Mobile-friendly button sizes - minimum 44px touch target */
+  .btn-touch {
+    @apply min-h-[44px] min-w-[44px] px-4 py-2;
+  }
+  
+  /* Mobile-optimized table container */
+  .table-mobile {
+    @apply overflow-x-auto;
+  }
+  
+  /* Responsive card stacking */
+  .card-stack {
+    @apply grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3;
+  }
+  
+  /* Mobile navigation styles */
+  .mobile-nav-overlay {
+    @apply fixed inset-0 z-50 bg-background/80 backdrop-blur-sm lg:hidden;
+  }
+  
+  .mobile-nav-menu {
+    @apply fixed inset-y-0 left-0 z-50 w-72 bg-card border-r shadow-strong p-6 lg:hidden;
+  }
+  
+  /* Responsive text sizes */
+  .text-responsive-sm {
+    @apply text-xs sm:text-sm;
+  }
+  
+  .text-responsive-base {
+    @apply text-sm sm:text-base;
+  }
+  
+  .text-responsive-lg {
+    @apply text-base sm:text-lg;
+  }
+  
+  .text-responsive-xl {
+    @apply text-lg sm:text-xl;
+  }
+  
+  /* Mobile form optimization */
+  .form-mobile {
+    @apply space-y-6 p-4;
+  }
+  
+  /* Hamburger menu animation */
+  .hamburger-line {
+    @apply block h-0.5 w-6 bg-current transition-all duration-300 ease-in-out;
+  }
+  
+  .hamburger-open .hamburger-line:nth-child(1) {
+    @apply rotate-45 translate-y-1.5;
+  }
+  
+  .hamburger-open .hamburger-line:nth-child(2) {
+    @apply opacity-0;
+  }
+  
+  .hamburger-open .hamburger-line:nth-child(3) {
+    @apply -rotate-45 -translate-y-1.5;
+  }
+
+  /* Rich text (Quill) output - lists, bold, italic, etc. */
+  .rich-text-content {
+    @apply font-normal;
+  }
+  .rich-text-content ol {
+    @apply list-decimal pl-6 my-3 space-y-1;
+  }
+  .rich-text-content ul {
+    @apply list-disc pl-6 my-3 space-y-1;
+  }
+  .rich-text-content li {
+    @apply pl-1;
+  }
+  .rich-text-content .ql-indent-1 { padding-left: 3em; }
+  .rich-text-content strong {
+    @apply font-semibold;
+  }
+  .rich-text-content em {
+    @apply italic;
+  }
+  .rich-text-content p {
+    @apply my-2 font-normal;
+  }
+  .rich-text-content p:first-child { margin-top: 0; }
+  .rich-text-content p:last-child { margin-bottom: 0; }
+  .rich-text-content a {
+    @apply text-primary underline underline-offset-2;
+  }
+  .rich-text-content h1 { @apply text-2xl font-bold mt-4 mb-2; }
+  .rich-text-content h2 { @apply text-xl font-bold mt-3 mb-2; }
+  .rich-text-content h3 { @apply text-lg font-bold mt-2 mb-1; }
+  /* Intro/step content: headings from Quill (e.g. h3) display as normal text */
+  .rich-text-content-plain-headings h1,
+  .rich-text-content-plain-headings h2,
+  .rich-text-content-plain-headings h3 {
+    @apply text-base font-normal mt-2 mb-1;
+  }
+}

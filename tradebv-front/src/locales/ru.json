@@ -1,0 +1,1574 @@
+{
+  "notifications": {
+    "title": "Уведомления",
+    "markAllRead": "Прочитать все",
+    "empty": "Уведомлений пока нет"
+  },
+  "nav": {
+    "home": "На сайт",
+    "mhr": "Trade BV",
+    "dashboard": "Панель управления",
+    "courses": "Курсы",
+    "profile": "Профиль",
+    "logout": "Выйти",
+    "login": "Войти",
+    "settings": "Настройки",
+    "language": "Язык",
+    "users": "Пользователи",
+    "cases": "Кейсы",
+    "feedback": "Отзывы",
+    "desktopSidebarHint": "💡 На десктопе доступна боковая панель для быстрой навигации"
+  },
+  "welcome": {
+    "title": "Добро пожаловать на ИИ обучающую платформу",
+    "subtitle": "Развивайте навыки с помощью интерактивных симуляций с ИИ"
+  },
+  "home": {
+    "goToDashboard": "Перейти к обучению",
+    "startLearning": "Начать обучение",
+    "learnMore": "Узнать больше",
+    "features": {
+      "title": "Почему выбирают нашу платформу?",
+      "subtitle": "Инновационные технологии ИИ для максимально эффективного обучения",
+      "aiPersonas": {
+        "title": "ИИ-персоны",
+        "description": "Интерактивные симуляции с умными ИИ-собеседниками"
+      },
+      "targetedLearning": {
+        "title": "Целевое обучение",
+        "description": "Персонализированные сценарии для развития конкретных навыков"
+      },
+      "teamwork": {
+        "title": "Командная работа",
+        "description": "Обучение эффективному взаимодействию в команде"
+      }
+    },
+    "courses": {
+      "title": "Популярные курсы",
+      "subtitle": "Наиболее востребованные учебные программы",
+      "viewAll": "Посмотреть все",
+      "students": "студентов",
+      "start": "Начать",
+      "noCourses": "Нет доступных курсов"
+    },
+    "cta": {
+      "title": "Готовы начать обучение?",
+      "subtitle": "Присоединяйтесь к тысячам профессионалов, которые уже повышают свои навыки"
+    }
+  },
+  "common": {
+    "loading": "Загрузка...",
+    "back": "Back",
+    "pagination": {
+      "previous": "Предыдущая",
+      "next": "Следующая",
+      "goToPreviousPage": "Перейти на предыдущую страницу",
+      "goToNextPage": "Перейти на следующую страницу"
+    }
+  },
+  "login": {
+    "title": "Вход в систему",
+    "description": "Войдите в систему",
+    "username": "Логин",
+    "password": "Пароль",
+    "submit": "Войти",
+    "admin": "Администратор",
+    "member": "Участник"
+  },
+  "admin": {
+    "sidebar": {
+      "title": "Панель администратора",
+      "subtitle": "ИИ платформа обучения",
+      "navigation": "Навигация",
+      "home": "Главная",
+      "users": "Пользователи",
+      "caseManagement": "Управление кейсами",
+      "feedback": "Обратная связь"
+    },
+    "dashboard": {
+      "title": "Панель администратора",
+      "welcome": "Добро пожаловать",
+      "overview": "Обзор активности",
+      "filters": "Фильтры",
+      "search": "Поиск",
+      "casesLaunchedWeekly": "Кейсы запущенные за неделю",
+      "recentActivity": "Последняя активность",
+      "recentActivityDescription": "Недавние действия пользователей в системе",
+      "viewAll": "Посмотреть всё",
+      "viewLess": "Показать меньше",
+      "noRecentActivity": "Нет недавней активности",
+      "pendingReports": "Отчёты, ожидающие подтверждения",
+      "pendingReportsDescription": "Подтверждайте оценки, чтобы открыть пользователям отчёты с баллами",
+      "reviewReport": "Просмотреть",
+      "noPendingReports": "Нет отчётов, ожидающих подтверждения",
+      "loadingActivity": "Загрузка активности...",
+      "quickActions": "Быстрые действия",
+      "quickActionsDescription": "Основные операции администратора",
+      "createUser": "Создать пользователя",
+      "createCase": "Создать кейс",
+      "viewFeedback": "Посмотреть отзывы",
+      "systemAnalytics": "Аналитика системы",
+      "systemNotifications": "Системные уведомления"
+    },
+    "activityActions": {
+      "startedSimulation": "Начал симуляцию",
+      "completedSimulation": "Завершил симуляцию",
+      "uploadedRecording": "Загрузил запись"
+    },
+    "timeAgo": {
+      "justNow": "только что",
+      "minutesAgo": "{{count}} мин назад",
+      "hoursAgo": "{{count}} ч назад",
+      "daysAgo": "{{count}} дн назад"
+    },
+    "stats": {
+      "totalUsers": "Общее количество пользователей",
+      "activeSimulations": "Активные симуляции",
+      "completedSimulations": "Завершённые симуляции",
+      "totalChats": "Всего чатов",
+      "newUsersThisWeek": "новых пользователей за неделю",
+      "newSimulationsThisWeek": "начато за неделю",
+      "completedThisWeek": "завершено за неделю",
+      "newChatsThisWeek": "новых чатов за неделю"
+    },
+    "activities": {
+      "completedSimulation": "Завершил симуляцию",
+      "startedSimulation": "Начала симуляцию",
+      "leftFeedback": "Оставил отзыв",
+      "registered": "Зарегистрировалась",
+      "timeAgo": {
+        "minutes": "{{count}} мин назад",
+        "hours": "{{count}} ч назад"
+      }
+    }
+  },
+  "member": {
+    "dashboard": {
+      "welcome": "Добро пожаловать",
+      "selectCase": "Нажмите «Начать выполнять», чтобы продолжить",
+      "learningCases": "Учебные кейсы",
+      "searchCases": "Поиск кейсов...",
+      "startWorking": "Начать выполнять",
+      "loading": "Загрузка...",
+      "noCases": "Нет доступных кейсов",
+      "bannerSubtitle": "Завершите назначенный кейс до дедлайна",
+      "deadlineLabel": "Дедлайн",
+      "deadlineRemaining": "осталось {{count}} дней",
+      "deadlinePassed": "Дедлайн прошёл",
+      "deadlineNone": "Без ограничения",
+      "statsAssigned": "Кейсов назначено",
+      "statsCompleted": "Завершено",
+      "statsDaysLeft": "Дней до дедлайна",
+      "sectionLearningCase": "Учебный кейс",
+      "cardDefaultKind": "Переговорная симуляция",
+      "cardAccessUntil": "Доступ до {{date}}"
+    },
+    "caseIntro": {
+      "roleInSimulation": "Описание кейса",
+      "personaDescription": "Ваша роль",
+      "caseOverview": "С кем вы общаетесь",
+      "roleSubtitle": "Ваш контекст и коммерческий бриф для этих переговоров",
+      "personaSubtitle": "Знакомство с вашим собеседником",
+      "overviewSubtitle": "Что ждёт в этой симуляции",
+      "preparation": "Подготовка",
+      "case": "Кейс",
+      "stepBadge": "Шаг {{current}} из {{total}}",
+      "starting": "Запуск...",
+      "continue": "Продолжить",
+      "back": "Назад",
+      "languageTitle": "Язык",
+      "languageSubtitle": "Выберите язык, на котором будете проходить симуляцию",
+      "languageLabel": "Язык симуляции",
+      "languageHint": "На этом языке будут интерфейс, разговор с персонажем и финальный отчёт. Изменить можно в любой момент в шапке.",
+      "languageSaveError": "Не удалось сохранить язык. Попробуйте выбрать ещё раз."
+    },
+    "stats": {
+      "completedSimulations": "Завершено симуляций",
+      "lastActivity": "Последняя активность",
+      "overallProgress": "Общий прогресс",
+      "daysAgo": "{{count}} дн назад"
+    }
+  },
+  "cases": {
+    "conflictManagement": {
+      "title": "Управление конфликтами",
+      "description": "Научитесь эффективно решать конфликты на рабочем месте"
+    },
+    "leadership": {
+      "title": "Лидерство и мотивация",
+      "description": "Развитие навыков лидерства и мотивации команды"
+    },
+    "communication": {
+      "title": "Эффективная коммуникация",
+      "description": "Основы профессиональной коммуникации в бизнес-среде"
+    },
+    "duration": "{{count}} мин",
+    "list": {
+      "title": "Cases",
+      "subtitle": "Choose a case to start simulation",
+      "searchPlaceholder": "Search cases...",
+      "refresh": "Refresh",
+      "errorLoading": "Error loading cases",
+      "failedToLoad": "Failed to load cases",
+      "loading": "Loading cases...",
+      "noMatchingSearch": "No cases found matching your search.",
+      "noCases": "No cases available.",
+      "badgeAvailable": "Available",
+      "createdLabel": "Created",
+      "startSimulation": "Start Simulation",
+      "accessDeniedTitle": "Access denied",
+      "accessDeniedBody": "You don't have access to this case. Contact your administrator.",
+      "runErrorTitle": "Error",
+      "runErrorBody": "Failed to start simulation. Please try again."
+    }
+  },
+  "status": {
+    "completed": "Завершено",
+    "active": "Активный",
+    "inProgress": "В процессе",
+    "available": "Доступный",
+    "unavailable": "Недоступный",
+    "feedback": "Отзыв",
+    "new": "Новый",
+    "unknown": "Неизвестно",
+    "draft": "Черновик"
+  },
+  "users": {
+    "title": "Управление пользователями",
+    "subtitle": "Управление учётными записями и правами доступа",
+    "addUser": "Добавить пользователя",
+    "addUserShort": "Добавить",
+    "searchPlaceholder": "Поиск пользователей...",
+    "filterByRole": "Фильтр по роли",
+    "filterByStatus": "Фильтр по статусу",
+    "allRoles": "Все роли",
+    "allStatuses": "Все статусы",
+    "userList": "Список пользователей",
+    "refresh": "Обновить",
+    "table": {
+      "id": "ID",
+      "name": "Имя",
+      "email": "Email",
+      "username": "Имя пользователя",
+      "role": "Роль",
+      "lastLogin": "Последний вход",
+      "simulations": "Симуляции",
+      "status": "Статус",
+      "actions": "Действия",
+      "createdAt": "Создано",
+      "noName": "Без имени"
+    },
+    "roles": {
+      "user": "Участник",
+      "admin": "Администратор",
+      "superadmin": "Супер-администратор"
+    },
+    "statuses": {
+      "active": "Активный",
+      "blocked": "Заблокированный"
+    },
+    "lastLogin": {
+      "never": "Никогда",
+      "now": "Сейчас",
+      "hoursAgo": "{{count}} ч назад",
+      "daysAgo": "{{count}} дн назад"
+    },
+    "actions": {
+      "viewProfile": "Посмотреть профиль",
+      "edit": "Редактировать",
+      "block": "Заблокировать",
+      "unblock": "Разблокировать",
+      "delete": "Удалить"
+    },
+    "modal": {
+      "addTitle": "Добавить нового пользователя",
+      "addDescription": "Создайте новую учётную запись пользователя в системе",
+      "firstName": "Имя",
+      "firstNamePlaceholder": "Введите имя",
+      "lastName": "Фамилия",
+      "lastNamePlaceholder": "Введите фамилию",
+      "username": "Email",
+      "usernamePlaceholder": "user@example.com",
+      "role": "Роль",
+      "password": "Пароль",
+      "passwordPlaceholder": "Оставьте пустым для автогенерации",
+      "passwordCopied": "Пароль скопирован!",
+      "cancel": "Отмена",
+      "create": "Создать пользователя",
+      "creating": "Создание..."
+    },
+    "toasts": {
+      "userCreated": "Пользователь создан",
+      "userCreatedDesc": "Пользователь {{username}} успешно создан.",
+      "generatedPassword": "Сгенерированный пароль",
+      "passwordDesc": "Пароль: {{password}}",
+      "statusUpdated": "Статус обновлён",
+      "statusUpdatedDesc": "Статус пользователя изменён на {{status}}.",
+      "userDeleted": "Пользователь удалён",
+      "userDeletedDesc": "Пользователь удалён из системы.",
+      "error": "Ошибка",
+      "errorCreating": "Ошибка создания пользователя",
+      "errorUpdating": "Ошибка обновления статуса",
+      "errorDeleting": "Ошибка удаления пользователя",
+      "errorLoading": "Не удалось загрузить пользователей",
+      "cannotBlockAdmin": "Невозможно заблокировать администратора или суперадминистратора",
+      "cannotDeleteAdmin": "Невозможно удалить администратора или суперадминистратора"
+    },
+    "confirmDelete": "Вы уверены, что хотите удалить этого пользователя?",
+    "noUsersFound": "Пользователи не найдены",
+    "noUsersFoundDesc": "Пользователи не соответствуют вашим текущим критериям поиска. Попробуйте изменить фильтры или поисковые запросы.",
+    "noSearchResults": "Результаты не найдены",
+    "noSearchResultsDesc": "Ваш поиск не вернул результатов. Попробуйте использовать другие ключевые слова или проверьте правописание."
+  },
+  "caseManagement": {
+    "title": "Управление кейсами",
+    "subtitle": "Управление учебными кейсами и персонами",
+    "searchPlaceholder": "Поиск кейсов и персон...",
+    "refresh": "Обновить",
+    "tabs": {
+      "cases": "Кейсы",
+      "personas": "Персоны"
+    },
+    "addCase": "Добавить кейс",
+    "addPersona": "Добавить персону",
+    "loading": "Загрузка...",
+    "noCases": "Нет кейсов",
+    "noPersonas": "Нет персон",
+    "casesNotFound": "Кейсы не найдены",
+    "personasNotFound": "Персоны не найдены",
+    "case": {
+      "status": {
+        "draft": "Черновик",
+        "active": "Активный"
+      },
+      "prompt": "Промпт",
+      "draftCopy": "Копия черновика",
+      "actions": {
+        "run": "Запустить",
+        "edit": "Редактировать",
+        "delete": "Удалить",
+        "testWithAI": "ИИ-тест",
+        "createDraft": "Создать полную копию",
+        "applyChanges": "Применить изменения"
+      },
+      "createdAt": "Создано",
+      "evaluationPrompt": "Промпт оценки",
+      "drafts": "Черновики"
+    },
+    "persona": {
+      "status": {
+        "draft": "Черновик",
+        "active": "Активный"
+      },
+      "goal": "Цель",
+      "actions": "Действия",
+      "actionsCount": "Действия ({{count}})",
+      "emotions": "Эмоции",
+      "createdAt": "Создано",
+      "edit": "Редактировать",
+      "delete": "Удалить",
+      "more": "ещё"
+    },
+    "aiTestRunner": {
+      "title": "Тестирование кейса с ИИ",
+      "testPersonaLabel": "Тестовая персона",
+      "selectPlaceholder": "Выберите тестовую персону",
+      "actions": {
+        "edit": "Редактировать персону",
+        "hideEdit": "Скрыть редактирование",
+        "run": "Запустить тест",
+        "running": "Тестирование...",
+        "showTestPersona": "Добавить тест-персону",
+        "hideTestPersona": "Скрыть тест-персону",
+        "delete": "Удалить",
+        "cancel": "Отмена",
+        "save": "Сохранить изменения",
+        "saving": "Сохранение..."
+      },
+      "devStatus": {
+        "title": "Функционал в разработке",
+        "description": "ИИ тестирование кейсов находится в разработке."
+      },
+      "collapsible": {
+        "log": "Лог действий ИИ",
+        "dialogue": "Финальный диалог"
+      },
+      "editPersonaCard": {
+        "title": "Редактирование персоны",
+        "description": "Обновите данные выбранной тестовой персоны."
+      },
+      "testPersonaCard": {
+        "title": "Тест-персона",
+        "description": "Задайте характеристики для тестирования кейса с этой персоной."
+      },
+      "fields": {
+        "name": "Имя",
+        "role": "Роль",
+        "voice": "Голос",
+        "description": "Описание персонажа",
+        "goals": "Цели персоны",
+        "voiceSample": "Текст голосового сообщения"
+      },
+      "placeholders": {
+        "name": "Пример: Ирина",
+        "role": "Пример: Руководитель отдела",
+        "description": "Опишите черты характера и контекст.",
+        "goals": "Чего стремится достичь персона и какие её ожидания.",
+        "voiceSample": "Текст, отражающий стиль общения персоны.",
+        "voiceSelect": "Выберите голос"
+      },
+      "voiceSampleHint": "Функция генерации озвучки пока недоступна, но вы можете подготовить текст заранее.",
+      "confirmDelete": "Вы уверены, что хотите удалить эту персону?",
+      "toasts": {
+        "update": {
+          "title": "Персона обновлена",
+          "description": "Изменения тестовой персоны сохранены."
+        },
+        "delete": {
+          "title": "Персона удалена",
+          "description": "Тестовая персона успешно удалена."
+        },
+        "error": {
+          "title": "Ошибка",
+          "run": "Не удалось запустить тест",
+          "update": "Не удалось обновить персону",
+          "delete": "Не удалось удалить персону",
+          "load": "Не удалось загрузить персоны"
+        }
+      }
+    },
+    "toasts": {
+      "caseDeleted": "Кейс удалён",
+      "caseDeletedDesc": "Кейс успешно удалён.",
+      "personaDeleted": "Персона удалена",
+      "personaDeletedDesc": "Персона успешно удалена.",
+      "error": "Ошибка",
+      "errorDeleting": "Ошибка удаления",
+      "errorLoading": "Не удалось загрузить данные",
+      "draftCopyCreated": "Копия черновика создана",
+      "draftCopyCreatedDesc": "Копия черновика успешно создана. Перенаправление...",
+      "errorCreatingDraft": "Не удалось создать копию черновика",
+      "changesApplied": "Изменения применены",
+      "errorApplyingChanges": "Не удалось применить изменения",
+      "errorStartingSimulation": "Не удалось запустить симуляцию"
+    },
+    "applyDraft": {
+      "title": "Применить изменения из черновика?",
+      "description": "Это действие заменит оригинальный кейс изменениями из этого черновика. После применения изменений черновик будет удалён. Это действие нельзя отменить.",
+      "cancel": "Отмена",
+      "apply": "Применить изменения"
+    }
+  },
+  "feedback": {
+    "title": "Управление отзывами",
+    "subtitle": "Просмотр и управление отзывами пользователей",
+    "refresh": "Обновить",
+    "searchPlaceholder": "Поиск отзывов...",
+    "feedbackEntries": "Записи отзывов ({{count}})",
+    "table": {
+      "dateTime": "Дата/Время",
+      "user": "Пользователь",
+      "page": "Страница",
+      "case": "Кейс",
+      "feedbackText": "Текст отзыва",
+      "screenshot": "Скриншот",
+      "status": "Статус",
+      "gradeAccepted": "Оценка принята",
+      "actions": "Действия"
+    },
+    "screenshot": {
+      "noImage": "Нет изображения",
+      "error": "Ошибка загрузки изображения",
+      "loadError": "Не удалось загрузить скриншот",
+      "clickToView": "Нажмите для просмотра в полном размере",
+      "title": "Скриншот",
+      "zoomIn": "Приблизить",
+      "zoomOut": "Отдалить",
+      "reset": "Сбросить масштаб",
+      "zoomLabel": "Уровень масштаба скриншота",
+      "zoomHint": "Масштабируйте ползунком или кнопками, прокручивайте для перемещения."
+    },
+    "caseContext": {
+      "title": "Содержание кейса",
+      "caseName": "Название кейса",
+      "description": "Описание"
+    },
+    "gradeStatus": {
+      "yes": "Да",
+      "no": "Нет",
+      "accepted": "Принято",
+      "notAccepted": "Не принято",
+      "notApplicable": "Н/Д"
+    },
+    "detail": {
+      "title": "Детали отзыва",
+      "feedbackInfo": "Информация об отзыве",
+      "userInformation": "Информация о пользователе",
+      "name": "Имя",
+      "email": "Email",
+      "source": "Источник",
+      "role": "Роль",
+      "submitted": "Отправлено",
+      "gradeAccepted": "Оценка принята",
+      "caseId": "ID Кейса",
+      "personaId": "ID Персоны",
+      "chatId": "ID Чата",
+      "feedbackText": "Полный отзыв",
+      "adminReview": "Обзор администратора",
+      "addReview": "Добавить отзыв",
+      "currentStatus": "Текущий статус",
+      "savedNotes": "Сохранённые заметки",
+      "markAsReviewed": "Отметить как рассмотренное",
+      "markAs": "Отметить как",
+      "reviewed": "Рассмотрено",
+      "pending": "В ожидании",
+      "adminNotes": "Заметки администратора",
+      "addNotesPlaceholder": "Добавьте свои заметки по этому отзыву...",
+      "saveNotes": "Сохранить заметки",
+      "saving": "Сохранение...",
+      "characters": "символов"
+    },
+    "filters": {
+      "allStatus": "Все статусы",
+      "pending": "⏳ В ожидании",
+      "reviewed": "✓ Рассмотрено",
+      "filterByStatus": "Фильтр по статусу",
+      "filterBySource": "Фильтр по источнику",
+      "allSources": "Все источники"
+    },
+    "sourceTags": {
+      "simulation": "Сессия симуляции",
+      "simulationResults": "Результаты симуляции",
+      "other": "Другой источник"
+    },
+    "anonymous": "Анонимный",
+    "noResults": "Отзывы не найдены",
+    "noFeedback": "Нет отзывов",
+    "noFeedbackAvailable": "Нет доступных отзывов\nОтзывы ещё не были отправлены. Пользователи увидят свои отзывы здесь после завершения симуляций.",
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "errorLoading": "Не удалось загрузить отзывы",
+    "toasts": {
+      "success": "Успех",
+      "error": "Ошибка",
+      "feedbackUpdated": "Отзыв успешно обновлён",
+      "updateError": "Не удалось обновить отзыв"
+    }
+  },
+  "equipmentTest": {
+    "title": "Тест оборудования",
+    "description": "Проверим ваше оборудование перед началом симуляции",
+    "microphone": {
+      "title": "Микрофон",
+      "description": "Тест записи звука",
+      "recording": "Запись… говорите в микрофон",
+      "getReady": "Приготовьтесь говорить…",
+      "speakNow": "Говорите сейчас",
+      "success": "Микрофон работает правильно",
+      "noSpeechDetected": "Речь не обнаружена. Пожалуйста, говорите чётко во время теста.",
+      "noAudioDetected": "Звук не обнаружен. Проверьте микрофон и попробуйте снова.",
+      "testFailed": "Не удалось выполнить тест микрофона. Попробуйте ещё раз.",
+      "mp3NotSupported": "Ваш браузер не поддерживает создание MP3-аудио. Пожалуйста, воспользуйтесь браузером с поддержкой MP3-записи.",
+      "selectDevice": "Выберите микрофон:",
+      "selectPlaceholder": "Выберите микрофон",
+      "audioLevel": "Уровень звука",
+      "unsupported": "Доступ к микрофону не поддерживается в этом браузере.",
+      "notFound": "Микрофон не найден.",
+      "notReadable": "Микрофон занят или недоступен.",
+      "permissionDenied": "Доступ к микрофону запрещён.",
+      "invalidState": "Микрофон в некорректном состоянии."
+    },
+    "speakers": {
+      "title": "Динамики",
+      "description": "Тест воспроизведения звука"
+    },
+    "camera": {
+      "title": "Камера",
+      "description": "Тест видео записи"
+    },
+    "screen": {
+      "title": "Запись экрана",
+      "description": "Разрешите запись экрана, чтобы сохранить вид симуляции."
+    },
+    "status": {
+      "ready": "Готово",
+      "error": "Ошибка",
+      "testing": "Тестирование..."
+    },
+    "buttons": {
+      "testMicrophone": "Тест микрофона",
+      "retryMicrophone": "Повторить",
+      "testAgain": "Протестировать снова",
+      "testSpeakers": "Тест звука",
+      "testCamera": "Тест камеры",
+      "testScreen": "Тест экрана",
+      "testing": "Тестирование..."
+    },
+    "footer": {
+      "allTestsRequired": "Проведите все тесты для продолжения",
+      "startSimulation": "Начать симуляцию",
+      "waitingForTests": "Ожидание тестов..."
+    },
+    "transcription": {
+      "label": "Распознанный текст:"
+    }
+  },
+  "userProfile": {
+    "title": "Профиль пользователя",
+    "subtitle": "Управление учётной записью и настройками",
+    "backToList": "Назад к списку",
+    "userNotFound": "Пользователь не найден",
+    "loading": "Загрузка...",
+    "status": {
+      "active": "Активный",
+      "blocked": "Заблокированный"
+    },
+    "role": {
+      "admin": "Администратор",
+      "user": "Участник",
+      "superadmin": "Супер-администратор"
+    },
+    "basicInfo": {
+      "title": "Основная информация",
+      "edit": "Редактировать",
+      "cancel": "Отмена",
+      "save": "Сохранить",
+      "firstName": "Имя",
+      "lastName": "Фамилия",
+      "email": "Email",
+      "role": "Роль",
+      "password": "Пароль",
+      "id": "ID",
+      "created": "Создано",
+      "lastLogin": "Последний вход",
+      "never": "Никогда",
+      "status": "Статус"
+    },
+    "permissions": {
+      "title": "Управление разрешениями",
+      "subtitle": "Настройка доступа и ограничений пользователя",
+      "caseAccess": "Доступ к кейсам",
+      "allCases": "Все кейсы",
+      "limitedCases": "Только назначенные ({{count}})",
+      "noCases": "Без доступа",
+      "accountExpiry": "Срок действия аккаунта",
+      "launchLimit": "Лимит запусков в день",
+      "simulationsCount": "Максимальная длительность сессии (мин)",
+      "simulationsCountPlaceholder": "Функционал в разработке",
+      "noLimit": "Без ограничений",
+      "editNote": "Редактирование расширенных настроек будет доступно в следующих версиях",
+      "savePermissions": "Сохранить разрешения",
+      "resetToDefault": "Сбросить к стандартным"
+    },
+    "recordings": {
+      "title": "Записи сессий",
+      "subtitle": "Аудио и видео записи симуляций пользователя (функционал в разработке)",
+      "mockBadge": "Mock данные",
+      "view": "Посмотреть",
+      "viewReport": "Посмотреть отчёт",
+      "viewWebcam": "Посмотреть веб-камеру",
+      "viewScreen": "Посмотреть симуляцию",
+      "copyLink": "Скопировать ссылку",
+      "videoAudio": "Аудио + Видео",
+      "videoOnly": "Только видео",
+      "audioOnly": "Только аудио",
+      "webcamLabel": "Запись с веб-камеры",
+      "screenLabel": "Запись симуляции",
+      "complete": "Завершена",
+      "incomplete": "Не завершена",
+      "noRecordings": "Записи сессий не найдены",
+      "loading": "Загрузка записей...",
+      "count": "{{count}} запись",
+      "count_plural": "{{count}} записи",
+      "count_many": "{{count}} записей"
+    },
+    "history": {
+      "title": "История симуляций",
+      "subtitle": "Результаты прохождения учебных кейсов",
+      "mockBadge": "Mock данные",
+      "date": "Дата",
+      "caseName": "Название кейса",
+      "status": "Статус",
+      "duration": "Длительность",
+      "score": "Оценка",
+      "actions": "Действия",
+      "viewLogs": "Посмотреть логи",
+      "viewReport": "Посмотреть отчёт",
+      "viewRecording": "Посмотреть запись",
+      "pendingReview": "Ожидает подтверждения",
+      "confirmed": "Подтверждено",
+      "completed": "Завершено",
+      "incomplete": "Не завершено",
+      "noHistory": "История симуляций не найдена",
+      "loading": "Загрузка истории симуляций...",
+      "count": "{{count}} симуляция",
+      "count_plural": "{{count}} симуляции",
+      "count_many": "{{count}} симуляций",
+      "minLabel": "мин",
+      "secLabel": "сек"
+    },
+    "assignedCases": {
+      "title": "Назначенные кейсы",
+      "subtitle": "Кейсы, доступные для прохождения пользователем",
+      "loading": "Загрузка кейсов...",
+      "noCases": "Кейсы не назначены",
+      "draft": "Черновик",
+      "active": "Активный",
+      "created": "Создано",
+      "view": "Посмотреть",
+      "assignCase": "Назначить кейс",
+      "allAccessNote": "Пользователь имеет доступ ко всем кейсам"
+    },
+    "assignCaseModal": {
+      "title": "Назначить кейс",
+      "subtitle": "Добавьте новый кейс для прохождения пользователем",
+      "selectCase": "Выберите кейс",
+      "placeholder": "Выберите кейс для назначения",
+      "timeLimit": "Временной лимит (часов)",
+      "timeLimitNote": "Доступ к кейсу будет активен в течение указанного времени",
+      "cancel": "Отмена",
+      "assign": "Назначить кейс",
+      "invitationSent": "Приглашение отправлено",
+      "sendInvitation": "Отправить приглашение",
+      "copyAll": "Скопировать всё",
+      "done": "Готово",
+      "emailLanguage": "Язык письма",
+      "firstName": "Имя",
+      "lastName": "Фамилия",
+      "email": "Email",
+      "firstNamePlaceholder": "Введите имя",
+      "lastNamePlaceholder": "Введите фамилию",
+      "editBodyLabel": "Редактировать тело письма (HTML, доступные плейсхолдеры: ",
+      "editorPlaceholder": "Текст письма...",
+      "previewLabel": "Предпросмотр письма",
+      "previewFrom": "От:",
+      "previewTo": "Кому:",
+      "previewSubject": "Тема:",
+      "resultMessage": "Письмо отправлено на {{email}}. Сохраните или скопируйте данные для входа ниже — пароль повторно не показываем.",
+      "loginLabel": "Логин",
+      "passwordLabel": "Пароль",
+      "linkLabel": "Ссылка",
+      "passwordAlreadyGenerated": "(сгенерирован ранее)",
+      "passwordNotAvailable": "(уже сгенерирован ранее)",
+      "toastCopied": "{{label}} скопировано",
+      "toastCopyFailed": "Не удалось скопировать",
+      "credentialsLabel": "Учётные данные",
+      "toastInvitationSent": "Приглашение отправлено",
+      "toastInvitationDescription": "Письмо отправлено на {{email}}",
+      "toastInvitationFailed": "Не удалось отправить приглашение",
+      "toastInvitationFailedDescription": "Попробуйте ещё раз позже",
+      "previewName": "Name Surname"
+    },
+    "passwordModal": {
+      "title": "Сменить пароль",
+      "subtitle": "Сгенерируйте новый пароль для пользователя",
+      "newPassword": "Новый пароль",
+      "placeholder": "Нажмите 'Генерировать' для создания пароля",
+      "generate": "Генерировать",
+      "copy": "Копировать",
+      "cancel": "Отмена",
+      "save": "Сохранить пароль",
+      "passwordChanged": "Пароль успешно изменён",
+      "passwordChangeError": "Не удалось изменить пароль"
+    },
+    "caseSelection": {
+      "title": "Выбор кейсов",
+      "subtitle": "Выберите кейсы, к которым пользователь будет иметь доступ",
+      "selectAll": "Выбрать все",
+      "deselectAll": "Отменить все",
+      "selected": "Выбрано",
+      "noCases": "Нет доступных кейсов",
+      "draft": "Черновик",
+      "cancel": "Отмена",
+      "save": "Сохранить"
+    },
+    "toasts": {
+      "success": "Успех",
+      "error": "Ошибка",
+      "profileUpdated": "Профиль пользователя обновлён",
+      "profileUpdateError": "Не удалось обновить профиль",
+      "loadError": "Не удалось загрузить данные пользователя",
+      "permissionsUpdated": "Разрешения пользователя обновлены",
+      "permissionsUpdateError": "Не удалось обновить разрешения",
+      "caseAssigned": "Кейс успешно назначен",
+      "caseAssignError": "Не удалось назначить кейс",
+      "caseUnassigned": "Кейс успешно удалён",
+      "caseUnassignError": "Не удалось удалить кейс"
+    }
+  },
+  "simulation": {
+    "endSuggestion": {
+      "title": "Разговор можно завершить",
+      "description": "Похоже, диалог дошёл до логического завершения. Нажмите Finish чтобы закрыть симуляцию или продолжите разговор.",
+      "finish": "Finish"
+    },
+    "loadingCase": "Загрузка кейса...",
+    "errors": {
+      "forbiddenTitle": "Доступ запрещён",
+      "forbiddenMessage": "У вас нет доступа к этому кейсу. Обратитесь к администратору для получения доступа.",
+      "notFoundTitle": "Кейс не найден",
+      "notFoundMessage": "Данный кейс недоступен или не существует. Возможно, он был удалён.",
+      "authTitle": "Авторизация",
+      "authMessage": "Сессия закончилась. Пожалуйста, войдите снова.",
+      "loadErrorTitle": "Ошибка загрузки",
+      "loadErrorMessage": "Не удалось загрузить кейс. Попробуйте обновить страницу."
+    },
+    "backToCases": "Вернуться к кейсам",
+    "titleWithCase": "Симуляция: {{title}}",
+    "sidebar": {
+      "userRole": "Ваша роль",
+      "botMessage": "Сообщение от бота",
+      "introForUser": "Интро для пользователя",
+      "personaDescription": "Описание персоны"
+    },
+    "personaNameFallback": "ИИ Ассистент",
+    "personaAltFallback": "ИИ",
+    "initialBotMessage": "Привет! Давайте начнём симуляцию.",
+    "endButton": "Завершить",
+    "ending": "Завершаем...",
+    "inputPlaceholder": "Введите ваш ответ...",
+    "connectionError": "Ошибка соединения с сервером. Пожалуйста, перезагрузите страницу.",
+    "connectionReconnecting": "Связь потеряна. Переподключаемся — ваше сообщение отправится автоматически.",
+    "replyTimeout": "Ответ не пришёл вовремя. Проверьте связь и отправьте сообщение ещё раз.",
+    "errorGeneric": "Что-то пошло не так. Попробуйте отправить сообщение ещё раз.",
+    "nonVerbalActionsButton": "Невербальные действия",
+    "nonVerbalActions": {
+      "lookAround": "Оглядеться",
+      "nod": "Кивнуть",
+      "shakeHead": "Покачать головой",
+      "pauseThink": "Сделать паузу",
+      "showConfusion": "Показать замешательство"
+    },
+    "endReminder": {
+      "message": "Если вы готовы завершить разговор, пожалуйста, нажмите «Завершить».",
+      "dismiss": "Закрыть"
+    },
+    "endDialog": {
+      "title": "Завершить симуляцию?",
+      "description": "Вы уверены, что хотите завершить текущую симуляцию? Весь прогресс будет сохранён.",
+      "recordingWarning": "⚠️ Запись видео будет остановлена и загружена.",
+      "continue": "Продолжить",
+      "endSimulation": "Завершить симуляцию"
+    },
+    "beforeUnloadWarning": "Идёт запись видео. Если вы выйдете сейчас, запись будет остановлена и загружена.",
+    "feedbackDialog": {
+      "title": "Обратная связь",
+      "description": "Поделитесь своими впечатлениями и предложениями по симуляции",
+      "label": "Ваш отзыв",
+      "placeholder": "Опишите ваши впечатления, предложения или проблемы...",
+      "cancel": "Отмена",
+      "submit": "Отправить",
+      "addScreenshot": "Добавить скриншот",
+      "capturingScreenshot": "Захват...",
+      "screenshotAdded": "✓ Скриншот добавлен"
+    },
+    "personaInfo": {
+      "title": "Информация о персоне",
+      "description": "Подробная информация об ИИ-персоне в этой симуляции",
+      "aboutPersona": "О персоне",
+      "goals": "Цели",
+      "currentState": "Текущее состояние",
+      "online": "Онлайн",
+      "feedback": "Отзыв",
+      "availableEmotions": "Доступные эмоции",
+      "nonVerbalActions": "Невербальные действия",
+      "simulationContext": "Контекст симуляции",
+      "case": "Кейс",
+      "close": "Закрыть",
+      "role": "Роль",
+      "noDescription": "Описание отсутствует",
+      "noGoals": "Цели отсутствуют"
+    },
+    "inputMode": {
+      "text": "Текст",
+      "audio": "Аудио",
+      "audioRecording": "Запись аудио"
+    },
+    "stepButtons": {
+      "step1": "1. Описание кейса",
+      "step2": "2. Ваша роль",
+      "step3": "3. С кем вы общаетесь"
+    },
+    "actionButtons": {
+      "Visit production site": "Посетить производство",
+      "Show detailed price proposal": "Показать ценовой расчёт",
+      "Share internal volume commitment": "Поделиться обязательством по объёму",
+      "Summarise and move to closure": "Подвести итоги и закрыть"
+    },
+    "rightPanel": {
+      "actions": "Действия",
+      "brief": "Ваш бриф",
+      "progress": "Прогресс",
+      "currentPhase": "Текущая фаза",
+      "phaseHint": "Фаза {{current}} из {{total}} — {{name}}"
+    },
+    "confirmAction": {
+      "title": "Подтвердить действие",
+      "description": "Вы уверены, что хотите выполнить это действие? Оно будет отправлено в чат.",
+      "cancel": "Отмена",
+      "confirm": "Да, выполнить"
+    },
+    "navigation": {
+      "button": "Навигация по симуляции",
+      "title": "Навигация по симуляции",
+      "description": "Следуйте этим шагам во время симуляции",
+      "empty": "Навигация для этой симуляции не указана."
+    },
+    "nonVerbalActionsMobile": "Действия",
+    "voiceMessage": "Голосовое сообщение",
+    "recordingActive": "Запись активна...",
+    "userLabel": "Вы",
+    "micAccessError": "Не удалось получить доступ к микрофону",
+    "timerWarning": {
+      "title": "Предупреждение о времени",
+      "message": "У вас осталось 10 минут для отправки сообщения",
+      "ok": "Понятно"
+    },
+    "divider": {
+      "postVisit": "The visit took place, the conversation continues after the visit"
+    },
+    "aiThinkingLong": "{{name}} думает дольше обычного, подождите секунду…",
+    "finishingResults": "Завершаем симуляцию и готовим ваши результаты. Это может занять до минуты…"
+  },
+  "videoRecorder": {
+    "consentDialog": {
+      "title": "Согласие на запись",
+      "description": "Для записи симуляции необходим доступ к вашей веб-камере и микрофону. Запись будет сохранена вместе с результатами симуляции.",
+      "question": "Вы даёте согласие на запись видео и аудио?",
+      "decline": "Отказаться",
+      "accept": "Согласен"
+    },
+    "recording": {
+      "started": "Запись началась",
+      "startedDesc": "Ваша веб-камера записывает симуляцию",
+      "stopped": "Запись остановлена",
+      "stoppedDesc": "Загружаем видео на сервер...",
+      "inProgress": "Идёт запись симуляции"
+    },
+    "upload": {
+      "progress": "Загрузка записи на сервер...",
+      "completed": "Загрузка завершена",
+      "completedDesc": "Видео успешно сохранено ({{size}} MB)"
+    },
+    "errors": {
+      "cameraAccess": "Ошибка",
+      "cameraAccessDesc": "Не удалось получить доступ к камере. Проверьте разрешения.",
+      "stopRecording": "Ошибка",
+      "stopRecordingDesc": "Не удалось остановить запись",
+      "uploadFailed": "Ошибка загрузки",
+      "uploadFailedDesc": "Не удалось загрузить видео на сервер"
+    },
+    "confirmCloseWhileRecording": "Recording will stop when you close the browser. Are you sure?"
+  },
+  "sessionRecorder": {
+    "title": "Запись симуляции",
+    "description": "Записывает экран симуляции и чат для просмотра позже.",
+    "start": "Начать запись экрана",
+    "stop": "Остановить запись экрана",
+    "inProgress": "Идёт запись экрана...",
+    "uploading": "Загрузка записи симуляции...",
+    "uploadCompleted": "Запись симуляции сохранена",
+    "uploadCompletedDesc": "Запись экрана загружена ({{size}} MB)",
+    "uploadFailed": "Ошибка загрузки",
+    "uploadFailedDesc": "Не удалось загрузить запись симуляции",
+    "startFailed": "Не удаётся начать запись экрана",
+    "startFailedDesc": "Браузер заблокировал захват экрана. Разрешите доступ и попробуйте ещё раз.",
+    "stopFailed": "Не удаётся остановить запись экрана",
+    "stopFailedDesc": "Работа рекордера не остановлена корректно"
+  },
+  "caseEditor": {
+    "title": {
+      "edit": "Редактировать кейс",
+      "create": "Создать новый кейс"
+    },
+    "back": "Назад",
+    "testDraft": "Протестировать черновик",
+    "testCase": "Протестировать кейс",
+    "saveDraft": "Сохранить черновик",
+    "saveCase": "Сохранить кейс",
+    "saving": "Сохранение...",
+    "draftCopy": "Черновик копии",
+    "applying": "Применение...",
+    "applyDraft": "Опубликовать черновик",
+    "applyChanges": "Применить изменения",
+    "cancel": "Отмена",
+    "saveChanges": "Сохранить изменения",
+    "applyDraftTitle": "Применить изменения черновика?",
+    "applyDraftDescription": "Это действие заменит оригинальный кейс изменениями из этого черновика. Черновик будет удалён после применения изменений. Это действие нельзя отменить.",
+    "finalEvaluationSystem": "Итоговое оценивание (Система)",
+    "toasts": {
+      "caseUpdated": "Кейс обновлён",
+      "caseCreated": "Кейс создан",
+      "loadError": "Не удалось загрузить кейс",
+      "saveError": "Не удалось сохранить кейс"
+    },
+    "tabs": {
+      "basic": "Основные",
+      "persona": "Персона",
+      "scenarios": "Сценарии",
+      "evaluation": "Оценка",
+      "finalEvaluation": "Итоговое оценивание"
+    },
+    "basic": {
+      "title": "Основная информация",
+      "description": "Основные данные об учебном кейсе",
+      "caseTitle": "Название кейса",
+      "caseTitlePlaceholder": "Введите название кейса",
+      "userDescription": "Интро для пользователя",
+      "userDescriptionPlaceholder": "Описание, которое видит конечный пользователь",
+      "userDescriptionHint": "Текст, отображаемый пользователю в описании.",
+      "roleInSimulation": "Описание кейса",
+      "roleInSimulationPlaceholder": "Введите описание кейса",
+      "roleInSimulationHint": "Общее описание ситуации кейса для пользователя.",
+      "personaDescription": "Ваша роль",
+      "personaDescriptionPlaceholder": "Введите описание роли пользователя",
+      "personaDescriptionHint": "Опишите роль, которую будет выполнять пользователь в симуляции.",
+      "caseOverview": "С кем вы общаетесь",
+      "caseOverviewPlaceholder": "Введите описание собеседника",
+      "caseOverviewHint": "Описание персоны, с которой будет общаться пользователь.",
+      "aiDescription": "Флоу разговора",
+      "aiDescriptionPlaceholder": "Полный контекст для работы ИИ, включая цели и поведение диалога",
+      "aiDescriptionHint": "Описание контекста работы искусственного интеллекта, включая цели и логику диалога.",
+      "evaluationPrompt": "Промпт оценивания",
+      "evaluationPromptPlaceholder": "Выберите промпт оценивания",
+      "noEvaluationPrompt": "Нет оценочного промпта",
+      "evaluationModel": "ИИ модель для оценивания",
+      "selectAIModel": "Выберите модель ИИ",
+      "aiModelForCategories": "Модель ИИ для оценивания по категориям",
+      "finalEvaluationPrompt": "Итоговая инструкция для ИИ",
+      "finalEvaluationPromptPlaceholder": "Выберите итоговую инструкцию для ИИ",
+      "noFinalEvaluationPrompt": "Итоговая инструкция для ИИ не найдена",
+      "finalEvaluationModel": "ИИ модель для итогового оценивания",
+      "aiModelForFinalSummary": "Модель ИИ для итогового оценивания",
+      "llm1Model": "LLM 1 модель",
+      "llm1ModelHint": "Основная модель ИИ для обработки кейса",
+      "llm2Model": "LLM 2 модель",
+      "llm2ModelHint": "Дополнительная модель ИИ для обработки кейса",
+      "userActions": {
+        "title": "Действия пользователя",
+        "helper": "Перечень действий, которые доступны пользователю для выбора.",
+        "add": "Добавить действие",
+        "addTitle": "Добавить действие пользователя",
+        "name": "Название действия",
+        "namePlaceholder": "Введите название действия",
+        "descriptionLabel": "Описание",
+        "descriptionPlaceholder": "Опишите, что делает это действие для пользователя",
+        "shortDescriptionLabel": "Короткая подпись для кнопки",
+        "shortDescriptionPlaceholder": "Напр. Пригласить визит на производство",
+        "shortDescriptionHint": "Отображается под названием кнопки в правой панели симуляции.",
+        "chatMessageLabel": "Chat action log",
+        "chatMessagePlaceholder": "Напр. Я хотел бы посетить ваше производство",
+        "chatMessageHint": "Этот текст будет отправлен в чат как сообщение пользователя после подтверждения действия. Можно добавить маркеры <!-- uk --> ... <!-- en --> ... для локализации.",
+        "popupTextLabel": "Pop-up text",
+        "popupTextPlaceholder": "Напр. Visit the customer's processing operation to understand trimming...",
+        "popupTextHint": "Текст в попапе подтверждения. Если пусто — будет показано общее 'Вы уверены?'. Можно добавить маркеры <!-- uk --> ... <!-- en --> ... для локализации.",
+        "submit": "Добавить действие",
+        "emptyState": "Действия ещё не добавлены.",
+        "validationError": "Пожалуйста, заполните название и описание действия",
+        "editTitle": "Редактировать действие пользователя",
+        "update": "Обновить действие",
+        "cancel": "Отмена",
+        "updateSuccess": "Действие успешно обновлено"
+      },
+      "scenarioBehaviorRulesCoarse": "Правила поведения сценария (общие)",
+      "scenarioBehaviorRulesCoarsePlaceholder": "Введите общие правила поведения для сценария...",
+      "scenarioBehaviorRulesCoarseHint": "Определите общие поведенческие указания, которым должен следовать ИИ во время сценария",
+      "scenarioBehaviorRulesFull": "Правила поведения сценария (полные)",
+      "scenarioBehaviorRulesFullPlaceholder": "Введите детальные правила поведения для сценария...",
+      "scenarioBehaviorRulesFullHint": "Предоставьте исчерпывающие поведенческие инструкции, включая специфические реакции, условия и граничные случаи",
+      "simulationNavigation": "Навигация по симуляции",
+      "simulationNavigationPlaceholder": "Добавьте инструкцию для пользователя (шаги, время, на что обратить внимание)",
+      "simulationNavigationHint": "Пример: 1) Начни с приветствия и отправь первое сообщение; 2) Следи за таймером и заверши в рамках времени.",
+      "briefItems": {
+        "title": "Брифинг (правая панель симуляции)",
+        "hint": "Пары label/value, которые отображаются в блоке «Ваш бриф» справа от чата. Напр. Reference price → €4.50/kg.",
+        "add": "Добавить строку",
+        "labelPlaceholder": "Reference price",
+        "valuePlaceholder": "€4.50/kg"
+      },
+      "phases": {
+        "title": "Фазы (Progress widget)",
+        "hint": "Фазы симуляции, которые отображаются в виджете прогресса. Выберите реакции персоны, которые мапятся на каждую фазу.",
+        "add": "Добавить фазу",
+        "idPlaceholder": "opening",
+        "namePlaceholder": "Opening",
+        "reactionsLabel": "Реакции в этой фазе:",
+        "noReactions": "Сначала добавьте реакции персоны во вкладке «Персона»."
+      }
+    },
+    "persona": {
+      "title": "Персона",
+      "description": "Настройка ИИ-персоны для этого кейса (1 персона = 1 кейс)",
+      "name": "Имя персоны",
+      "namePlaceholder": "Имя персоны",
+      "role": "Роль",
+      "rolePlaceholder": "например, Руководитель, Менеджер, Работник",
+      "roleExample": "например, Руководитель, Менеджер, Работник",
+      "voice": "Голос",
+      "voicePlaceholder": "Выберите голос",
+      "voiceSampleLabel": "Текст для прослушивания",
+      "voiceSamplePlaceholder": "Введите текст для озвучивания выбранным голосом",
+      "voiceSampleHint": "Используйте стандартное предложение или введите свою фразу, чтобы прослушать выбранный голос.",
+      "voiceSampleButton": "Прослушать голос",
+      "voiceSampleGenerating": "Создаём образец...",
+      "voiceSampleDefault": "This is a sample voice test",
+      "voiceSampleError": "Не удалось сгенерировать образец голоса. Попробуйте ещё раз.",
+      "personaDescription": "Описание персоны",
+      "personaDescriptionPlaceholder": "Кто они, их роль и поведение",
+      "goalDescription": "Цели персоны",
+      "goalDescriptionPlaceholder": "Опишите цели персоны (каждая цель с новой строки)",
+      "goalDescriptionHint": "Опишите цели для персоны. Каждая цель должна быть указана в новой строке",
+      "styleAndLanguage": "Стиль и язык",
+      "styleAndLanguagePlaceholder": "Опишите стиль коммуникации и языковые предпочтения...",
+      "behaviorConstraints": "Ограничения поведения",
+      "behaviorConstraintsPlaceholder": "Определите поведенческие границы и ограничения...",
+      "internalReasoning": "Внутреннее рассуждение",
+      "internalReasoningPlaceholder": "Опишите процесс внутреннего рассуждения...",
+      "noImage": "Нет изображения",
+      "uploading": "Загрузка...",
+      "cropper": {
+        "title": "Настроить изображение",
+        "subtitle": "Перетащите, чтобы отцентрировать лицо, используйте ползунок для зума",
+        "zoom": "Масштаб",
+        "cancel": "Отмена",
+        "save": "Сохранить обрезку"
+      },
+      "reactionName": "Название реакции",
+      "reactionNamePlaceholder": "Введите название реакции",
+      "reactionDescription": "Описание",
+      "reactionDescriptionPlaceholder": "Опишите эту реакцию",
+      "reactionPrompt": "Опишите поведение",
+      "reactionPromptPlaceholder": "Опишите, как должна вести себя персона для этой реакции",
+      "addReaction": "Добавить реакцию",
+      "promptLabel": "Поведение:",
+      "emotions": {
+        "title": "Эмоции персоны",
+        "add": "Добавить эмоцию",
+        "addTitle": "Добавить новую эмоцию",
+        "name": "Название эмоции",
+        "namePlaceholder": "Название эмоции",
+        "description": "Описание",
+        "descriptionPlaceholder": "Текстовое описание эмоции",
+        "image": "Изображение эмоции",
+        "chooseFile": "Выберите файл",
+        "noFileChosen": "Файл не выбран",
+        "submit": "Добавить эмоцию",
+        "validationError": "Пожалуйста, заполните название и описание эмоции"
+      },
+      "reactions": {
+        "title": "Реакции",
+        "helper": "Данный раздел отвечает за конфигурирование возможных реакций ИИ персоны на выбранные пользователем действия.",
+        "add": "Добавить реакцию",
+        "addTitle": "Добавить новую реакцию",
+        "name": "Название реакции",
+        "namePlaceholder": "Название реакции",
+        "description": "Описание",
+        "descriptionPlaceholder": "Описание реакции персоны",
+        "selectionLogic": "Логика выбора",
+        "selectionLogicPlaceholder": "Объясните, когда эта реакция должна быть доступна пользователю",
+        "selectionLogicLabel": "Логика выбора:",
+        "submit": "Добавить реакцию",
+        "validationError": "Пожалуйста, заполните название реакции и опишите поведение",
+        "goals": "Цели реакции",
+        "goalsLabel": "Цели:",
+        "goalsPlaceholder": "Определите цели, которых должна достичь эта реакция...",
+        "goalsHint": "Укажите, чего пытается достичь эта реакция в разговоре"
+      }
+    },
+    "scenarios": {
+      "title": "Сценарии-реакции",
+      "description": "Дополнительные сценарии поведения персоны в разных ситуациях",
+      "add": "Добавить сценарий",
+      "addTitle": "Добавить новый сценарий",
+      "condition": "Условие срабатывания",
+      "conditionPlaceholder": "Когда эта реакция выбирается",
+      "reaction": "Реакция персоны",
+      "reactionPlaceholder": "Как ведёт себя персона в этой реакции",
+      "conditionLabel": "Условие",
+      "reactionLabel": "Реакция",
+      "submit": "Добавить сценарий",
+      "validationError": "Пожалуйста, заполните условие и реакцию сценария"
+    },
+    "evaluation": {
+      "title": "Логика оценивания",
+      "description": "Категории и критерии для оценивания диалога",
+      "promptSettingsTitle": "Настройки промптов",
+      "promptSettingsDescription": "Назначьте промпты оценивания и модели, используемые для автоматического оценивания.",
+      "add": "Добавить категорию",
+      "addTitle": "Добавить категорию оценки",
+      "finalSummaryRule": "Правило подведения итога",
+      "finalSummaryRulePlaceholder": "Как формируется финальный анализ в PDF на основе оценок по категориям",
+      "finalSummaryRuleNote": "Опишите, как на основе оценок формируется финальный анализ для пользователя",
+      "categories": "Категории оценивания",
+      "categoryName": "Название категории",
+      "categoryNamePlaceholder": "Название категории оценки",
+      "criteria": "Критерии оценивания",
+      "criteriaPlaceholder": "Как оценивать этот аспект диалога",
+      "submit": "Добавить категорию",
+      "validationError": "Пожалуйста, заполните название и критерии категории",
+      "instructionCreateTitle": "Создать новую инструкцию для ИИ",
+      "instructionEditTitle": "Настройки инструкции для ИИ",
+      "nameLabel": "Название",
+      "namePlaceholder": "Введите название...",
+      "instructionLabel": "Инструкция для ИИ",
+      "instructionPlaceholder": "Введите инструкцию для ИИ...",
+      "instructionHint": "Это инструкция для агента искусственного интеллекта в рамках оценки критериев",
+      "createInstructionButton": "Создать инструкцию",
+      "noInstructionTitle": "Инструкция не настроена",
+      "noInstructionDescription": "Выберите имеющуюся инструкцию выше или создайте новую.",
+      "createInstructionCta": "Создать новую инструкцию для ИИ",
+      "availableInstructionsTitle": "Доступные инструкции для ИИ",
+      "selectedInstructionLabel": "Выбрано",
+      "adminDescriptionLabel": "Административное описание",
+      "adminDescriptionPlaceholder": "Введите административное описание для этой категории...",
+      "categoryInstructionPlaceholder": "Введите инструкцию для ИИ...",
+      "createSuccess": "Инструкция для ИИ успешно создана",
+      "createError": "Не удалось создать инструкцию для ИИ",
+      "promptLoadedForEditing": "Промпт загружен для редактирования",
+      "viewPrompt": "Посмотреть промпт",
+      "categoryFromPrompt": "Категория из промпта оценивания: {{catName}}",
+      "deleteConfirm": "Вы уверены, что хотите удалить эту инструкцию для ИИ?",
+      "deleteSuccess": "Инструкция для ИИ удалена",
+      "deleteError": "Не удалось удалить инструкцию для ИИ",
+      "validationErrorFull": "Пожалуйста, заполните название, административное описание и инструкцию для ИИ",
+      "saveAsDraftLabel": "Сохранить как черновик",
+      "saveAsDraftNote": "(Черновые инструкции не используются для оценивания)"
+    },
+    "aiAssistant": {
+      "title": "ИИ-ассистент",
+      "description": "Тестирование и отладка кейса",
+      "testPersona": "Тестовая персона",
+      "testPersonaPlaceholder": "Выберите тестовую персону",
+      "aiLog": "Лог ИИ",
+      "aiLogTitle": "Лог действий ИИ-агента",
+      "dialogue": "Диалог",
+      "dialogueTitle": "Итоговый диалог",
+      "messagePlaceholder": "Сообщение для ИИ...",
+      "logMessages": {
+        "init": "[AI LOG] Инициализация агента...",
+        "loadingPersona": "[AI LOG] Загрузка персоны: {{name}}",
+        "processingTestPersona": "[AI LOG] Обработка тестовой персоны: {{name}}",
+        "ready": "[AI LOG] Готовность к диалогу"
+      },
+      "response": "Ответ ИИ-ассистента на основе тестовой персоны \"{{name}}\": {{message}}"
+    },
+    "finalEvaluation": {
+      "title": "Итоговая инструкция для ИИ",
+      "description": "Просмотр и управление системной итоговой инструкцией для ИИ, которая используется для создания комплексных итоговых оцениваний",
+      "noPromptFound": "Итоговая инструкция для ИИ не найдена",
+      "noPromptDescription": "Системная итоговая инструкция для ИИ ещё не настроена",
+      "createPrompt": "Создать итоговую инструкцию для ИИ",
+      "editPrompt": "Редактировать инструкцию",
+      "usePrompt": "Использовать эту инструкцию",
+      "promptSelected": "Инструкция выбрана",
+      "promptSelectedDescription": "Итоговая инструкция для ИИ назначена для этого кейса",
+      "aboutFinalEvaluation": "Об итоговом оценивании",
+      "aboutDescription": "Итоговая инструкция для ИИ используется для создания комплексного резюме после завершения симуляции. Она учитывает все оценки по категориям и формирует общую оценку с:",
+      "aboutPoints": {
+        "summary": "Резюме ключевых сильных сторон и областей для улучшения",
+        "score": "Общая оценка от 1 до 10",
+        "examples": "Конкретные примеры из разговора",
+        "recommendations": "Практические рекомендации"
+      },
+      "createTitle": "Создать итоговую инструкцию для ИИ",
+      "editTitle": "Настройки итоговой инструкции для ИИ",
+      "currentPrompt": "Текущая итоговая инструкция для ИИ",
+      "promptContent": "Итоговая инструкция для ИИ",
+      "namePlaceholder": "Введите название итоговой инструкции для ИИ...",
+      "promptPlaceholder": "Введите итоговую инструкцию для ИИ, которая анализирует и обобщает все категории оценивания...",
+      "creating": "Создание...",
+      "createPromptButton": "Создать инструкцию",
+      "saveInstructionButton": "Сохранить итоговую инструкцию",
+      "saveChanges": "Сохранить изменения",
+      "cancel": "Отмена",
+      "success": "Успех",
+      "createSuccess": "Итоговая инструкция для ИИ успешно создана",
+      "createError": "Не удалось создать итоговую инструкцию для ИИ",
+      "deleteConfirm": "Вы уверены, что хотите удалить эту итоговую инструкцию для ИИ?",
+      "deleteSuccess": "Итоговая инструкция для ИИ удалена",
+      "deleteError": "Не удалось удалить итоговую инструкцию для ИИ",
+      "availableInstructionsTitle": "Доступные итоговые инструкции для ИИ",
+      "saveAsDraftLabel": "Сохранить как черновик",
+      "saveAsDraftNote": "(Черновые инструкции не используются для итогового оценивания)",
+      "pdfNote": "После финальной оценки пользователь получит PDF файл с результатами прохождения теста.",
+      "promptUpdated": "Итоговая инструкция для ИИ обновлена",
+      "status": {
+        "draft": "Черновик",
+        "active": "Активный"
+      }
+    },
+    "toast": {
+      "uploadError": "Failed to upload image",
+      "cropError": "Failed to crop image"
+    },
+    "validate": {
+      "button": "Проверить",
+      "title": "Проверка кейса",
+      "summary": "{{errors}} ошибок, {{warnings}} предупреждений",
+      "noIssues": "Структурных проблем не найдено",
+      "error": "Ошибка проверки"
+    }
+  },
+  "simulationResults": {
+    "report": {
+      "title": "Отчёт по оцениванию",
+      "overallAssessment": "Общая оценка",
+      "overallScore": "Итоговый балл",
+      "blockATitle": "Блок А — Профессиональные компетенции",
+      "blockBTitle": "Блок Б — Коммуникативные индикаторы",
+      "competencyOverview": "Обзор компетенций",
+      "strengths": "Сильные стороны",
+      "developmentAreas": "Зоны развития",
+      "criticalMarkers": "Критические маркеры",
+      "scoringScale": "Шкала оценивания",
+      "whatScoreMeans": "Что означает ваш балл?",
+      "whatScoreMeansBody": "Ваш результат соответствует уровню «{{level}}».",
+      "whatScoreMeansFallback": "Балл отражает вашу производительность по заданной рубрике.",
+      "transcript": "Транскрипт разговора"
+    },
+    "loading": "Загрузка результатов...",
+    "errorTitle": "Ошибка загрузки",
+    "errorNotFound": "Результаты симуляции не найдены",
+    "errorGeneric": "Не удалось загрузить результаты симуляции",
+    "backToDashboard": "Вернуться к панели",
+    "processingResults": "Обработка ваших результатов...",
+    "pollingAttempt": "Готовим ваш отчёт — обычно это несколько минут. Вкладку можно не закрывать.",
+    "generatingReport": "Генерация вашего отчёта, пожалуйста подождите...",
+    "errorTimeout": "Время ожидания обработки результатов истекло. Попробуйте позже.",
+    "errorNoReport": "Отчёт для этой сессии недоступен.",
+    "delayedTitle": "Ваш отчёт готовится",
+    "delayedBody": "Этот отчёт формируется чуть дольше обычного. Мы уже этим занимаемся — как только он будет готов, вы получите уведомление здесь. Проходить симуляцию заново не нужно.",
+    "noResultsTitle": "Результаты не найдены",
+    "noResultsDescription": "Симуляция ещё не завершена или результаты не сохранены.",
+    "headerTitle": "Симуляция завершена!",
+    "headerDescription": "{{name}} • {{durationLabel}}: {{duration}}",
+    "duration": {
+      "label": "Длительность",
+      "hoursMinutes": "{{hours}} ч {{minutes}} мин",
+      "hoursOnly": "{{hours}} ч",
+      "format": "{{minutes}} мин {{seconds}} сек",
+      "minutesOnly": "{{minutes}} мин",
+      "secondsOnly": "{{seconds}} сек",
+      "notAvailable": "Н/Д"
+    },
+    "notAvailable": "Н/Д",
+    "totalScoreLabel": "общий балл",
+    "scoreBadge": {
+      "excellent": "Отлично",
+      "good": "Хорошо",
+      "satisfactory": "Удовлетворительно",
+      "needsImprovement": "Требует улучшения"
+    },
+    "categoriesTitle": "Показатели по категориям",
+    "statisticsTitle": "Детальная статистика",
+    "statistics": {
+      "messages": "Сообщений",
+      "minResponseTime": "Мин. время ответа",
+      "secondsShort": "с",
+      "voiceUsage": "Использование голоса",
+      "nonVerbal": "Невербальные действия"
+    },
+    "feedbackTitle": "Обратная связь",
+    "feedback": {
+      "strongPoints": "Сильные стороны:",
+      "improvements": "Возможности для улучшения:"
+    },
+    "actions": {
+      "downloadPdf": "Скачать PDF",
+      "downloadExcel": "Скачать Excel",
+      "fileUnavailable": "Файл недоступен",
+      "viewReport": "Посмотреть отчёт",
+      "downloading": "Загрузка...",
+      "acceptScore": "Принять оценку",
+      "rejectScore": "Отклонить оценку"
+    },
+    "confirmation": {
+      "acceptTitle": "Принять оценку?",
+      "cancelTitle": "Отклонить оценку?",
+      "acceptDescription": "Ваша оценка будет сохранена в профиле. Эти результаты будут учтены в общей статистике.",
+      "cancelDescription": "Оценка будет отклонена, но данные о прохождении симуляции сохранятся для анализа.",
+      "back": "Вернуться",
+      "acceptConfirm": "Принять",
+      "cancelConfirm": "Отклонить оценку"
+    },
+    "feedbackForm": {
+      "label": "Добавьте комментарий",
+      "placeholder": "Поделитесь мыслями об этой оценке...",
+      "submitError": "Не удалось отправить обратную связь. Попробуйте ещё раз.",
+      "defaultAccept": "Пользователь принял оценку из результатов симуляции.",
+      "defaultReject": "Пользователь отклонил оценку из результатов симуляции.",
+      "promptAccept": "Вы можете добавить комментарий о том, почему оценка вам подходит (необязательно).",
+      "promptReject": "Пожалуйста, опишите, почему вы не согласны с этой оценкой (необязательно).",
+      "capture": "Захватить скриншот результатов",
+      "capturing": "Захват...",
+      "captureAdded": "Скриншот добавлен",
+      "removeScreenshot": "Удалить скриншот",
+      "submit": "Отправить",
+      "cancel": "Отмена",
+      "captureError": "Не удалось сделать скриншот результатов. Попробуйте ещё раз.",
+      "actionMissing": "Выберите, принимаете или отклоняете оценку, прежде чем отправлять."
+    }
+  },
+  "aiModels": {
+    "categories": {
+      "recommendedForAnalysis": "Рекомендовано для анализа",
+      "forEmotionalTone": "Для эмоционального тона",
+      "advancedReasoning": "Продвинутое мышление",
+      "fastAndEfficient": "Быстро и эффективно",
+      "otherProviders": "Другие провайдеры"
+    },
+    "descriptions": {
+      "gpt41": "Лучший для глубокого анализа и комплексного оценивания. Отличные возможности рассуждения и генерации детальных отзывов.",
+      "claude37Sonnet": "Идеален для тщательного анализа с сильными аналитическими навыками. Отлично подходит для сложных сценариев оценивания, требующих нюансного понимания.",
+      "claude3Opus": "Премиум модель для продвинутых задач анализа. Предоставляет очень детальные и информативные оценки.",
+      "gpt4o": "Отлично для мультимодального анализа и комплексных оцениваний. Сильная производительность в разных типах задач.",
+      "gemini25Pro": "Продвинутая модель рассуждения, идеальная для детального анализа и задач оценивания, требующих глубокого понимания.",
+      "claude35Sonnet": "Отлично для анализа эмоционального тона и оценки эмпатии. Прекрасно понимает тонкие эмоциональные сигналы.",
+      "claude35Haiku": "Быстро и эффективно для оценивания эмоционального тона. Хороший баланс между скоростью и пониманием эмоций."
+    }
+  },
+  "caseDetails": {
+    "notFound": {
+      "title": "Case not found",
+      "description": "The selected case is not available or does not exist."
+    },
+    "info": {
+      "duration": "Duration",
+      "participants": "Participants",
+      "level": "Level"
+    },
+    "aiPersona": {
+      "title": "AI Persona"
+    },
+    "objectives": {
+      "title": "Learning objectives"
+    },
+    "instructions": {
+      "title": "Instructions",
+      "allowed": "Allowed actions:",
+      "forbidden": "Forbidden actions:"
+    },
+    "equipment": {
+      "title": "Equipment test",
+      "description": "Check your equipment before starting the simulation",
+      "tabs": {
+        "audio": "Audio test",
+        "recording": "Voice recording",
+        "video": "Video test"
+      },
+      "audio": {
+        "title": "Audio playback test",
+        "description": "Press \"Start test\" to play a sample audio file",
+        "playing": "Playing...",
+        "start": "Start test",
+        "stop": "Finish test",
+        "success": "✓ Test audio is playing"
+      },
+      "recording": {
+        "title": "Voice recording test",
+        "description": "Record a test message and listen to the recording",
+        "stop": "Stop recording",
+        "start": "Start recording",
+        "play": "Play recording",
+        "speakHint": "Say something for the test",
+        "success": "✓ Recording saved successfully"
+      },
+      "video": {
+        "title": "Video test",
+        "description": "Watch a sample video to check playback quality",
+        "success": "✓ Test video is playing"
+      }
+    },
+    "access": {
+      "title": "Access restricted",
+      "description": "You don't have access to this case or your access period has expired. Contact your administrator to get access.",
+      "backToCases": "Back to cases"
+    },
+    "actions": {
+      "creatingChat": "Creating chat...",
+      "startSimulation": "Start simulation",
+      "starting": "Starting...",
+      "startWithAgent": "Start with agent"
+    },
+    "toast": {
+      "startErrorDefault": "Failed to start simulation. Please try again.",
+      "errorTitle": "Error",
+      "forbiddenTitle": "Access denied",
+      "forbiddenNoCase": "You don't have access to this case. Contact your administrator to get access.",
+      "forbiddenGeneric": "You don't have permission to start the simulation. Contact your administrator.",
+      "notFoundTitle": "Case not found",
+      "notFoundMessage": "This case is unavailable or does not exist. Try refreshing the page.",
+      "authTitle": "Authorization",
+      "authMessage": "Your session has expired. Please sign in again.",
+      "agentInDevTitle": "Feature in development",
+      "agentInDevFallback": "In development",
+      "agentStartedTitle": "Simulation started",
+      "agentStartedDescription": "Agent simulation started successfully",
+      "agentStartErrorDescription": "Failed to start simulation with agent"
+    },
+    "mock": {
+      "case1": {
+        "title": "Conflict management",
+        "description": "Learn to resolve workplace conflicts effectively through interactive simulations with AI characters.",
+        "duration": "45 min",
+        "difficulty": "Intermediate",
+        "participants": "1-2 participants",
+        "objective1": "Recognize signs of conflict at an early stage",
+        "objective2": "Apply active listening techniques",
+        "objective3": "Find compromise solutions",
+        "objective4": "Prevent conflict escalation",
+        "instruction1": "Carefully read the conflict scenario",
+        "instruction2": "Interact with the AI persona using a professional approach",
+        "instruction3": "Use various conflict resolution strategies",
+        "instruction4": "Stick to the time limit (45 minutes)",
+        "instruction5": "Forbidden to use aggressive language",
+        "instruction6": "Allowed to take pauses to think",
+        "personaName": "Anna Petrenko",
+        "personaRole": "Project Manager",
+        "personaDescription": "Experienced manager with 8 years of IT industry experience"
+      },
+      "case2": {
+        "title": "Leadership and motivation",
+        "description": "Develop leadership skills and the ability to motivate a team in difficult situations.",
+        "duration": "60 min",
+        "difficulty": "Advanced",
+        "participants": "1 participant",
+        "objective1": "Demonstrate leadership qualities",
+        "objective2": "Motivate a demotivated team",
+        "objective3": "Create a recovery plan after setbacks",
+        "objective4": "Apply emotional intelligence",
+        "instruction1": "Get acquainted with the team's situation after a failed release",
+        "instruction2": "Hold a motivational conversation with a key employee",
+        "instruction3": "Suggest concrete steps to improve the situation",
+        "instruction4": "Simulation duration: 60 minutes",
+        "instruction5": "Forbidden to blame or criticize",
+        "instruction6": "Allowed to focus on positive solutions",
+        "personaName": "Oleksii Kovalenko",
+        "personaRole": "Senior Developer",
+        "personaDescription": "Talented developer going through a confidence crisis after a failure"
+      }
+    }
+  },
+  "caseStart": {
+    "unknownError": "Unknown error",
+    "activating": "Activating your invitation…",
+    "title": {
+      "expired": "Invitation expired",
+      "invalid": "Invalid invitation",
+      "error": "Could not activate invitation"
+    },
+    "description": {
+      "expired": "This link has expired. Contact your administrator to get a new one.",
+      "invalid": "Link not found. It may be incorrect or already deleted.",
+      "error": "A technical error occurred while activating the invitation. Please try again later or contact your administrator."
+    },
+    "goToLogin": "Go to login page"
+  },
+  "feedbackManagement": {
+    "alt": {
+      "screenshotPreview": "Screenshot preview",
+      "feedbackScreenshot": "Feedback screenshot",
+      "screenshotFullView": "Screenshot full view"
+    }
+  }
+}

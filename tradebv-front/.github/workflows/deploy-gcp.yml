@@ -1,0 +1,69 @@
+run-name: Deploy ${{ github.ref_name }} frontend to Cloud Run
+permissions:
+  contents: read
+
+on:
+  push:
+    branches:
+      - main
+      - proj/hr-mhp
+
+env:
+  REGION: ${{ secrets.GCP_REGION }}
+  PROJECT: ${{ secrets.GCP_PROJECT }}
+  REGISTRY: ${{ secrets.GCP_REGION }}-docker.pkg.dev
+  REPO: gart-apps
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Backend URLs are the Cloud Run run.app hosts for now; switch to the
+      # public domains here at DNS cutover (they are baked into the static bundle).
+      - name: Per-branch config
+        id: cfg
+        shell: bash
+        run: |
+          if [ "${GITHUB_REF_NAME}" = "proj/hr-mhp" ]; then
+            echo "service=tradebv-mhp-front" >> "$GITHUB_OUTPUT"
+            echo "api=https://mhp.gart.technology/api/v1" >> "$GITHUB_OUTPUT"
+            echo "ws=wss://mhp.gart.technology" >> "$GITHUB_OUTPUT"
+            echo "hr=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "service=tradebv-front" >> "$GITHUB_OUTPUT"
+            echo "api=https://tradebv.gart.technology/api/v1" >> "$GITHUB_OUTPUT"
+            echo "ws=wss://tradebv.gart.technology" >> "$GITHUB_OUTPUT"
+            echo "hr=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - uses: google-github-actions/setup-gcloud@v2
+
+      - name: Docker auth
+        run: gcloud auth configure-docker ${{ env.REGISTRY }} --quiet
+
+      - name: Build & push
+        run: |
+          IMAGE="${REGISTRY}/${PROJECT}/${REPO}/${{ steps.cfg.outputs.service }}:${GITHUB_SHA::8}"
+          echo "IMAGE=$IMAGE" >> "$GITHUB_ENV"
+          docker build -f docker/Dockerfile \
+            --build-arg VITE_API_BASE_URL=${{ steps.cfg.outputs.api }} \
+            --build-arg VITE_WS_BASE_URL=${{ steps.cfg.outputs.ws }} \
+            --build-arg HR_VERSION=${{ steps.cfg.outputs.hr }} \
+            -t "$IMAGE" .
+          docker push "$IMAGE"
+
+      - name: Deploy to Cloud Run
+        run: |
+          gcloud run deploy ${{ steps.cfg.outputs.service }} \
+            --image "$IMAGE" \
+            --region "$REGION" --project "$PROJECT" \
+            --platform managed \
+            --port 80 \
+            --allow-unauthenticated \
+            --min-instances 0 --max-instances 3

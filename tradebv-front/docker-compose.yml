@@ -1,0 +1,104 @@
+services:
+  frontend:
+    image: ghcr.io/gart-tech/tradebv-front_main:latest
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - tradebv
+    restart: always
+
+  backend:
+    image: ghcr.io/gart-tech/tradebv-back_main:latest
+    environment:
+      # --- APP Section (из .env кодера) ---
+      APP_NAME: TradeBV Backend
+      APP_API_PREFIX: /api/v1
+      APP_CORE_SERVICE_URL: http://localhost:8000/api
+      APP_SUPERADMIN_EMAIL: superadmin2@example.com
+      APP_SUPERADMIN_PASSWORD: my3_notsecure_password
+      APP_IS_DEBUG: false
+
+      # --- MONGO Section (из .env кодера) ---
+      MONGO_SCHEMA: mongodb
+      MONGO_HOST: mongodb
+      MONGO_PORT: 27017
+      MONGO_DB: tradebv
+      MONGO_USER: admin
+      MONGO_PASSWORD: adminpass
+
+      # --- JWT Section (из .env кодера) ---
+      JWT_SECRET_KEY: super-secret-change-me
+      JWT_ALGORITHM: HS256
+      JWT_ACCESS_TOKEN_EXPIRE_MINUTES: 1440
+
+      # --- MINIO Section (из .env кодера) ---
+      MINIO_ENDPOINT: minio:9000
+      MINIO_ACCESS_KEY: minioadmin
+      MINIO_SECRET_KEY: minioadmin
+      MINIO_BUCKET_RECORDINGS: tradebv-recordings
+      MINIO_BUCKET_REPORTS: tradebv-reports
+      MINIO_REGION: us-east-1
+
+      # --- OpenAI (из вашего файла .env на сервере) ---
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+
+    volumes:
+      - backend-media:/data/media
+    depends_on:
+      - mongodb
+      - minio
+    ports:
+      - "8000:8000"
+    networks:
+      - tradebv
+    restart: always
+
+  mongodb:
+    image: mongo:6.0
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: adminpass
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - tradebv
+    restart: always
+
+  minio:
+    image: minio/minio:RELEASE.2025-09-07T16-13-09Z-cpuv1
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+      MINIO_BROWSER_REDIRECT_URL: https://${DOMAIN}
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio-data:/data
+    networks:
+      - tradebv
+    restart: always
+
+  watchtower:
+    image: containrrr/watchtower
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /root/.docker/config.json:/config.json
+    environment:
+      - WATCHTOWER_CLEANUP=true
+      - WATCHTOWER_POLL_INTERVAL=30
+      - WATCHTOWER_IGNORE=registry.docker.io
+      - WATCHTOWER_DEBUG=false
+
+volumes:
+  backend-media: {}
+  mongo-data: {}
+  minio-data: {}
+
+networks:
+  tradebv:
+    driver: bridge
